@@ -1,0 +1,33 @@
+language_names:
+  arb:
+    pl-PL: arabski standardowy
+    en-US: Standard Arabic
+    es-ES: árabe estándar
+  deu:
+    pl-PL: niemiecki
+    en-US: German
+    es-ES: alemán
+  eng:
+    pl-PL: angielski
+    en-US: English
+    es-ES: inglés
+  fra:
+    pl-PL: francuski
+    en-US: French
+    es-ES: francés
+  jpn:
+    pl-PL: japoński
+    en-US: Japanese
+    es-ES: japonés
+  pol:
+    pl-PL: polski
+    en-US: Polish
+    es-ES: polaco
+  rus:
+    pl-PL: rosyjski
+    en-US: Russian
+    es-ES: ruso
+  spa:
+    pl-PL: hiszpański
+    en-US: Spanish
+    es-ES: español

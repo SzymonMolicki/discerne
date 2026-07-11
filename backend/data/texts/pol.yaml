@@ -1,0 +1,22 @@
+language: pol
+texts:
+  - content: "Po deszczu chodnik pachniał wilgotnymi liśćmi. W małej piekarni zapalono światło, zanim ulica naprawdę się obudziła."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Dziecko ułożyło kredki w równym szeregu. Na pierwszym rysunku pojawił się ogród, niski płot i pochylone drzewo."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Stary zegar w przedpokoju zatrzymał się tuż przed południem. Nikt tego nie zauważył, dopóki w mieszkaniu nie zrobiło się dziwnie cicho."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Gęsta zupa parowała w głębokiej misce. Obok położono świeży chleb i zamknięto kuchenne okno."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "O zmierzchu ścieżka nad wodą opustoszała. Z powierzchni unosiła się lekka mgła, która rozmywała światło latarni."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true

@@ -1,0 +1,13 @@
+continents:
+  - code: AF
+    name: Africa
+  - code: AS
+    name: Asia
+  - code: EU
+    name: Europe
+  - code: NA
+    name: North America
+  - code: SA
+    name: South America
+  - code: OC
+    name: Oceania

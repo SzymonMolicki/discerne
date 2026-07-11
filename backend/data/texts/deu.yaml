@@ -1,0 +1,22 @@
+language: deu
+texts:
+  - content: "Nach dem Regen roch der Gehweg nach feuchten Blättern. In einer kleinen Bäckerei ging früh das Licht an, bevor die Straße richtig erwachte."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Ein Kind legte Buntstifte ordentlich auf den Tisch. Die erste Zeichnung zeigte einen ruhigen Garten und einen schiefen Zaun."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Die alte Uhr im Flur blieb kurz vor Mittag stehen. Niemand bemerkte es, bis das Haus ungewöhnlich still wurde."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Heiße Suppe dampfte in einer tiefen Schale. Jemand legte frisches Brot daneben und schloss das Küchenfenster."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Bei Dämmerung wurde der Weg am Wasser leer. Ein feiner Nebel stieg langsam auf und machte das Licht der Laternen weich."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true

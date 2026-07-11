@@ -1,0 +1,16 @@
+groups:
+  - code: italic
+    family: indo-european
+    name: Italic
+  - code: germanic
+    family: indo-european
+    name: Germanic
+  - code: balto-slavic
+    family: indo-european
+    name: Balto-Slavic
+  - code: semitic
+    family: afro-asiatic
+    name: Semitic
+  - code: japanese
+    family: japonic
+    name: Japanese

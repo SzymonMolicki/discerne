@@ -1,0 +1,73 @@
+languages:
+  - iso_639_3: arb
+    iso_639_1: ar
+    canonical_name: Standard Arabic
+    family: afro-asiatic
+    group: semitic
+    subgroup: central-semitic
+    continent: AS
+    script: Arab
+    enabled: true
+  - iso_639_3: deu
+    iso_639_1: de
+    canonical_name: German
+    family: indo-european
+    group: germanic
+    subgroup: west-germanic
+    continent: EU
+    script: Latn
+    enabled: true
+  - iso_639_3: eng
+    iso_639_1: en
+    canonical_name: English
+    family: indo-european
+    group: germanic
+    subgroup: west-germanic
+    continent: EU
+    script: Latn
+    enabled: true
+  - iso_639_3: fra
+    iso_639_1: fr
+    canonical_name: French
+    family: indo-european
+    group: italic
+    subgroup: romance
+    continent: EU
+    script: Latn
+    enabled: true
+  - iso_639_3: jpn
+    iso_639_1: ja
+    canonical_name: Japanese
+    family: japonic
+    group: japanese
+    subgroup: japanese
+    continent: AS
+    script: Jpan
+    enabled: true
+  - iso_639_3: pol
+    iso_639_1: pl
+    canonical_name: Polish
+    family: indo-european
+    group: balto-slavic
+    subgroup: west-slavic
+    continent: EU
+    script: Latn
+    enabled: true
+  - iso_639_3: rus
+    iso_639_1: ru
+    canonical_name: Russian
+    family: indo-european
+    group: balto-slavic
+    subgroup: east-slavic
+    continent: EU
+    script: Cyrl
+    enabled: true
+  - iso_639_3: spa
+    iso_639_1: es
+    canonical_name: Spanish
+    family: indo-european
+    group: italic
+    subgroup: romance
+    continent: EU
+    script: Latn
+    enabled: true

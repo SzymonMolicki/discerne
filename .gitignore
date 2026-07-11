@@ -1,0 +1,31 @@
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Go
+bin/
+dist/
+coverage.out
+*.test
+*.prof
+
+# Frontend / Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+frontend/dist/
+frontend/.vite/
+
+# Local IDE and OS files
+.idea/
+.DS_Store
+
+# Notes with project plan
+docs/
+
+# Local runtime output
+tmp/
+*.log

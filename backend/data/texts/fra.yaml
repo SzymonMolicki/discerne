@@ -1,0 +1,22 @@
+language: fra
+texts:
+  - content: "Après la pluie, le trottoir sentait les feuilles humides. Une petite boulangerie a allumé sa lumière avant que la rue ne se réveille vraiment."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Un enfant a rangé des crayons de couleur sur la table. Son premier dessin montrait un jardin calme et une clôture penchée."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "La vieille horloge du couloir s'est arrêtée juste avant midi. Personne ne l'a remarqué avant que la maison devienne étrangement silencieuse."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Une soupe chaude fumait dans un bol profond. Quelqu'un a posé du pain frais à côté et a fermé la fenêtre de la cuisine."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Au crépuscule, le chemin près de l'eau s'est vidé. Une brume légère montait lentement et adoucissait la lumière des lampes."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true

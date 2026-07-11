@@ -1,0 +1,22 @@
+language: eng
+texts:
+  - content: "The morning air felt cool after the rain. A small bakery opened early, and the street slowly filled with voices."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "A child arranged colored pencils on the table. The first drawing showed a quiet garden and a crooked fence."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "The old clock in the hall stopped just before noon. Nobody noticed until the room became unusually silent."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Warm soup steamed in a wide bowl. Someone placed fresh bread beside it and closed the kitchen window."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "At dusk, the path near the water became empty. A thin mist rose from the surface and softened the lamps."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true

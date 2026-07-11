@@ -1,0 +1,19 @@
+subgroups:
+  - code: romance
+    group: italic
+    name: Romance
+  - code: west-germanic
+    group: germanic
+    name: West Germanic
+  - code: west-slavic
+    group: balto-slavic
+    name: West Slavic
+  - code: east-slavic
+    group: balto-slavic
+    name: East Slavic
+  - code: central-semitic
+    group: semitic
+    name: Central Semitic
+  - code: japanese
+    group: japanese
+    name: Japanese

@@ -1,0 +1,9 @@
+scripts:
+  - iso_15924_code: Arab
+    name: Arabic
+  - iso_15924_code: Cyrl
+    name: Cyrillic
+  - iso_15924_code: Jpan
+    name: Japanese
+  - iso_15924_code: Latn
+    name: Latin

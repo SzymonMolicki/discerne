@@ -1,0 +1,22 @@
+language: jpn
+texts:
+  - content: "雨上がりの歩道は、湿った葉の匂いがした。小さなパン屋では、通りが目を覚ます前に明かりがともった。"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "子どもは色鉛筆を机の上にきれいに並べた。最初の絵には、静かな庭と少し傾いた柵が描かれていた。"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "廊下の古い時計は、正午の少し前に止まった。家の中が妙に静かになるまで、誰もそれに気づかなかった。"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "深い器の中で、温かいスープから湯気が上がっていた。誰かがそばに焼きたてのパンを置き、台所の窓を閉めた。"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "夕暮れになると、水辺の道には人影がなくなった。薄い霧がゆっくり立ちのぼり、街灯の光をやわらげた。"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true

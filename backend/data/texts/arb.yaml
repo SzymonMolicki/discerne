@@ -1,0 +1,22 @@
+language: arb
+texts:
+  - content: "بعد المطر، امتلأ الرصيف برائحة الأوراق المبللة. أضاء مخبز صغير مصابيحه باكرًا قبل أن يستيقظ الشارع تمامًا."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "رتب طفل أقلامًا ملونة على الطاولة. أظهر الرسم الأول حديقة هادئة وسياجًا مائلًا."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "توقفت الساعة القديمة في الممر قبل الظهيرة بقليل. لم يلاحظ أحد ذلك حتى صار البيت صامتًا على نحو غريب."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "تصاعد بخار الحساء الساخن من وعاء عميق. وضع أحدهم خبزًا طازجًا بجانبه وأغلق نافذة المطبخ."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "عند الغسق، خلا الطريق قرب الماء. ارتفع ضباب خفيف ببطء وجعل ضوء المصابيح أكثر نعومة."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true

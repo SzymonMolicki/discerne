@@ -1,0 +1,22 @@
+language: rus
+texts:
+  - content: "После дождя тротуар пах мокрыми листьями. В маленькой пекарне рано зажгли свет, прежде чем улица по-настоящему проснулась."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Ребёнок разложил цветные карандаши на столе ровным рядом. На первом рисунке появился тихий сад и покосившийся забор."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Старые часы в коридоре остановились незадолго до полудня. Никто не заметил этого, пока в доме не стало необычно тихо."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Горячий суп дымился в глубокой миске. Кто-то положил рядом свежий хлеб и закрыл кухонное окно."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "В сумерках дорожка у воды опустела. Лёгкий туман медленно поднимался и смягчал свет фонарей."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
