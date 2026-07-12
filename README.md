@@ -2,24 +2,13 @@
 
 Discerne is a browser-based daily language identification quiz. The backend is written in Go and the future frontend will be a TypeScript application.
 
-## Current State
-
-The repository currently contains:
-
-- configuration loading;
-- `APP_TIMEZONE=Europe/Warsaw` by default;
-- `APP_NAME=Discerne` by default;
-- a minimal API server;
-- `GET /api/v1/health`;
-- seed metadata for 8 enabled languages;
-- 5 seed texts for each enabled language;
-- configurable distractor weight calculation;
-- weighted distractor selection;
-- random source for deterministic quiz logic;
-- first in-memory quiz generator shape;
-- quiz preview command using seed data.
-
 ## Run Backend
+
+Start PostgreSQL:
+
+```bash
+docker compose up -d postgres
+```
 
 From `backend/`:
 
@@ -49,4 +38,23 @@ Generate a deterministic quiz preview from seed data:
 
 ```bash
 go run ./cmd/quiz-preview --seed 1 --locale en-US
+```
+
+Run database migrations:
+
+```bash
+source ../.env
+goose -dir ./migrations postgres "$DATABASE_URL" up
+```
+
+Import validated seed data into PostgreSQL:
+
+```bash
+go run ./cmd/seed-import
+```
+
+Stop local services:
+
+```bash
+docker compose down
 ```
