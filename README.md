@@ -12,7 +12,12 @@ The repository currently contains:
 - a minimal API server;
 - `GET /api/v1/health`;
 - seed metadata for 8 enabled languages;
-- 5 seed texts for each enabled language.
+- 5 seed texts for each enabled language;
+- configurable distractor weight calculation;
+- weighted distractor selection;
+- random source for deterministic quiz logic;
+- first in-memory quiz generator shape;
+- quiz preview command using seed data.
 
 ## Run Backend
 
@@ -38,4 +43,10 @@ Validate seed data:
 
 ```bash
 go run ./cmd/data-validator
+```
+
+Generate a deterministic quiz preview from seed data:
+
+```bash
+go run ./cmd/quiz-preview --seed 1 --locale en-US
 ```

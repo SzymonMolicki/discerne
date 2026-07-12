@@ -23,6 +23,10 @@ func fileExists(path string) bool {
 	return err == nil && !info.IsDir()
 }
 
+func Load(dataDir string) (Catalog, error) {
+	return loadCatalog(filepath.Clean(dataDir))
+}
+
 func loadCatalog(dataDir string) (Catalog, error) {
 	var catalog Catalog
 

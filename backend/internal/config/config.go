@@ -2,8 +2,11 @@ package config
 
 import (
 	"fmt"
+	"strconv"
 	"strings"
 	"time"
+
+	"discerne/backend/internal/quiz"
 )
 
 const (
@@ -14,9 +17,10 @@ const (
 
 // Config contains settings validated at startup.
 type Config struct {
-	AppName     string
-	HTTPAddress string
-	AppTimezone *time.Location
+	AppName           string
+	HTTPAddress       string
+	AppTimezone       *time.Location
+	DistractorWeights quiz.DistractorWeights
 }
 
 // Load builds Config from environment values.
@@ -43,11 +47,66 @@ func Load(environ []string) (Config, error) {
 		return Config{}, fmt.Errorf("load APP_TIMEZONE %q: %w", timezoneName, err)
 	}
 
+	distractorWeights, err := loadDistractorWeights(values)
+	if err != nil {
+		return Config{}, err
+	}
+
 	return Config{
-		AppName:     appName,
-		HTTPAddress: httpAddress,
-		AppTimezone: location,
+		AppName:           appName,
+		HTTPAddress:       httpAddress,
+		AppTimezone:       location,
+		DistractorWeights: distractorWeights,
 	}, nil
+}
+
+func loadDistractorWeights(values map[string]string) (quiz.DistractorWeights, error) {
+	weights := quiz.DefaultDistractorWeights()
+
+	var err error
+	weights.Base, err = intFromEnv(values, "DISTRACTOR_BASE_WEIGHT", weights.Base)
+	if err != nil {
+		return quiz.DistractorWeights{}, err
+	}
+	weights.SameFamily, err = intFromEnv(values, "DISTRACTOR_SAME_FAMILY_WEIGHT", weights.SameFamily)
+	if err != nil {
+		return quiz.DistractorWeights{}, err
+	}
+	weights.SameGroup, err = intFromEnv(values, "DISTRACTOR_SAME_GROUP_WEIGHT", weights.SameGroup)
+	if err != nil {
+		return quiz.DistractorWeights{}, err
+	}
+	weights.SameSubgroup, err = intFromEnv(values, "DISTRACTOR_SAME_SUBGROUP_WEIGHT", weights.SameSubgroup)
+	if err != nil {
+		return quiz.DistractorWeights{}, err
+	}
+	weights.SameContinent, err = intFromEnv(values, "DISTRACTOR_SAME_CONTINENT_WEIGHT", weights.SameContinent)
+	if err != nil {
+		return quiz.DistractorWeights{}, err
+	}
+	weights.SameScript, err = intFromEnv(values, "DISTRACTOR_SAME_SCRIPT_WEIGHT", weights.SameScript)
+	if err != nil {
+		return quiz.DistractorWeights{}, err
+	}
+
+	if err := weights.Validate(); err != nil {
+		return quiz.DistractorWeights{}, fmt.Errorf("validate distractor weights: %w", err)
+	}
+
+	return weights, nil
+}
+
+func intFromEnv(values map[string]string, key string, fallback int) (int, error) {
+	rawValue := strings.TrimSpace(values[key])
+	if rawValue == "" {
+		return fallback, nil
+	}
+
+	value, err := strconv.Atoi(rawValue)
+	if err != nil {
+		return 0, fmt.Errorf("parse %s %q: %w", key, rawValue, err)
+	}
+	return value, nil
 }
 
 func parseEnvironment(environ []string) map[string]string {

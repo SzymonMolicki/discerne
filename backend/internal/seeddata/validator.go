@@ -76,12 +76,22 @@ type Report struct {
 }
 
 func Validate(dataDir string) (Report, error) {
-	catalog, err := loadCatalog(filepath.Clean(dataDir))
+	catalog, err := Load(filepath.Clean(dataDir))
 	if err != nil {
 		return Report{}, err
 	}
 
-	return validateCatalog(catalog), nil
+	return ValidateCatalog(catalog), nil
+}
+
+func RequiredLocales() []string {
+	locales := make([]string, len(requiredLocales))
+	copy(locales, requiredLocales)
+	return locales
+}
+
+func ValidateCatalog(catalog Catalog) Report {
+	return validateCatalog(catalog)
 }
 
 func validateCatalog(catalog Catalog) Report {
