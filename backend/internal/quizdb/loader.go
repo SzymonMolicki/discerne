@@ -17,6 +17,7 @@ var ErrDailyQuizNotFound = errors.New("daily quiz not found")
 
 type queryer interface {
 	Query(ctx context.Context, sql string, args ...any) (pgx.Rows, error)
+	QueryRow(ctx context.Context, sql string, args ...any) pgx.Row
 }
 
 type storeDB interface {

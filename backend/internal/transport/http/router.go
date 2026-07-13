@@ -5,6 +5,7 @@ import (
 	"context"
 	"encoding/json"
 	"errors"
+	"io"
 	"log/slog"
 	"net/http"
 	"time"
@@ -21,9 +22,19 @@ type AttemptStarter interface {
 	StartAttempt(rctx context.Context, quizDate string, deviceID string) (quizdb.Attempt, error)
 }
 
+type AnswerSubmitter interface {
+	SubmitAnswer(rctx context.Context, input quizdb.SubmitAnswerInput) (quizdb.AnswerSubmission, error)
+}
+
+type AttemptLoader interface {
+	LoadAttempt(rctx context.Context, attemptID string, deviceID string) (quizdb.AttemptResult, error)
+}
+
 type QuizService interface {
 	DailyQuizReader
 	AttemptStarter
+	AnswerSubmitter
+	AttemptLoader
 }
 
 // NewRouter wires the API routes.
@@ -97,6 +108,79 @@ func NewRouter(cfg config.Config, logger *slog.Logger, quizzes QuizService) http
 		}
 	})
 
+	mux.HandleFunc("POST /api/v1/attempts/{attemptId}/answers", func(w http.ResponseWriter, r *http.Request) {
+		if quizzes == nil {
+			respondError(w, http.StatusServiceUnavailable, "database_unavailable")
+			return
+		}
+
+		var request submitAnswerRequest
+		if err := decodeJSONRequest(w, r, &request); err != nil {
+			respondError(w, http.StatusBadRequest, "invalid_request")
+			return
+		}
+
+		answer, err := quizzes.SubmitAnswer(r.Context(), quizdb.SubmitAnswerInput{
+			AttemptID:          r.PathValue("attemptId"),
+			DeviceID:           deviceIDFromCookie(r, cfg.DeviceCookieName),
+			QuestionID:         request.QuestionID,
+			SelectedLanguageID: request.SelectedLanguageID,
+			ResponseTimeMS:     request.ResponseTimeMS,
+		})
+		if errors.Is(err, quizdb.ErrAttemptNotFound) {
+			respondError(w, http.StatusNotFound, "attempt_not_found")
+			return
+		}
+		if errors.Is(err, quizdb.ErrInvalidAnswer) {
+			respondError(w, http.StatusBadRequest, "invalid_answer")
+			return
+		}
+		if errors.Is(err, quizdb.ErrAnswerAlreadySubmitted) {
+			respondError(w, http.StatusConflict, "answer_already_submitted")
+			return
+		}
+		if err != nil {
+			logger.Error("submit quiz answer", "error", err)
+			respondError(w, http.StatusInternalServerError, "internal_error")
+			return
+		}
+
+		if err := respondJSON(w, http.StatusCreated, submitAnswerResponse{
+			QuestionID:         answer.QuestionID,
+			SelectedLanguageID: answer.SelectedLanguageID,
+			CorrectLanguageID:  answer.CorrectLanguageID,
+			IsCorrect:          answer.IsCorrect,
+		}); err != nil {
+			logger.Error("write submit answer response", "error", err)
+		}
+	})
+
+	mux.HandleFunc("GET /api/v1/attempts/{attemptId}", func(w http.ResponseWriter, r *http.Request) {
+		if quizzes == nil {
+			respondError(w, http.StatusServiceUnavailable, "database_unavailable")
+			return
+		}
+
+		attempt, err := quizzes.LoadAttempt(
+			r.Context(),
+			r.PathValue("attemptId"),
+			deviceIDFromCookie(r, cfg.DeviceCookieName),
+		)
+		if errors.Is(err, quizdb.ErrAttemptNotFound) {
+			respondError(w, http.StatusNotFound, "attempt_not_found")
+			return
+		}
+		if err != nil {
+			logger.Error("load quiz attempt", "error", err)
+			respondError(w, http.StatusInternalServerError, "internal_error")
+			return
+		}
+
+		if err := respondJSON(w, http.StatusOK, attemptResultResponseFromAttempt(attempt)); err != nil {
+			logger.Error("write attempt response", "error", err)
+		}
+	})
+
 	return requestLogger(logger, mux)
 }
 
@@ -125,6 +209,27 @@ type todayQuizOption struct {
 type startAttemptResponse struct {
 	AttemptID string `json:"attemptId"`
 	Status    string `json:"status"`
+}
+
+type submitAnswerRequest struct {
+	QuestionID         string `json:"questionId"`
+	SelectedLanguageID string `json:"selectedLanguageId"`
+	ResponseTimeMS     *int   `json:"responseTimeMs"`
+}
+
+type submitAnswerResponse struct {
+	QuestionID         string `json:"questionId"`
+	SelectedLanguageID string `json:"selectedLanguageId"`
+	CorrectLanguageID  string `json:"correctLanguageId"`
+	IsCorrect          bool   `json:"isCorrect"`
+}
+
+type attemptResultResponse struct {
+	AttemptID     string `json:"attemptId"`
+	Status        string `json:"status"`
+	AnsweredCount int    `json:"answeredCount"`
+	QuestionCount int    `json:"questionCount"`
+	Score         *int   `json:"score"`
 }
 
 type healthResponse struct {
@@ -168,6 +273,16 @@ func todayQuizResponseFromDailyQuiz(dailyQuiz quizdb.DailyQuiz) todayQuizRespons
 	return response
 }
 
+func attemptResultResponseFromAttempt(attempt quizdb.AttemptResult) attemptResultResponse {
+	return attemptResultResponse{
+		AttemptID:     attempt.ID,
+		Status:        attempt.Status,
+		AnsweredCount: attempt.AnsweredCount,
+		QuestionCount: attempt.QuestionCount,
+		Score:         attempt.Score,
+	}
+}
+
 func supportedLocale(rawLocale string) (string, bool) {
 	if rawLocale == "" {
 		return "en-US", true
@@ -199,6 +314,25 @@ func setDeviceCookie(w http.ResponseWriter, cfg config.Config, deviceID string) 
 		Secure:   cfg.SecureCookies,
 		SameSite: http.SameSiteLaxMode,
 	})
+}
+
+func decodeJSONRequest(w http.ResponseWriter, r *http.Request, body any) error {
+	r.Body = http.MaxBytesReader(w, r.Body, 1<<20)
+
+	decoder := json.NewDecoder(r.Body)
+	decoder.DisallowUnknownFields()
+	if err := decoder.Decode(body); err != nil {
+		return err
+	}
+
+	var extra struct{}
+	if err := decoder.Decode(&extra); err != nil && !errors.Is(err, io.EOF) {
+		return err
+	} else if err == nil {
+		return errors.New("request body must contain a single JSON value")
+	}
+
+	return nil
 }
 
 func respondJSON(w http.ResponseWriter, status int, body any) error {

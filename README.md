@@ -74,7 +74,21 @@ curl "http://localhost:8080/api/v1/quizzes/today?locale=en-US"
 Start today's quiz attempt:
 
 ```bash
-curl -i -X POST http://localhost:8080/api/v1/quizzes/today/attempt
+curl -i -c cookies.txt -X POST http://localhost:8080/api/v1/quizzes/today/attempt
+```
+
+Submit an answer:
+
+```bash
+curl -i -b cookies.txt -X POST http://localhost:8080/api/v1/attempts/{attemptId}/answers \
+  -H "Content-Type: application/json" \
+  -d '{"questionId":"{questionId}","selectedLanguageId":"{languageId}","responseTimeMs":5400}'
+```
+
+Read attempt status and result:
+
+```bash
+curl -i -b cookies.txt http://localhost:8080/api/v1/attempts/{attemptId}
 ```
 
 Stop local services:
