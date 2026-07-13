@@ -1,33 +1,733 @@
 language_names:
+  abk:
+    pl-PL: abchaski
+    en-US: Abkhazian
+    es-ES: abjasio
+  aar:
+    pl-PL: afarski
+    en-US: Afar
+    es-ES: afar
+  afr:
+    pl-PL: afrikaans
+    en-US: Afrikaans
+    es-ES: afrikáans
+  sqi:
+    pl-PL: albański
+    en-US: Albanian
+    es-ES: albanés
+  amh:
+    pl-PL: amharski
+    en-US: Amharic
+    es-ES: amárico
   arb:
-    pl-PL: arabski standardowy
-    en-US: Standard Arabic
-    es-ES: árabe estándar
-  deu:
-    pl-PL: niemiecki
-    en-US: German
-    es-ES: alemán
+    pl-PL: arabski
+    en-US: Arabic
+    es-ES: árabe
+  arg:
+    pl-PL: aragoński
+    en-US: Aragonese
+    es-ES: aragonés
+  hye:
+    pl-PL: ormiański
+    en-US: Armenian
+    es-ES: armenio
+  asm:
+    pl-PL: asamski
+    en-US: Assamese
+    es-ES: asamés
+  ava:
+    pl-PL: awarski
+    en-US: Avaric
+    es-ES: avar
+  ave:
+    pl-PL: awestyjski
+    en-US: Avestan
+    es-ES: avéstico
+  aym:
+    pl-PL: ajmara
+    en-US: Aymara
+    es-ES: aimara
+  aze:
+    pl-PL: azerbejdżański
+    en-US: Azerbaijani
+    es-ES: azerí
+  bam:
+    pl-PL: bambara
+    en-US: Bambara
+    es-ES: bambara
+  bak:
+    pl-PL: baszkirski
+    en-US: Bashkir
+    es-ES: baskir
+  eus:
+    pl-PL: baskijski
+    en-US: Basque
+    es-ES: euskera
+  bel:
+    pl-PL: białoruski
+    en-US: Belarusian
+    es-ES: bielorruso
+  ben:
+    pl-PL: bengalski
+    en-US: Bengali
+    es-ES: bengalí
+  bis:
+    pl-PL: bislama
+    en-US: Bislama
+    es-ES: bislama
+  bos:
+    pl-PL: bośniacki
+    en-US: Bosnian
+    es-ES: bosnio
+  bre:
+    pl-PL: bretoński
+    en-US: Breton
+    es-ES: bretón
+  bul:
+    pl-PL: bułgarski
+    en-US: Bulgarian
+    es-ES: búlgaro
+  mya:
+    pl-PL: birmański
+    en-US: Burmese
+    es-ES: birmano
+  cat:
+    pl-PL: kataloński
+    en-US: Catalan
+    es-ES: catalán
+  khm:
+    pl-PL: khmerski centralny
+    en-US: Central Khmer
+    es-ES: jemer central
+  cha:
+    pl-PL: czamorro
+    en-US: Chamorro
+    es-ES: chamorro
+  che:
+    pl-PL: czeczeński
+    en-US: Chechen
+    es-ES: checheno
+  nya:
+    pl-PL: cziczewa
+    en-US: Chichewa
+    es-ES: chichewa
+  zho:
+    pl-PL: chiński
+    en-US: Chinese
+    es-ES: chino
+  chu:
+    pl-PL: cerkiewnosłowiański
+    en-US: Church Slavic
+    es-ES: eslavo eclesiástico
+  chv:
+    pl-PL: czuwaski
+    en-US: Chuvash
+    es-ES: chuvasio
+  cor:
+    pl-PL: kornijski
+    en-US: Cornish
+    es-ES: córnico
+  cos:
+    pl-PL: korsykański
+    en-US: Corsican
+    es-ES: corso
+  cre:
+    pl-PL: kri
+    en-US: Cree
+    es-ES: cree
+  hrv:
+    pl-PL: chorwacki
+    en-US: Croatian
+    es-ES: croata
+  ces:
+    pl-PL: czeski
+    en-US: Czech
+    es-ES: checo
+  dan:
+    pl-PL: duński
+    en-US: Danish
+    es-ES: danés
+  div:
+    pl-PL: malediwski
+    en-US: Divehi
+    es-ES: divehi
+  nld:
+    pl-PL: niderlandzki
+    en-US: Dutch
+    es-ES: neerlandés
+  dzo:
+    pl-PL: dzongkha
+    en-US: Dzongkha
+    es-ES: dzongkha
   eng:
     pl-PL: angielski
     en-US: English
     es-ES: inglés
+  epo:
+    pl-PL: esperanto
+    en-US: Esperanto
+    es-ES: esperanto
+  est:
+    pl-PL: estoński
+    en-US: Estonian
+    es-ES: estonio
+  ewe:
+    pl-PL: ewe
+    en-US: Ewe
+    es-ES: ewé
+  fao:
+    pl-PL: farerski
+    en-US: Faroese
+    es-ES: feroés
+  fij:
+    pl-PL: fidżyjski
+    en-US: Fijian
+    es-ES: fiyiano
+  fin:
+    pl-PL: fiński
+    en-US: Finnish
+    es-ES: finés
   fra:
     pl-PL: francuski
     en-US: French
     es-ES: francés
+  ful:
+    pl-PL: fulani
+    en-US: Fulah
+    es-ES: fulani
+  glg:
+    pl-PL: galicyjski
+    en-US: Galician
+    es-ES: gallego
+  lug:
+    pl-PL: luganda
+    en-US: Ganda
+    es-ES: luganda
+  kat:
+    pl-PL: gruziński
+    en-US: Georgian
+    es-ES: georgiano
+  deu:
+    pl-PL: niemiecki
+    en-US: German
+    es-ES: alemán
+  ell:
+    pl-PL: grecki
+    en-US: Greek
+    es-ES: griego
+  grn:
+    pl-PL: guarani
+    en-US: Guarani
+    es-ES: guaraní
+  guj:
+    pl-PL: gudżarati
+    en-US: Gujarati
+    es-ES: guyaratí
+  hat:
+    pl-PL: haitański
+    en-US: Haitian Creole
+    es-ES: criollo haitiano
+  hau:
+    pl-PL: hausa
+    en-US: Hausa
+    es-ES: hausa
+  heb:
+    pl-PL: hebrajski
+    en-US: Hebrew
+    es-ES: hebreo
+  her:
+    pl-PL: herero
+    en-US: Herero
+    es-ES: herero
+  hin:
+    pl-PL: hindi
+    en-US: Hindi
+    es-ES: hindi
+  hmo:
+    pl-PL: hiri motu
+    en-US: Hiri Motu
+    es-ES: hiri motu
+  hun:
+    pl-PL: węgierski
+    en-US: Hungarian
+    es-ES: húngaro
+  isl:
+    pl-PL: islandzki
+    en-US: Icelandic
+    es-ES: islandés
+  ido:
+    pl-PL: ido
+    en-US: Ido
+    es-ES: ido
+  ibo:
+    pl-PL: igbo
+    en-US: Igbo
+    es-ES: igbo
+  ind:
+    pl-PL: indonezyjski
+    en-US: Indonesian
+    es-ES: indonesio
+  ina:
+    pl-PL: interlingua
+    en-US: Interlingua
+    es-ES: interlingua
+  ile:
+    pl-PL: interlingue
+    en-US: Interlingue
+    es-ES: interlingue
+  iku:
+    pl-PL: inuktitut
+    en-US: Inuktitut
+    es-ES: inuktitut
+  ipk:
+    pl-PL: inupiak
+    en-US: Inupiaq
+    es-ES: inupiaq
+  gle:
+    pl-PL: irlandzki
+    en-US: Irish
+    es-ES: irlandés
+  ita:
+    pl-PL: włoski
+    en-US: Italian
+    es-ES: italiano
   jpn:
     pl-PL: japoński
     en-US: Japanese
     es-ES: japonés
+  jav:
+    pl-PL: jawajski
+    en-US: Javanese
+    es-ES: javanés
+  kal:
+    pl-PL: grenlandzki
+    en-US: Kalaallisut
+    es-ES: groenlandés
+  kan:
+    pl-PL: kannada
+    en-US: Kannada
+    es-ES: canarés
+  kau:
+    pl-PL: kanuri
+    en-US: Kanuri
+    es-ES: kanuri
+  kas:
+    pl-PL: kaszmirski
+    en-US: Kashmiri
+    es-ES: cachemiro
+  csb:
+    pl-PL: kaszubski
+    en-US: Kashubian
+    es-ES: casubio
+  kaz:
+    pl-PL: kazachski
+    en-US: Kazakh
+    es-ES: kazajo
+  kik:
+    pl-PL: kikuju
+    en-US: Kikuyu
+    es-ES: kikuyu
+  kin:
+    pl-PL: kinyarwanda
+    en-US: Kinyarwanda
+    es-ES: kiñaruanda
+  kom:
+    pl-PL: komi
+    en-US: Komi
+    es-ES: komi
+  kon:
+    pl-PL: kongo
+    en-US: Kongo
+    es-ES: kongo
+  kor:
+    pl-PL: koreański
+    en-US: Korean
+    es-ES: coreano
+  kua:
+    pl-PL: kwanyama
+    en-US: Kuanyama
+    es-ES: kuanyama
+  kur:
+    pl-PL: kurdyjski
+    en-US: Kurdish
+    es-ES: kurdo
+  kir:
+    pl-PL: kirgiski
+    en-US: Kyrgyz
+    es-ES: kirguís
+  lao:
+    pl-PL: laotański
+    en-US: Lao
+    es-ES: lao
+  lat:
+    pl-PL: łaciński
+    en-US: Latin
+    es-ES: latín
+  lav:
+    pl-PL: łotewski
+    en-US: Latvian
+    es-ES: letón
+  lim:
+    pl-PL: limburski
+    en-US: Limburgish
+    es-ES: limburgués
+  lin:
+    pl-PL: lingala
+    en-US: Lingala
+    es-ES: lingala
+  lit:
+    pl-PL: litewski
+    en-US: Lithuanian
+    es-ES: lituano
+  lub:
+    pl-PL: luba-katanga
+    en-US: Luba-Katanga
+    es-ES: luba-katanga
+  ltz:
+    pl-PL: luksemburski
+    en-US: Luxembourgish
+    es-ES: luxemburgués
+  mkd:
+    pl-PL: macedoński
+    en-US: Macedonian
+    es-ES: macedonio
+  mlg:
+    pl-PL: malgaski
+    en-US: Malagasy
+    es-ES: malgache
+  mal:
+    pl-PL: malajalam
+    en-US: Malayalam
+    es-ES: malayalam
+  mlt:
+    pl-PL: maltański
+    en-US: Maltese
+    es-ES: maltés
+  glv:
+    pl-PL: manx
+    en-US: Manx
+    es-ES: manés
+  mri:
+    pl-PL: maoryski
+    en-US: Maori
+    es-ES: maorí
+  mar:
+    pl-PL: marathi
+    en-US: Marathi
+    es-ES: maratí
+  mah:
+    pl-PL: marszalski
+    en-US: Marshallese
+    es-ES: marshalés
+  mon:
+    pl-PL: mongolski
+    en-US: Mongolian
+    es-ES: mongol
+  nau:
+    pl-PL: nauru
+    en-US: Nauru
+    es-ES: nauruano
+  nav:
+    pl-PL: nawaho
+    en-US: Navajo
+    es-ES: navajo
+  ndo:
+    pl-PL: ndonga
+    en-US: Ndonga
+    es-ES: ndonga
+  nep:
+    pl-PL: nepalski
+    en-US: Nepali
+    es-ES: nepalí
+  nde:
+    pl-PL: ndebele północny
+    en-US: North Ndebele
+    es-ES: ndebele septentrional
+  sme:
+    pl-PL: północnolapoński
+    en-US: Northern Sami
+    es-ES: sami septentrional
+  nor:
+    pl-PL: norweski
+    en-US: Norwegian
+    es-ES: noruego
+  oci:
+    pl-PL: oksytański
+    en-US: Occitan
+    es-ES: occitano
+  oji:
+    pl-PL: odżibwe
+    en-US: Ojibwa
+    es-ES: ojibwa
+  ori:
+    pl-PL: orija
+    en-US: Oriya
+    es-ES: oriya
+  orm:
+    pl-PL: oromo
+    en-US: Oromo
+    es-ES: oromo
+  oss:
+    pl-PL: osetyjski
+    en-US: Ossetian
+    es-ES: osetio
+  pli:
+    pl-PL: pali
+    en-US: Pali
+    es-ES: pali
+  pus:
+    pl-PL: paszto
+    en-US: Pashto
+    es-ES: pastún
+  fas:
+    pl-PL: perski
+    en-US: Persian
+    es-ES: persa
   pol:
     pl-PL: polski
     en-US: Polish
     es-ES: polaco
+  por:
+    pl-PL: portugalski
+    en-US: Portuguese
+    es-ES: portugués
+  pan:
+    pl-PL: pendżabski
+    en-US: Punjabi
+    es-ES: panyabí
+  que:
+    pl-PL: keczua
+    en-US: Quechua
+    es-ES: quechua
+  ron:
+    pl-PL: rumuński
+    en-US: Romanian
+    es-ES: rumano
+  roh:
+    pl-PL: romansz
+    en-US: Romansh
+    es-ES: romanche
+  run:
+    pl-PL: rundi
+    en-US: Rundi
+    es-ES: rundi
   rus:
     pl-PL: rosyjski
     en-US: Russian
     es-ES: ruso
+  smo:
+    pl-PL: samoański
+    en-US: Samoan
+    es-ES: samoano
+  sag:
+    pl-PL: sango
+    en-US: Sango
+    es-ES: sango
+  san:
+    pl-PL: sanskryt
+    en-US: Sanskrit
+    es-ES: sánscrito
+  srd:
+    pl-PL: sardyński
+    en-US: Sardinian
+    es-ES: sardo
+  gla:
+    pl-PL: gaelicki szkocki
+    en-US: Scottish Gaelic
+    es-ES: gaélico escocés
+  srp:
+    pl-PL: serbski
+    en-US: Serbian
+    es-ES: serbio
+  sna:
+    pl-PL: shona
+    en-US: Shona
+    es-ES: shona
+  iii:
+    pl-PL: yi syczuański
+    en-US: Sichuan Yi
+    es-ES: yi de Sichuan
+  szl:
+    pl-PL: śląski
+    en-US: Silesian
+    es-ES: silesio
+  snd:
+    pl-PL: sindhi
+    en-US: Sindhi
+    es-ES: sindhi
+  sin:
+    pl-PL: syngaleski
+    en-US: Sinhala
+    es-ES: cingalés
+  slk:
+    pl-PL: słowacki
+    en-US: Slovak
+    es-ES: eslovaco
+  slv:
+    pl-PL: słoweński
+    en-US: Slovenian
+    es-ES: esloveno
+  som:
+    pl-PL: somalijski
+    en-US: Somali
+    es-ES: somalí
+  nbl:
+    pl-PL: ndebele południowy
+    en-US: Southern Ndebele
+    es-ES: ndebele meridional
+  sot:
+    pl-PL: sotho południowy
+    en-US: Southern Sotho
+    es-ES: sesotho
   spa:
     pl-PL: hiszpański
     en-US: Spanish
     es-ES: español
+  zsm:
+    pl-PL: malajski standardowy
+    en-US: Standard Malay
+    es-ES: malayo estándar
+  sun:
+    pl-PL: sundajski
+    en-US: Sundanese
+    es-ES: sundanés
+  swa:
+    pl-PL: suahili
+    en-US: Swahili
+    es-ES: suajili
+  ssw:
+    pl-PL: suazi
+    en-US: Swati
+    es-ES: suazi
+  swe:
+    pl-PL: szwedzki
+    en-US: Swedish
+    es-ES: sueco
+  tgl:
+    pl-PL: tagalski
+    en-US: Tagalog
+    es-ES: tagalo
+  tah:
+    pl-PL: tahitański
+    en-US: Tahitian
+    es-ES: tahitiano
+  tgk:
+    pl-PL: tadżycki
+    en-US: Tajik
+    es-ES: tayiko
+  tam:
+    pl-PL: tamilski
+    en-US: Tamil
+    es-ES: tamil
+  tat:
+    pl-PL: tatarski
+    en-US: Tatar
+    es-ES: tártaro
+  tel:
+    pl-PL: telugu
+    en-US: Telugu
+    es-ES: telugu
+  tha:
+    pl-PL: tajski
+    en-US: Thai
+    es-ES: tailandés
+  bod:
+    pl-PL: tybetański
+    en-US: Tibetan
+    es-ES: tibetano
+  tir:
+    pl-PL: tigrinia
+    en-US: Tigrinya
+    es-ES: tigriña
+  ton:
+    pl-PL: tongijski
+    en-US: Tongan
+    es-ES: tongano
+  tso:
+    pl-PL: tsonga
+    en-US: Tsonga
+    es-ES: tsonga
+  tsn:
+    pl-PL: tswana
+    en-US: Tswana
+    es-ES: setsuana
+  tur:
+    pl-PL: turecki
+    en-US: Turkish
+    es-ES: turco
+  tuk:
+    pl-PL: turkmeński
+    en-US: Turkmen
+    es-ES: turcomano
+  twi:
+    pl-PL: twi
+    en-US: Twi
+    es-ES: twi
+  ukr:
+    pl-PL: ukraiński
+    en-US: Ukrainian
+    es-ES: ucraniano
+  urd:
+    pl-PL: urdu
+    en-US: Urdu
+    es-ES: urdu
+  uig:
+    pl-PL: ujgurski
+    en-US: Uyghur
+    es-ES: uigur
+  uzb:
+    pl-PL: uzbecki
+    en-US: Uzbek
+    es-ES: uzbeko
+  ven:
+    pl-PL: venda
+    en-US: Venda
+    es-ES: venda
+  vie:
+    pl-PL: wietnamski
+    en-US: Vietnamese
+    es-ES: vietnamita
+  vol:
+    pl-PL: volapük
+    en-US: Volapük
+    es-ES: volapük
+  wln:
+    pl-PL: waloński
+    en-US: Walloon
+    es-ES: valón
+  cym:
+    pl-PL: walijski
+    en-US: Welsh
+    es-ES: galés
+  fry:
+    pl-PL: zachodniofryzyjski
+    en-US: Western Frisian
+    es-ES: frisón occidental
+  wol:
+    pl-PL: wolof
+    en-US: Wolof
+    es-ES: wólof
+  wym:
+    pl-PL: wilamowski
+    en-US: Wymysorys
+    es-ES: vilamoviciano
+  xho:
+    pl-PL: xhosa
+    en-US: Xhosa
+    es-ES: xhosa
+  yid:
+    pl-PL: jidysz
+    en-US: Yiddish
+    es-ES: yidis
+  yor:
+    pl-PL: joruba
+    en-US: Yoruba
+    es-ES: yoruba
+  zha:
+    pl-PL: zhuang
+    en-US: Zhuang
+    es-ES: zhuang
+  zul:
+    pl-PL: zulu
+    en-US: Zulu
+    es-ES: zulú

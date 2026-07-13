@@ -1,9 +1,61 @@
 scripts:
   - iso_15924_code: Arab
     name: Arabic
+  - iso_15924_code: Armn
+    name: Armenian
+  - iso_15924_code: Avst
+    name: Avestan
+  - iso_15924_code: Beng
+    name: Bengali
+  - iso_15924_code: Cans
+    name: Unified Canadian Aboriginal Syllabics
   - iso_15924_code: Cyrl
     name: Cyrillic
+  - iso_15924_code: Deva
+    name: Devanagari
+  - iso_15924_code: Ethi
+    name: Ethiopic
+  - iso_15924_code: Geor
+    name: Georgian
+  - iso_15924_code: Grek
+    name: Greek
+  - iso_15924_code: Guru
+    name: Gurmukhi
+  - iso_15924_code: Gujr
+    name: Gujarati
+  - iso_15924_code: Hans
+    name: Han Simplified
+  - iso_15924_code: Hebr
+    name: Hebrew
   - iso_15924_code: Jpan
     name: Japanese
+  - iso_15924_code: Knda
+    name: Kannada
+  - iso_15924_code: Kore
+    name: Korean
+  - iso_15924_code: Khmr
+    name: Khmer
+  - iso_15924_code: Laoo
+    name: Lao
   - iso_15924_code: Latn
     name: Latin
+  - iso_15924_code: Mlym
+    name: Malayalam
+  - iso_15924_code: Mymr
+    name: Myanmar
+  - iso_15924_code: Orya
+    name: Oriya
+  - iso_15924_code: Sinh
+    name: Sinhala
+  - iso_15924_code: Taml
+    name: Tamil
+  - iso_15924_code: Telu
+    name: Telugu
+  - iso_15924_code: Thaa
+    name: Thaana
+  - iso_15924_code: Thai
+    name: Thai
+  - iso_15924_code: Tibt
+    name: Tibetan
+  - iso_15924_code: Yiii
+    name: Yi

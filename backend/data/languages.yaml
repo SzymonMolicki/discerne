@@ -1,22 +1,364 @@
 languages:
+  - iso_639_3: abk
+    iso_639_1: ab
+    canonical_name: Abkhazian
+    family: northwest-caucasian
+    group: abazgi
+    subgroup: abkhaz-abaza
+    continent: AS
+    script: Cyrl
+    enabled: false
+  - iso_639_3: aar
+    iso_639_1: aa
+    canonical_name: Afar
+    family: afro-asiatic
+    group: cushitic
+    subgroup: lowland-east-cushitic
+    continent: AF
+    script: Latn
+    enabled: false
+  - iso_639_3: afr
+    iso_639_1: af
+    canonical_name: Afrikaans
+    family: indo-european
+    group: germanic
+    subgroup: west-germanic
+    continent: AF
+    script: Latn
+    enabled: false
+  - iso_639_3: sqi
+    iso_639_1: sq
+    canonical_name: Albanian
+    family: indo-european
+    group: albanian
+    subgroup: albanian
+    continent: EU
+    script: Latn
+    enabled: false
+  - iso_639_3: amh
+    iso_639_1: am
+    canonical_name: Amharic
+    family: afro-asiatic
+    group: semitic
+    subgroup: ethiopian-semitic
+    continent: AF
+    script: Ethi
+    enabled: false
   - iso_639_3: arb
     iso_639_1: ar
-    canonical_name: Standard Arabic
+    canonical_name: Arabic
     family: afro-asiatic
     group: semitic
     subgroup: central-semitic
     continent: AS
     script: Arab
     enabled: true
-  - iso_639_3: deu
-    iso_639_1: de
-    canonical_name: German
+  - iso_639_3: arg
+    iso_639_1: an
+    canonical_name: Aragonese
+    family: indo-european
+    group: italic
+    subgroup: romance
+    continent: EU
+    script: Latn
+    enabled: false
+  - iso_639_3: hye
+    iso_639_1: hy
+    canonical_name: Armenian
+    family: indo-european
+    group: armenian
+    subgroup: armenian
+    continent: AS
+    script: Armn
+    enabled: false
+  - iso_639_3: asm
+    iso_639_1: as
+    canonical_name: Assamese
+    family: indo-european
+    group: indo-iranian
+    subgroup: indo-aryan
+    continent: AS
+    script: Beng
+    enabled: false
+  - iso_639_3: ava
+    iso_639_1: av
+    canonical_name: Avaric
+    family: northeast-caucasian
+    group: avar-andic
+    subgroup: avar
+    continent: AS
+    script: Cyrl
+    enabled: false
+  - iso_639_3: ave
+    iso_639_1: ae
+    canonical_name: Avestan
+    family: indo-european
+    group: indo-iranian
+    subgroup: iranian
+    continent: AS
+    script: Avst
+    enabled: false
+  - iso_639_3: aym
+    iso_639_1: ay
+    canonical_name: Aymara
+    family: aymaran
+    group: aymaran
+    subgroup: aymara
+    continent: SA
+    script: Latn
+    enabled: false
+  - iso_639_3: aze
+    iso_639_1: az
+    canonical_name: Azerbaijani
+    family: turkic
+    group: common-turkic
+    subgroup: oghuz
+    continent: AS
+    script: Latn
+    enabled: false
+  - iso_639_3: bam
+    iso_639_1: bm
+    canonical_name: Bambara
+    family: niger-congo
+    group: mande
+    subgroup: western-mande
+    continent: AF
+    script: Latn
+    enabled: false
+  - iso_639_3: bak
+    iso_639_1: ba
+    canonical_name: Bashkir
+    family: turkic
+    group: common-turkic
+    subgroup: kipchak
+    continent: EU
+    script: Cyrl
+    enabled: false
+  - iso_639_3: eus
+    iso_639_1: eu
+    canonical_name: Basque
+    family: language-isolate
+    group: basque
+    subgroup: basque
+    continent: EU
+    script: Latn
+    enabled: false
+  - iso_639_3: bel
+    iso_639_1: be
+    canonical_name: Belarusian
+    family: indo-european
+    group: balto-slavic
+    subgroup: east-slavic
+    continent: EU
+    script: Cyrl
+    enabled: false
+  - iso_639_3: ben
+    iso_639_1: bn
+    canonical_name: Bengali
+    family: indo-european
+    group: indo-iranian
+    subgroup: indo-aryan
+    continent: AS
+    script: Beng
+    enabled: false
+  - iso_639_3: bis
+    iso_639_1: bi
+    canonical_name: Bislama
+    family: creole
+    group: english-based-creole
+    subgroup: pacific-english-creole
+    continent: OC
+    script: Latn
+    enabled: false
+  - iso_639_3: bos
+    iso_639_1: bs
+    canonical_name: Bosnian
+    family: indo-european
+    group: balto-slavic
+    subgroup: south-slavic
+    continent: EU
+    script: Latn
+    enabled: false
+  - iso_639_3: bre
+    iso_639_1: br
+    canonical_name: Breton
+    family: indo-european
+    group: celtic
+    subgroup: brittonic
+    continent: EU
+    script: Latn
+    enabled: false
+  - iso_639_3: bul
+    iso_639_1: bg
+    canonical_name: Bulgarian
+    family: indo-european
+    group: balto-slavic
+    subgroup: south-slavic
+    continent: EU
+    script: Cyrl
+    enabled: false
+  - iso_639_3: mya
+    iso_639_1: my
+    canonical_name: Burmese
+    family: sino-tibetan
+    group: tibeto-burman
+    subgroup: burmish
+    continent: AS
+    script: Mymr
+    enabled: false
+  - iso_639_3: cat
+    iso_639_1: ca
+    canonical_name: Catalan
+    family: indo-european
+    group: italic
+    subgroup: romance
+    continent: EU
+    script: Latn
+    enabled: false
+  - iso_639_3: khm
+    iso_639_1: km
+    canonical_name: Central Khmer
+    family: austroasiatic
+    group: mon-khmer
+    subgroup: khmeric
+    continent: AS
+    script: Khmr
+    enabled: false
+  - iso_639_3: cha
+    iso_639_1: ch
+    canonical_name: Chamorro
+    family: austronesian
+    group: malayo-polynesian
+    subgroup: chamorro
+    continent: OC
+    script: Latn
+    enabled: false
+  - iso_639_3: che
+    iso_639_1: ce
+    canonical_name: Chechen
+    family: northeast-caucasian
+    group: nakh
+    subgroup: vainakh
+    continent: AS
+    script: Cyrl
+    enabled: false
+  - iso_639_3: nya
+    iso_639_1: ny
+    canonical_name: Chichewa
+    family: niger-congo
+    group: benue-congo
+    subgroup: bantu
+    continent: AF
+    script: Latn
+    enabled: false
+  - iso_639_3: zho
+    iso_639_1: zh
+    canonical_name: Chinese
+    family: sino-tibetan
+    group: sinitic
+    subgroup: chinese
+    continent: AS
+    script: Hans
+    enabled: false
+  - iso_639_3: chu
+    iso_639_1: cu
+    canonical_name: Church Slavic
+    family: indo-european
+    group: balto-slavic
+    subgroup: south-slavic
+    continent: EU
+    script: Cyrl
+    enabled: false
+  - iso_639_3: chv
+    iso_639_1: cv
+    canonical_name: Chuvash
+    family: turkic
+    group: oghur
+    subgroup: oghur
+    continent: EU
+    script: Cyrl
+    enabled: false
+  - iso_639_3: cor
+    iso_639_1: kw
+    canonical_name: Cornish
+    family: indo-european
+    group: celtic
+    subgroup: brittonic
+    continent: EU
+    script: Latn
+    enabled: false
+  - iso_639_3: cos
+    iso_639_1: co
+    canonical_name: Corsican
+    family: indo-european
+    group: italic
+    subgroup: romance
+    continent: EU
+    script: Latn
+    enabled: false
+  - iso_639_3: cre
+    iso_639_1: cr
+    canonical_name: Cree
+    family: algic
+    group: algonquian
+    subgroup: cree-montagnais
+    continent: NA
+    script: Cans
+    enabled: false
+  - iso_639_3: hrv
+    iso_639_1: hr
+    canonical_name: Croatian
+    family: indo-european
+    group: balto-slavic
+    subgroup: south-slavic
+    continent: EU
+    script: Latn
+    enabled: false
+  - iso_639_3: ces
+    iso_639_1: cs
+    canonical_name: Czech
+    family: indo-european
+    group: balto-slavic
+    subgroup: west-slavic
+    continent: EU
+    script: Latn
+    enabled: false
+  - iso_639_3: dan
+    iso_639_1: da
+    canonical_name: Danish
+    family: indo-european
+    group: germanic
+    subgroup: north-germanic
+    continent: EU
+    script: Latn
+    enabled: false
+  - iso_639_3: div
+    iso_639_1: dv
+    canonical_name: Divehi
+    family: indo-european
+    group: indo-iranian
+    subgroup: indo-aryan
+    continent: AS
+    script: Thaa
+    enabled: false
+  - iso_639_3: nld
+    iso_639_1: nl
+    canonical_name: Dutch
     family: indo-european
     group: germanic
     subgroup: west-germanic
     continent: EU
     script: Latn
-    enabled: true
+    enabled: false
+  - iso_639_3: dzo
+    iso_639_1: dz
+    canonical_name: Dzongkha
+    family: sino-tibetan
+    group: tibeto-burman
+    subgroup: bodish
+    continent: AS
+    script: Tibt
+    enabled: false
   - iso_639_3: eng
     iso_639_1: en
     canonical_name: English
@@ -26,6 +368,60 @@ languages:
     continent: EU
     script: Latn
     enabled: true
+  - iso_639_3: epo
+    iso_639_1: eo
+    canonical_name: Esperanto
+    family: constructed
+    group: international-auxiliary
+    subgroup: esperanto
+    continent: EU
+    script: Latn
+    enabled: false
+  - iso_639_3: est
+    iso_639_1: et
+    canonical_name: Estonian
+    family: uralic
+    group: finnic
+    subgroup: finnic
+    continent: EU
+    script: Latn
+    enabled: false
+  - iso_639_3: ewe
+    iso_639_1: ee
+    canonical_name: Ewe
+    family: niger-congo
+    group: kwa
+    subgroup: gbe
+    continent: AF
+    script: Latn
+    enabled: false
+  - iso_639_3: fao
+    iso_639_1: fo
+    canonical_name: Faroese
+    family: indo-european
+    group: germanic
+    subgroup: north-germanic
+    continent: EU
+    script: Latn
+    enabled: false
+  - iso_639_3: fij
+    iso_639_1: fj
+    canonical_name: Fijian
+    family: austronesian
+    group: malayo-polynesian
+    subgroup: oceanic
+    continent: OC
+    script: Latn
+    enabled: false
+  - iso_639_3: fin
+    iso_639_1: fi
+    canonical_name: Finnish
+    family: uralic
+    group: finnic
+    subgroup: finnic
+    continent: EU
+    script: Latn
+    enabled: false
   - iso_639_3: fra
     iso_639_1: fr
     canonical_name: French
@@ -35,6 +431,231 @@ languages:
     continent: EU
     script: Latn
     enabled: true
+  - iso_639_3: ful
+    iso_639_1: ff
+    canonical_name: Fulah
+    family: niger-congo
+    group: atlantic-congo
+    subgroup: senegambian
+    continent: AF
+    script: Latn
+    enabled: false
+  - iso_639_3: glg
+    iso_639_1: gl
+    canonical_name: Galician
+    family: indo-european
+    group: italic
+    subgroup: romance
+    continent: EU
+    script: Latn
+    enabled: false
+  - iso_639_3: lug
+    iso_639_1: lg
+    canonical_name: Ganda
+    family: niger-congo
+    group: benue-congo
+    subgroup: bantu
+    continent: AF
+    script: Latn
+    enabled: false
+  - iso_639_3: kat
+    iso_639_1: ka
+    canonical_name: Georgian
+    family: kartvelian
+    group: kartvelian
+    subgroup: georgian
+    continent: AS
+    script: Geor
+    enabled: false
+  - iso_639_3: deu
+    iso_639_1: de
+    canonical_name: German
+    family: indo-european
+    group: germanic
+    subgroup: west-germanic
+    continent: EU
+    script: Latn
+    enabled: true
+  - iso_639_3: ell
+    iso_639_1: el
+    canonical_name: Greek
+    family: indo-european
+    group: hellenic
+    subgroup: greek
+    continent: EU
+    script: Grek
+    enabled: false
+  - iso_639_3: grn
+    iso_639_1: gn
+    canonical_name: Guarani
+    family: tupi
+    group: tupi-guarani
+    subgroup: guarani
+    continent: SA
+    script: Latn
+    enabled: false
+  - iso_639_3: guj
+    iso_639_1: gu
+    canonical_name: Gujarati
+    family: indo-european
+    group: indo-iranian
+    subgroup: indo-aryan
+    continent: AS
+    script: Gujr
+    enabled: false
+  - iso_639_3: hat
+    iso_639_1: ht
+    canonical_name: Haitian Creole
+    family: creole
+    group: french-based-creole
+    subgroup: haitian-creole
+    continent: NA
+    script: Latn
+    enabled: false
+  - iso_639_3: hau
+    iso_639_1: ha
+    canonical_name: Hausa
+    family: afro-asiatic
+    group: chadic
+    subgroup: west-chadic
+    continent: AF
+    script: Latn
+    enabled: false
+  - iso_639_3: heb
+    iso_639_1: he
+    canonical_name: Hebrew
+    family: afro-asiatic
+    group: semitic
+    subgroup: northwest-semitic
+    continent: AS
+    script: Hebr
+    enabled: false
+  - iso_639_3: her
+    iso_639_1: hz
+    canonical_name: Herero
+    family: niger-congo
+    group: benue-congo
+    subgroup: bantu
+    continent: AF
+    script: Latn
+    enabled: false
+  - iso_639_3: hin
+    iso_639_1: hi
+    canonical_name: Hindi
+    family: indo-european
+    group: indo-iranian
+    subgroup: indo-aryan
+    continent: AS
+    script: Deva
+    enabled: false
+  - iso_639_3: hmo
+    iso_639_1: ho
+    canonical_name: Hiri Motu
+    family: austronesian
+    group: malayo-polynesian
+    subgroup: oceanic
+    continent: OC
+    script: Latn
+    enabled: false
+  - iso_639_3: hun
+    iso_639_1: hu
+    canonical_name: Hungarian
+    family: uralic
+    group: ugric
+    subgroup: hungarian
+    continent: EU
+    script: Latn
+    enabled: false
+  - iso_639_3: isl
+    iso_639_1: is
+    canonical_name: Icelandic
+    family: indo-european
+    group: germanic
+    subgroup: north-germanic
+    continent: EU
+    script: Latn
+    enabled: false
+  - iso_639_3: ido
+    iso_639_1: io
+    canonical_name: Ido
+    family: constructed
+    group: international-auxiliary
+    subgroup: ido
+    continent: EU
+    script: Latn
+    enabled: false
+  - iso_639_3: ibo
+    iso_639_1: ig
+    canonical_name: Igbo
+    family: niger-congo
+    group: volta-niger
+    subgroup: igboid
+    continent: AF
+    script: Latn
+    enabled: false
+  - iso_639_3: ind
+    iso_639_1: id
+    canonical_name: Indonesian
+    family: austronesian
+    group: malayo-polynesian
+    subgroup: malayic
+    continent: AS
+    script: Latn
+    enabled: false
+  - iso_639_3: ina
+    iso_639_1: ia
+    canonical_name: Interlingua
+    family: constructed
+    group: international-auxiliary
+    subgroup: interlingua
+    continent: EU
+    script: Latn
+    enabled: false
+  - iso_639_3: ile
+    iso_639_1: ie
+    canonical_name: Interlingue
+    family: constructed
+    group: international-auxiliary
+    subgroup: interlingue
+    continent: EU
+    script: Latn
+    enabled: false
+  - iso_639_3: iku
+    iso_639_1: iu
+    canonical_name: Inuktitut
+    family: eskimo-aleut
+    group: eskimo
+    subgroup: inuit
+    continent: NA
+    script: Cans
+    enabled: false
+  - iso_639_3: ipk
+    iso_639_1: ik
+    canonical_name: Inupiaq
+    family: eskimo-aleut
+    group: eskimo
+    subgroup: inuit
+    continent: NA
+    script: Latn
+    enabled: false
+  - iso_639_3: gle
+    iso_639_1: ga
+    canonical_name: Irish
+    family: indo-european
+    group: celtic
+    subgroup: goidelic
+    continent: EU
+    script: Latn
+    enabled: false
+  - iso_639_3: ita
+    iso_639_1: it
+    canonical_name: Italian
+    family: indo-european
+    group: italic
+    subgroup: romance
+    continent: EU
+    script: Latn
+    enabled: false
   - iso_639_3: jpn
     iso_639_1: ja
     canonical_name: Japanese
@@ -44,6 +665,428 @@ languages:
     continent: AS
     script: Jpan
     enabled: true
+  - iso_639_3: jav
+    iso_639_1: jv
+    canonical_name: Javanese
+    family: austronesian
+    group: malayo-polynesian
+    subgroup: javanese
+    continent: AS
+    script: Latn
+    enabled: false
+  - iso_639_3: kal
+    iso_639_1: kl
+    canonical_name: Kalaallisut
+    family: eskimo-aleut
+    group: eskimo
+    subgroup: inuit
+    continent: NA
+    script: Latn
+    enabled: false
+  - iso_639_3: kan
+    iso_639_1: kn
+    canonical_name: Kannada
+    family: dravidian
+    group: south-dravidian
+    subgroup: kannada
+    continent: AS
+    script: Knda
+    enabled: false
+  - iso_639_3: kau
+    iso_639_1: kr
+    canonical_name: Kanuri
+    family: nilo-saharan
+    group: saharan
+    subgroup: western-saharan
+    continent: AF
+    script: Latn
+    enabled: false
+  - iso_639_3: kas
+    iso_639_1: ks
+    canonical_name: Kashmiri
+    family: indo-european
+    group: indo-iranian
+    subgroup: indo-aryan
+    continent: AS
+    script: Arab
+    enabled: false
+  - iso_639_3: csb
+    canonical_name: Kashubian
+    family: indo-european
+    group: balto-slavic
+    subgroup: west-slavic
+    continent: EU
+    script: Latn
+    enabled: false
+  - iso_639_3: kaz
+    iso_639_1: kk
+    canonical_name: Kazakh
+    family: turkic
+    group: common-turkic
+    subgroup: kipchak
+    continent: AS
+    script: Cyrl
+    enabled: false
+  - iso_639_3: kik
+    iso_639_1: ki
+    canonical_name: Kikuyu
+    family: niger-congo
+    group: benue-congo
+    subgroup: bantu
+    continent: AF
+    script: Latn
+    enabled: false
+  - iso_639_3: kin
+    iso_639_1: rw
+    canonical_name: Kinyarwanda
+    family: niger-congo
+    group: benue-congo
+    subgroup: bantu
+    continent: AF
+    script: Latn
+    enabled: false
+  - iso_639_3: kom
+    iso_639_1: kv
+    canonical_name: Komi
+    family: uralic
+    group: permic
+    subgroup: komi
+    continent: EU
+    script: Cyrl
+    enabled: false
+  - iso_639_3: kon
+    iso_639_1: kg
+    canonical_name: Kongo
+    family: niger-congo
+    group: benue-congo
+    subgroup: bantu
+    continent: AF
+    script: Latn
+    enabled: false
+  - iso_639_3: kor
+    iso_639_1: ko
+    canonical_name: Korean
+    family: koreanic
+    group: koreanic
+    subgroup: korean
+    continent: AS
+    script: Kore
+    enabled: false
+  - iso_639_3: kua
+    iso_639_1: kj
+    canonical_name: Kuanyama
+    family: niger-congo
+    group: benue-congo
+    subgroup: bantu
+    continent: AF
+    script: Latn
+    enabled: false
+  - iso_639_3: kur
+    iso_639_1: ku
+    canonical_name: Kurdish
+    family: indo-european
+    group: indo-iranian
+    subgroup: iranian
+    continent: AS
+    script: Latn
+    enabled: false
+  - iso_639_3: kir
+    iso_639_1: ky
+    canonical_name: Kyrgyz
+    family: turkic
+    group: common-turkic
+    subgroup: kipchak
+    continent: AS
+    script: Cyrl
+    enabled: false
+  - iso_639_3: lao
+    iso_639_1: lo
+    canonical_name: Lao
+    family: kra-dai
+    group: tai
+    subgroup: southwestern-tai
+    continent: AS
+    script: Laoo
+    enabled: false
+  - iso_639_3: lat
+    iso_639_1: la
+    canonical_name: Latin
+    family: indo-european
+    group: italic
+    subgroup: romance
+    continent: EU
+    script: Latn
+    enabled: false
+  - iso_639_3: lav
+    iso_639_1: lv
+    canonical_name: Latvian
+    family: indo-european
+    group: balto-slavic
+    subgroup: east-baltic
+    continent: EU
+    script: Latn
+    enabled: false
+  - iso_639_3: lim
+    iso_639_1: li
+    canonical_name: Limburgish
+    family: indo-european
+    group: germanic
+    subgroup: west-germanic
+    continent: EU
+    script: Latn
+    enabled: false
+  - iso_639_3: lin
+    iso_639_1: ln
+    canonical_name: Lingala
+    family: niger-congo
+    group: benue-congo
+    subgroup: bantu
+    continent: AF
+    script: Latn
+    enabled: false
+  - iso_639_3: lit
+    iso_639_1: lt
+    canonical_name: Lithuanian
+    family: indo-european
+    group: balto-slavic
+    subgroup: east-baltic
+    continent: EU
+    script: Latn
+    enabled: false
+  - iso_639_3: lub
+    iso_639_1: lu
+    canonical_name: Luba-Katanga
+    family: niger-congo
+    group: benue-congo
+    subgroup: bantu
+    continent: AF
+    script: Latn
+    enabled: false
+  - iso_639_3: ltz
+    iso_639_1: lb
+    canonical_name: Luxembourgish
+    family: indo-european
+    group: germanic
+    subgroup: west-germanic
+    continent: EU
+    script: Latn
+    enabled: false
+  - iso_639_3: mkd
+    iso_639_1: mk
+    canonical_name: Macedonian
+    family: indo-european
+    group: balto-slavic
+    subgroup: south-slavic
+    continent: EU
+    script: Cyrl
+    enabled: false
+  - iso_639_3: mlg
+    iso_639_1: mg
+    canonical_name: Malagasy
+    family: austronesian
+    group: malayo-polynesian
+    subgroup: malagasy
+    continent: AF
+    script: Latn
+    enabled: false
+  - iso_639_3: mal
+    iso_639_1: ml
+    canonical_name: Malayalam
+    family: dravidian
+    group: south-dravidian
+    subgroup: malayalam
+    continent: AS
+    script: Mlym
+    enabled: false
+  - iso_639_3: mlt
+    iso_639_1: mt
+    canonical_name: Maltese
+    family: afro-asiatic
+    group: semitic
+    subgroup: central-semitic
+    continent: EU
+    script: Latn
+    enabled: false
+  - iso_639_3: glv
+    iso_639_1: gv
+    canonical_name: Manx
+    family: indo-european
+    group: celtic
+    subgroup: goidelic
+    continent: EU
+    script: Latn
+    enabled: false
+  - iso_639_3: mri
+    iso_639_1: mi
+    canonical_name: Maori
+    family: austronesian
+    group: malayo-polynesian
+    subgroup: oceanic
+    continent: OC
+    script: Latn
+    enabled: false
+  - iso_639_3: mar
+    iso_639_1: mr
+    canonical_name: Marathi
+    family: indo-european
+    group: indo-iranian
+    subgroup: indo-aryan
+    continent: AS
+    script: Deva
+    enabled: false
+  - iso_639_3: mah
+    iso_639_1: mh
+    canonical_name: Marshallese
+    family: austronesian
+    group: malayo-polynesian
+    subgroup: oceanic
+    continent: OC
+    script: Latn
+    enabled: false
+  - iso_639_3: mon
+    iso_639_1: mn
+    canonical_name: Mongolian
+    family: mongolic
+    group: mongolic
+    subgroup: mongolic
+    continent: AS
+    script: Cyrl
+    enabled: false
+  - iso_639_3: nau
+    iso_639_1: na
+    canonical_name: Nauru
+    family: austronesian
+    group: malayo-polynesian
+    subgroup: oceanic
+    continent: OC
+    script: Latn
+    enabled: false
+  - iso_639_3: nav
+    iso_639_1: nv
+    canonical_name: Navajo
+    family: athabaskan-eyak-tlingit
+    group: athabaskan
+    subgroup: southern-athabaskan
+    continent: NA
+    script: Latn
+    enabled: false
+  - iso_639_3: ndo
+    iso_639_1: ng
+    canonical_name: Ndonga
+    family: niger-congo
+    group: benue-congo
+    subgroup: bantu
+    continent: AF
+    script: Latn
+    enabled: false
+  - iso_639_3: nep
+    iso_639_1: ne
+    canonical_name: Nepali
+    family: indo-european
+    group: indo-iranian
+    subgroup: indo-aryan
+    continent: AS
+    script: Deva
+    enabled: false
+  - iso_639_3: nde
+    iso_639_1: nd
+    canonical_name: North Ndebele
+    family: niger-congo
+    group: benue-congo
+    subgroup: bantu
+    continent: AF
+    script: Latn
+    enabled: false
+  - iso_639_3: sme
+    iso_639_1: se
+    canonical_name: Northern Sami
+    family: uralic
+    group: sami
+    subgroup: northern-sami
+    continent: EU
+    script: Latn
+    enabled: false
+  - iso_639_3: nor
+    iso_639_1: no
+    canonical_name: Norwegian
+    family: indo-european
+    group: germanic
+    subgroup: north-germanic
+    continent: EU
+    script: Latn
+    enabled: false
+  - iso_639_3: oci
+    iso_639_1: oc
+    canonical_name: Occitan
+    family: indo-european
+    group: italic
+    subgroup: romance
+    continent: EU
+    script: Latn
+    enabled: false
+  - iso_639_3: oji
+    iso_639_1: oj
+    canonical_name: Ojibwa
+    family: algic
+    group: algonquian
+    subgroup: ojibwe
+    continent: NA
+    script: Latn
+    enabled: false
+  - iso_639_3: ori
+    iso_639_1: or
+    canonical_name: Oriya
+    family: indo-european
+    group: indo-iranian
+    subgroup: indo-aryan
+    continent: AS
+    script: Orya
+    enabled: false
+  - iso_639_3: orm
+    iso_639_1: om
+    canonical_name: Oromo
+    family: afro-asiatic
+    group: cushitic
+    subgroup: lowland-east-cushitic
+    continent: AF
+    script: Latn
+    enabled: false
+  - iso_639_3: oss
+    iso_639_1: os
+    canonical_name: Ossetian
+    family: indo-european
+    group: indo-iranian
+    subgroup: iranian
+    continent: EU
+    script: Cyrl
+    enabled: false
+  - iso_639_3: pli
+    iso_639_1: pi
+    canonical_name: Pali
+    family: indo-european
+    group: indo-iranian
+    subgroup: indo-aryan
+    continent: AS
+    script: Deva
+    enabled: false
+  - iso_639_3: pus
+    iso_639_1: ps
+    canonical_name: Pashto
+    family: indo-european
+    group: indo-iranian
+    subgroup: iranian
+    continent: AS
+    script: Arab
+    enabled: false
+  - iso_639_3: fas
+    iso_639_1: fa
+    canonical_name: Persian
+    family: indo-european
+    group: indo-iranian
+    subgroup: iranian
+    continent: AS
+    script: Arab
+    enabled: false
   - iso_639_3: pol
     iso_639_1: pl
     canonical_name: Polish
@@ -53,6 +1096,60 @@ languages:
     continent: EU
     script: Latn
     enabled: true
+  - iso_639_3: por
+    iso_639_1: pt
+    canonical_name: Portuguese
+    family: indo-european
+    group: italic
+    subgroup: romance
+    continent: EU
+    script: Latn
+    enabled: false
+  - iso_639_3: pan
+    iso_639_1: pa
+    canonical_name: Punjabi
+    family: indo-european
+    group: indo-iranian
+    subgroup: indo-aryan
+    continent: AS
+    script: Guru
+    enabled: false
+  - iso_639_3: que
+    iso_639_1: qu
+    canonical_name: Quechua
+    family: quechuan
+    group: quechuan
+    subgroup: quechua
+    continent: SA
+    script: Latn
+    enabled: false
+  - iso_639_3: ron
+    iso_639_1: ro
+    canonical_name: Romanian
+    family: indo-european
+    group: italic
+    subgroup: romance
+    continent: EU
+    script: Latn
+    enabled: false
+  - iso_639_3: roh
+    iso_639_1: rm
+    canonical_name: Romansh
+    family: indo-european
+    group: italic
+    subgroup: romance
+    continent: EU
+    script: Latn
+    enabled: false
+  - iso_639_3: run
+    iso_639_1: rn
+    canonical_name: Rundi
+    family: niger-congo
+    group: benue-congo
+    subgroup: bantu
+    continent: AF
+    script: Latn
+    enabled: false
   - iso_639_3: rus
     iso_639_1: ru
     canonical_name: Russian
@@ -62,6 +1159,149 @@ languages:
     continent: EU
     script: Cyrl
     enabled: true
+  - iso_639_3: smo
+    iso_639_1: sm
+    canonical_name: Samoan
+    family: austronesian
+    group: malayo-polynesian
+    subgroup: oceanic
+    continent: OC
+    script: Latn
+    enabled: false
+  - iso_639_3: sag
+    iso_639_1: sg
+    canonical_name: Sango
+    family: niger-congo
+    group: ubangian
+    subgroup: sango
+    continent: AF
+    script: Latn
+    enabled: false
+  - iso_639_3: san
+    iso_639_1: sa
+    canonical_name: Sanskrit
+    family: indo-european
+    group: indo-iranian
+    subgroup: indo-aryan
+    continent: AS
+    script: Deva
+    enabled: false
+  - iso_639_3: srd
+    iso_639_1: sc
+    canonical_name: Sardinian
+    family: indo-european
+    group: italic
+    subgroup: romance
+    continent: EU
+    script: Latn
+    enabled: false
+  - iso_639_3: gla
+    iso_639_1: gd
+    canonical_name: Scottish Gaelic
+    family: indo-european
+    group: celtic
+    subgroup: goidelic
+    continent: EU
+    script: Latn
+    enabled: false
+  - iso_639_3: srp
+    iso_639_1: sr
+    canonical_name: Serbian
+    family: indo-european
+    group: balto-slavic
+    subgroup: south-slavic
+    continent: EU
+    script: Cyrl
+    enabled: false
+  - iso_639_3: sna
+    iso_639_1: sn
+    canonical_name: Shona
+    family: niger-congo
+    group: benue-congo
+    subgroup: bantu
+    continent: AF
+    script: Latn
+    enabled: false
+  - iso_639_3: iii
+    iso_639_1: ii
+    canonical_name: Sichuan Yi
+    family: sino-tibetan
+    group: tibeto-burman
+    subgroup: lolo-burmese
+    continent: AS
+    script: Yiii
+    enabled: false
+  - iso_639_3: szl
+    canonical_name: Silesian
+    family: indo-european
+    group: balto-slavic
+    subgroup: west-slavic
+    continent: EU
+    script: Latn
+    enabled: false
+  - iso_639_3: snd
+    iso_639_1: sd
+    canonical_name: Sindhi
+    family: indo-european
+    group: indo-iranian
+    subgroup: indo-aryan
+    continent: AS
+    script: Arab
+    enabled: false
+  - iso_639_3: sin
+    iso_639_1: si
+    canonical_name: Sinhala
+    family: indo-european
+    group: indo-iranian
+    subgroup: indo-aryan
+    continent: AS
+    script: Sinh
+    enabled: false
+  - iso_639_3: slk
+    iso_639_1: sk
+    canonical_name: Slovak
+    family: indo-european
+    group: balto-slavic
+    subgroup: west-slavic
+    continent: EU
+    script: Latn
+    enabled: false
+  - iso_639_3: slv
+    iso_639_1: sl
+    canonical_name: Slovenian
+    family: indo-european
+    group: balto-slavic
+    subgroup: south-slavic
+    continent: EU
+    script: Latn
+    enabled: false
+  - iso_639_3: som
+    iso_639_1: so
+    canonical_name: Somali
+    family: afro-asiatic
+    group: cushitic
+    subgroup: lowland-east-cushitic
+    continent: AF
+    script: Latn
+    enabled: false
+  - iso_639_3: nbl
+    iso_639_1: nr
+    canonical_name: Southern Ndebele
+    family: niger-congo
+    group: benue-congo
+    subgroup: bantu
+    continent: AF
+    script: Latn
+    enabled: false
+  - iso_639_3: sot
+    iso_639_1: st
+    canonical_name: Southern Sotho
+    family: niger-congo
+    group: benue-congo
+    subgroup: bantu
+    continent: AF
+    script: Latn
+    enabled: false
   - iso_639_3: spa
     iso_639_1: es
     canonical_name: Spanish
@@ -71,3 +1311,334 @@ languages:
     continent: EU
     script: Latn
     enabled: true
+  - iso_639_3: zsm
+    canonical_name: Standard Malay
+    family: austronesian
+    group: malayo-polynesian
+    subgroup: malayic
+    continent: AS
+    script: Latn
+    enabled: false
+  - iso_639_3: sun
+    iso_639_1: su
+    canonical_name: Sundanese
+    family: austronesian
+    group: malayo-polynesian
+    subgroup: sundanese
+    continent: AS
+    script: Latn
+    enabled: false
+  - iso_639_3: swa
+    iso_639_1: sw
+    canonical_name: Swahili
+    family: niger-congo
+    group: benue-congo
+    subgroup: bantu
+    continent: AF
+    script: Latn
+    enabled: false
+  - iso_639_3: ssw
+    iso_639_1: ss
+    canonical_name: Swati
+    family: niger-congo
+    group: benue-congo
+    subgroup: bantu
+    continent: AF
+    script: Latn
+    enabled: false
+  - iso_639_3: swe
+    iso_639_1: sv
+    canonical_name: Swedish
+    family: indo-european
+    group: germanic
+    subgroup: north-germanic
+    continent: EU
+    script: Latn
+    enabled: false
+  - iso_639_3: tgl
+    iso_639_1: tl
+    canonical_name: Tagalog
+    family: austronesian
+    group: malayo-polynesian
+    subgroup: central-philippine
+    continent: AS
+    script: Latn
+    enabled: false
+  - iso_639_3: tah
+    iso_639_1: ty
+    canonical_name: Tahitian
+    family: austronesian
+    group: malayo-polynesian
+    subgroup: oceanic
+    continent: OC
+    script: Latn
+    enabled: false
+  - iso_639_3: tgk
+    iso_639_1: tg
+    canonical_name: Tajik
+    family: indo-european
+    group: indo-iranian
+    subgroup: iranian
+    continent: AS
+    script: Cyrl
+    enabled: false
+  - iso_639_3: tam
+    iso_639_1: ta
+    canonical_name: Tamil
+    family: dravidian
+    group: south-dravidian
+    subgroup: tamil
+    continent: AS
+    script: Taml
+    enabled: false
+  - iso_639_3: tat
+    iso_639_1: tt
+    canonical_name: Tatar
+    family: turkic
+    group: common-turkic
+    subgroup: kipchak
+    continent: EU
+    script: Cyrl
+    enabled: false
+  - iso_639_3: tel
+    iso_639_1: te
+    canonical_name: Telugu
+    family: dravidian
+    group: south-central-dravidian
+    subgroup: telugu
+    continent: AS
+    script: Telu
+    enabled: false
+  - iso_639_3: tha
+    iso_639_1: th
+    canonical_name: Thai
+    family: kra-dai
+    group: tai
+    subgroup: southwestern-tai
+    continent: AS
+    script: Thai
+    enabled: false
+  - iso_639_3: bod
+    iso_639_1: bo
+    canonical_name: Tibetan
+    family: sino-tibetan
+    group: tibeto-burman
+    subgroup: bodish
+    continent: AS
+    script: Tibt
+    enabled: false
+  - iso_639_3: tir
+    iso_639_1: ti
+    canonical_name: Tigrinya
+    family: afro-asiatic
+    group: semitic
+    subgroup: ethiopian-semitic
+    continent: AF
+    script: Ethi
+    enabled: false
+  - iso_639_3: ton
+    iso_639_1: to
+    canonical_name: Tongan
+    family: austronesian
+    group: malayo-polynesian
+    subgroup: oceanic
+    continent: OC
+    script: Latn
+    enabled: false
+  - iso_639_3: tso
+    iso_639_1: ts
+    canonical_name: Tsonga
+    family: niger-congo
+    group: benue-congo
+    subgroup: bantu
+    continent: AF
+    script: Latn
+    enabled: false
+  - iso_639_3: tsn
+    iso_639_1: tn
+    canonical_name: Tswana
+    family: niger-congo
+    group: benue-congo
+    subgroup: bantu
+    continent: AF
+    script: Latn
+    enabled: false
+  - iso_639_3: tur
+    iso_639_1: tr
+    canonical_name: Turkish
+    family: turkic
+    group: common-turkic
+    subgroup: oghuz
+    continent: AS
+    script: Latn
+    enabled: false
+  - iso_639_3: tuk
+    iso_639_1: tk
+    canonical_name: Turkmen
+    family: turkic
+    group: common-turkic
+    subgroup: oghuz
+    continent: AS
+    script: Latn
+    enabled: false
+  - iso_639_3: twi
+    iso_639_1: tw
+    canonical_name: Twi
+    family: niger-congo
+    group: kwa
+    subgroup: potou-tano
+    continent: AF
+    script: Latn
+    enabled: false
+  - iso_639_3: ukr
+    iso_639_1: uk
+    canonical_name: Ukrainian
+    family: indo-european
+    group: balto-slavic
+    subgroup: east-slavic
+    continent: EU
+    script: Cyrl
+    enabled: false
+  - iso_639_3: urd
+    iso_639_1: ur
+    canonical_name: Urdu
+    family: indo-european
+    group: indo-iranian
+    subgroup: indo-aryan
+    continent: AS
+    script: Arab
+    enabled: false
+  - iso_639_3: uig
+    iso_639_1: ug
+    canonical_name: Uyghur
+    family: turkic
+    group: common-turkic
+    subgroup: karluk
+    continent: AS
+    script: Arab
+    enabled: false
+  - iso_639_3: uzb
+    iso_639_1: uz
+    canonical_name: Uzbek
+    family: turkic
+    group: common-turkic
+    subgroup: karluk
+    continent: AS
+    script: Latn
+    enabled: false
+  - iso_639_3: ven
+    iso_639_1: ve
+    canonical_name: Venda
+    family: niger-congo
+    group: benue-congo
+    subgroup: bantu
+    continent: AF
+    script: Latn
+    enabled: false
+  - iso_639_3: vie
+    iso_639_1: vi
+    canonical_name: Vietnamese
+    family: austroasiatic
+    group: vietic
+    subgroup: viet-muong
+    continent: AS
+    script: Latn
+    enabled: false
+  - iso_639_3: vol
+    iso_639_1: vo
+    canonical_name: Volapük
+    family: constructed
+    group: international-auxiliary
+    subgroup: volapuk
+    continent: EU
+    script: Latn
+    enabled: false
+  - iso_639_3: wln
+    iso_639_1: wa
+    canonical_name: Walloon
+    family: indo-european
+    group: italic
+    subgroup: romance
+    continent: EU
+    script: Latn
+    enabled: false
+  - iso_639_3: cym
+    iso_639_1: cy
+    canonical_name: Welsh
+    family: indo-european
+    group: celtic
+    subgroup: brittonic
+    continent: EU
+    script: Latn
+    enabled: false
+  - iso_639_3: fry
+    iso_639_1: fy
+    canonical_name: Western Frisian
+    family: indo-european
+    group: germanic
+    subgroup: west-germanic
+    continent: EU
+    script: Latn
+    enabled: false
+  - iso_639_3: wol
+    iso_639_1: wo
+    canonical_name: Wolof
+    family: niger-congo
+    group: atlantic-congo
+    subgroup: senegambian
+    continent: AF
+    script: Latn
+    enabled: false
+  - iso_639_3: wym
+    canonical_name: Wymysorys
+    family: indo-european
+    group: germanic
+    subgroup: west-germanic
+    continent: EU
+    script: Latn
+    enabled: false
+  - iso_639_3: xho
+    iso_639_1: xh
+    canonical_name: Xhosa
+    family: niger-congo
+    group: benue-congo
+    subgroup: bantu
+    continent: AF
+    script: Latn
+    enabled: false
+  - iso_639_3: yid
+    iso_639_1: yi
+    canonical_name: Yiddish
+    family: indo-european
+    group: germanic
+    subgroup: west-germanic
+    continent: EU
+    script: Hebr
+    enabled: false
+  - iso_639_3: yor
+    iso_639_1: yo
+    canonical_name: Yoruba
+    family: niger-congo
+    group: volta-niger
+    subgroup: yoruboid
+    continent: AF
+    script: Latn
+    enabled: false
+  - iso_639_3: zha
+    iso_639_1: za
+    canonical_name: Zhuang
+    family: kra-dai
+    group: kra
+    subgroup: zhuang
+    continent: AS
+    script: Latn
+    enabled: false
+  - iso_639_3: zul
+    iso_639_1: zu
+    canonical_name: Zulu
+    family: niger-congo
+    group: benue-congo
+    subgroup: bantu
+    continent: AF
+    script: Latn
+    enabled: false

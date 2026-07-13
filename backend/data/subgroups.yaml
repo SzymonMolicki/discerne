@@ -5,15 +5,231 @@ subgroups:
   - code: west-germanic
     group: germanic
     name: West Germanic
+  - code: north-germanic
+    group: germanic
+    name: North Germanic
   - code: west-slavic
     group: balto-slavic
     name: West Slavic
   - code: east-slavic
     group: balto-slavic
     name: East Slavic
+  - code: south-slavic
+    group: balto-slavic
+    name: South Slavic
+  - code: brittonic
+    group: celtic
+    name: Brittonic
+  - code: albanian
+    group: albanian
+    name: Albanian
+  - code: armenian
+    group: armenian
+    name: Armenian
+  - code: indo-aryan
+    group: indo-iranian
+    name: Indo-Aryan
+  - code: iranian
+    group: indo-iranian
+    name: Iranian
   - code: central-semitic
     group: semitic
     name: Central Semitic
+  - code: northwest-semitic
+    group: semitic
+    name: Northwest Semitic
+  - code: ethiopian-semitic
+    group: semitic
+    name: Ethiopian Semitic
+  - code: west-chadic
+    group: chadic
+    name: West Chadic
+  - code: lowland-east-cushitic
+    group: cushitic
+    name: Lowland East Cushitic
   - code: japanese
     group: japanese
     name: Japanese
+  - code: potou-tano
+    group: kwa
+    name: Potou-Tano
+  - code: abkhaz-abaza
+    group: abazgi
+    name: Abkhaz-Abaza
+  - code: avar
+    group: avar-andic
+    name: Avar
+  - code: aymara
+    group: aymaran
+    name: Aymara
+  - code: oghuz
+    group: common-turkic
+    name: Oghuz
+  - code: kipchak
+    group: common-turkic
+    name: Kipchak
+  - code: western-mande
+    group: mande
+    name: Western Mande
+  - code: basque
+    group: basque
+    name: Basque
+  - code: pacific-english-creole
+    group: english-based-creole
+    name: Pacific English Creole
+  - code: burmish
+    group: tibeto-burman
+    name: Burmish
+  - code: chinese
+    group: sinitic
+    name: Chinese
+  - code: khmeric
+    group: mon-khmer
+    name: Khmeric
+  - code: chamorro
+    group: malayo-polynesian
+    name: Chamorro
+  - code: vainakh
+    group: nakh
+    name: Vainakh
+  - code: bantu
+    group: benue-congo
+    name: Bantu
+  - code: oghur
+    group: oghur
+    name: Oghur
+  - code: cree-montagnais
+    group: algonquian
+    name: Cree-Montagnais
+  - code: bodish
+    group: tibeto-burman
+    name: Bodish
+  - code: esperanto
+    group: international-auxiliary
+    name: Esperanto
+  - code: ido
+    group: international-auxiliary
+    name: Ido
+  - code: interlingua
+    group: international-auxiliary
+    name: Interlingua
+  - code: interlingue
+    group: international-auxiliary
+    name: Interlingue
+  - code: finnic
+    group: finnic
+    name: Finnic
+  - code: hungarian
+    group: ugric
+    name: Hungarian
+  - code: komi
+    group: permic
+    name: Komi
+  - code: gbe
+    group: kwa
+    name: Gbe
+  - code: igboid
+    group: volta-niger
+    name: Igboid
+  - code: oceanic
+    group: malayo-polynesian
+    name: Oceanic
+  - code: malayic
+    group: malayo-polynesian
+    name: Malayic
+  - code: javanese
+    group: malayo-polynesian
+    name: Javanese
+  - code: senegambian
+    group: atlantic-congo
+    name: Senegambian
+  - code: goidelic
+    group: celtic
+    name: Goidelic
+  - code: georgian
+    group: kartvelian
+    name: Georgian
+  - code: greek
+    group: hellenic
+    name: Greek
+  - code: guarani
+    group: tupi-guarani
+    name: Guarani
+  - code: haitian-creole
+    group: french-based-creole
+    name: Haitian Creole
+  - code: inuit
+    group: eskimo
+    name: Inuit
+  - code: kannada
+    group: south-dravidian
+    name: Kannada
+  - code: western-saharan
+    group: saharan
+    name: Western Saharan
+  - code: korean
+    group: koreanic
+    name: Korean
+  - code: southwestern-tai
+    group: tai
+    name: Southwestern Tai
+  - code: zhuang
+    group: kra
+    name: Zhuang
+  - code: east-baltic
+    group: balto-slavic
+    name: East Baltic
+  - code: central-malayo-polynesian
+    group: malayo-polynesian
+    name: Central Malayo-Polynesian
+  - code: central-philippine
+    group: malayo-polynesian
+    name: Central Philippine
+  - code: malagasy
+    group: malayo-polynesian
+    name: Malagasy
+  - code: malayalam
+    group: south-dravidian
+    name: Malayalam
+  - code: tamil
+    group: south-dravidian
+    name: Tamil
+  - code: telugu
+    group: south-central-dravidian
+    name: Telugu
+  - code: mongolic
+    group: mongolic
+    name: Mongolic
+  - code: southern-athabaskan
+    group: athabaskan
+    name: Southern Athabaskan
+  - code: northern-sami
+    group: sami
+    name: Northern Sami
+  - code: ojibwe
+    group: algonquian
+    name: Ojibwe
+  - code: quechua
+    group: quechuan
+    name: Quechua
+  - code: sango
+    group: ubangian
+    name: Sango
+  - code: lolo-burmese
+    group: tibeto-burman
+    name: Lolo-Burmese
+  - code: sundanese
+    group: malayo-polynesian
+    name: Sundanese
+  - code: karluk
+    group: common-turkic
+    name: Karluk
+  - code: viet-muong
+    group: vietic
+    name: Viet-Muong
+  - code: volapuk
+    group: international-auxiliary
+    name: Volapuk
+  - code: yoruboid
+    group: volta-niger
+    name: Yoruboid

@@ -8,9 +8,144 @@ groups:
   - code: balto-slavic
     family: indo-european
     name: Balto-Slavic
+  - code: albanian
+    family: indo-european
+    name: Albanian
+  - code: armenian
+    family: indo-european
+    name: Armenian
+  - code: indo-iranian
+    family: indo-european
+    name: Indo-Iranian
+  - code: celtic
+    family: indo-european
+    name: Celtic
   - code: semitic
     family: afro-asiatic
     name: Semitic
+  - code: chadic
+    family: afro-asiatic
+    name: Chadic
+  - code: cushitic
+    family: afro-asiatic
+    name: Cushitic
   - code: japanese
     family: japonic
     name: Japanese
+  - code: kwa
+    family: niger-congo
+    name: Kwa
+  - code: abazgi
+    family: northwest-caucasian
+    name: Abazgi
+  - code: avar-andic
+    family: northeast-caucasian
+    name: Avar-Andic
+  - code: aymaran
+    family: aymaran
+    name: Aymaran
+  - code: common-turkic
+    family: turkic
+    name: Common Turkic
+  - code: mande
+    family: niger-congo
+    name: Mande
+  - code: basque
+    family: language-isolate
+    name: Basque
+  - code: english-based-creole
+    family: creole
+    name: English-Based Creole
+  - code: tibeto-burman
+    family: sino-tibetan
+    name: Tibeto-Burman
+  - code: sinitic
+    family: sino-tibetan
+    name: Sinitic
+  - code: mon-khmer
+    family: austroasiatic
+    name: Mon-Khmer
+  - code: malayo-polynesian
+    family: austronesian
+    name: Malayo-Polynesian
+  - code: nakh
+    family: northeast-caucasian
+    name: Nakh
+  - code: benue-congo
+    family: niger-congo
+    name: Benue-Congo
+  - code: oghur
+    family: turkic
+    name: Oghur
+  - code: algonquian
+    family: algic
+    name: Algonquian
+  - code: international-auxiliary
+    family: constructed
+    name: International Auxiliary
+  - code: finnic
+    family: uralic
+    name: Finnic
+  - code: ugric
+    family: uralic
+    name: Ugric
+  - code: permic
+    family: uralic
+    name: Permic
+  - code: atlantic-congo
+    family: niger-congo
+    name: Atlantic-Congo
+  - code: volta-niger
+    family: niger-congo
+    name: Volta-Niger
+  - code: kartvelian
+    family: kartvelian
+    name: Kartvelian
+  - code: hellenic
+    family: indo-european
+    name: Hellenic
+  - code: tupi-guarani
+    family: tupi
+    name: Tupi-Guarani
+  - code: french-based-creole
+    family: creole
+    name: French-Based Creole
+  - code: eskimo
+    family: eskimo-aleut
+    name: Eskimo
+  - code: south-dravidian
+    family: dravidian
+    name: South Dravidian
+  - code: south-central-dravidian
+    family: dravidian
+    name: South-Central Dravidian
+  - code: saharan
+    family: nilo-saharan
+    name: Saharan
+  - code: koreanic
+    family: koreanic
+    name: Koreanic
+  - code: tai
+    family: kra-dai
+    name: Tai
+  - code: kra
+    family: kra-dai
+    name: Kra
+  - code: mongolic
+    family: mongolic
+    name: Mongolic
+  - code: athabaskan
+    family: athabaskan-eyak-tlingit
+    name: Athabaskan
+  - code: sami
+    family: uralic
+    name: Sami
+  - code: quechuan
+    family: quechuan
+    name: Quechuan
+  - code: ubangian
+    family: niger-congo
+    name: Ubangian
+  - code: vietic
+    family: austroasiatic
+    name: Vietic

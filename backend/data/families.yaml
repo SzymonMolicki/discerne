@@ -5,3 +5,49 @@ families:
     name: Afro-Asiatic
   - code: japonic
     name: Japonic
+  - code: niger-congo
+    name: Niger-Congo
+  - code: northwest-caucasian
+    name: Northwest Caucasian
+  - code: northeast-caucasian
+    name: Northeast Caucasian
+  - code: aymaran
+    name: Aymaran
+  - code: turkic
+    name: Turkic
+  - code: language-isolate
+    name: Language Isolate
+  - code: creole
+    name: Creole
+  - code: sino-tibetan
+    name: Sino-Tibetan
+  - code: austroasiatic
+    name: Austroasiatic
+  - code: austronesian
+    name: Austronesian
+  - code: algic
+    name: Algic
+  - code: constructed
+    name: Constructed
+  - code: uralic
+    name: Uralic
+  - code: kartvelian
+    name: Kartvelian
+  - code: tupi
+    name: Tupi
+  - code: eskimo-aleut
+    name: Eskimo-Aleut
+  - code: dravidian
+    name: Dravidian
+  - code: nilo-saharan
+    name: Nilo-Saharan
+  - code: koreanic
+    name: Koreanic
+  - code: kra-dai
+    name: Kra-Dai
+  - code: mongolic
+    name: Mongolic
+  - code: athabaskan-eyak-tlingit
+    name: Athabaskan-Eyak-Tlingit
+  - code: quechuan
+    name: Quechuan
