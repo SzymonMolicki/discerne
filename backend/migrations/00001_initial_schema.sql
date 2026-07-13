@@ -92,10 +92,8 @@ CREATE INDEX language_texts_language_approved_idx ON language_texts (language_id
 CREATE TABLE daily_quizzes (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     quiz_date DATE NOT NULL UNIQUE,
-    generation_version INTEGER NOT NULL,
     created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
-    published_at TIMESTAMPTZ,
-    CONSTRAINT daily_quizzes_generation_version_chk CHECK (generation_version > 0)
+    published_at TIMESTAMPTZ
 );
 
 CREATE INDEX daily_quizzes_quiz_date_idx ON daily_quizzes (quiz_date);

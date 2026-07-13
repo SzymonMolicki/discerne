@@ -1,15 +1,21 @@
 package main
 
 import (
+	"context"
 	"encoding/json"
 	"flag"
 	"fmt"
 	"os"
+	"time"
 
 	"discerne/backend/internal/config"
+	"discerne/backend/internal/database"
 	"discerne/backend/internal/quiz"
+	"discerne/backend/internal/quizdb"
 	"discerne/backend/internal/quizseed"
 	"discerne/backend/internal/seeddata"
+
+	"github.com/jackc/pgx/v5"
 )
 
 type previewQuiz struct {
@@ -38,28 +44,15 @@ type previewLanguage struct {
 
 func main() {
 	dataDir := flag.String("data-dir", seeddata.DefaultDataDir(), "path to seed data directory")
+	source := flag.String("source", "seed", "quiz data source: seed or database")
+	databaseURL := flag.String("database-url", "", "PostgreSQL connection URL")
 	locale := flag.String("locale", "en-US", "locale used for language names")
 	seed := flag.Int64("seed", 1, "deterministic random seed")
 	flag.Parse()
 
-	catalog, err := seeddata.Load(*dataDir)
+	languages, languageNames, err := loadGenerationInput(*source, *dataDir, *databaseURL)
 	if err != nil {
-		fmt.Fprintf(os.Stderr, "load seed data: %v\n", err)
-		os.Exit(1)
-	}
-
-	report := seeddata.ValidateCatalog(catalog)
-	if len(report.Errors) > 0 {
-		fmt.Fprintln(os.Stderr, "seed data is invalid:")
-		for _, validationError := range report.Errors {
-			fmt.Fprintf(os.Stderr, "- %s\n", validationError)
-		}
-		os.Exit(1)
-	}
-
-	languages, err := quizseed.GenerationLanguages(catalog)
-	if err != nil {
-		fmt.Fprintf(os.Stderr, "prepare quiz languages: %v\n", err)
+		fmt.Fprintf(os.Stderr, "load generation input: %v\n", err)
 		os.Exit(1)
 	}
 
@@ -79,7 +72,7 @@ func main() {
 		os.Exit(1)
 	}
 
-	output, err := buildPreview(generatedQuiz, catalog, *locale)
+	output, err := buildPreview(generatedQuiz, languageNames, *locale)
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "build quiz preview: %v\n", err)
 		os.Exit(1)
@@ -93,13 +86,69 @@ func main() {
 	}
 }
 
-func buildPreview(generatedQuiz quiz.GeneratedQuiz, catalog seeddata.Catalog, locale string) (previewQuiz, error) {
+func loadGenerationInput(source string, dataDir string, databaseURL string) ([]quiz.GenerationLanguage, map[string]map[string]string, error) {
+	switch source {
+	case "seed":
+		return loadSeedGenerationInput(dataDir)
+	case "database":
+		return loadDatabaseGenerationInput(databaseURL)
+	default:
+		return nil, nil, fmt.Errorf("unknown source %q", source)
+	}
+}
+
+func loadSeedGenerationInput(dataDir string) ([]quiz.GenerationLanguage, map[string]map[string]string, error) {
+	catalog, err := seeddata.Load(dataDir)
+	if err != nil {
+		return nil, nil, fmt.Errorf("load seed data: %w", err)
+	}
+
+	report := seeddata.ValidateCatalog(catalog)
+	if len(report.Errors) > 0 {
+		return nil, nil, fmt.Errorf("seed data is invalid: %s", report.Errors[0])
+	}
+
+	languages, err := quizseed.GenerationLanguages(catalog)
+	if err != nil {
+		return nil, nil, fmt.Errorf("prepare quiz languages: %w", err)
+	}
+
+	return languages, catalog.LanguageNames, nil
+}
+
+func loadDatabaseGenerationInput(databaseURL string) ([]quiz.GenerationLanguage, map[string]map[string]string, error) {
+	connectionURL := databaseURL
+	if connectionURL == "" {
+		connectionURL = database.URLFromEnvironment()
+	}
+	if connectionURL == "" {
+		return nil, nil, fmt.Errorf("DATABASE_URL is empty; set it in the environment, .env, or pass -database-url")
+	}
+
+	ctx, cancel := context.WithTimeout(context.Background(), 30*time.Second)
+	defer cancel()
+
+	conn, err := pgx.Connect(ctx, connectionURL)
+	if err != nil {
+		return nil, nil, fmt.Errorf("connect to database: %w", err)
+	}
+	defer conn.Close(context.Background())
+
+	catalog, err := quizdb.LoadCatalog(ctx, conn)
+	if err != nil {
+		return nil, nil, err
+	}
+
+	return catalog.Languages, catalog.LanguageNames, nil
+}
+
+func buildPreview(generatedQuiz quiz.GeneratedQuiz, languageNames map[string]map[string]string, locale string) (previewQuiz, error) {
 	output := previewQuiz{
 		Questions: make([]previewQuestion, 0, len(generatedQuiz.Questions)),
 	}
 
 	for _, question := range generatedQuiz.Questions {
-		correctLanguage, err := previewLanguageFor(catalog, question.CorrectLanguage.ID, locale)
+		correctLanguage, err := previewLanguageFor(languageNames, question.CorrectLanguage.ID, locale)
 		if err != nil {
 			return previewQuiz{}, err
 		}
@@ -113,7 +162,7 @@ func buildPreview(generatedQuiz quiz.GeneratedQuiz, catalog seeddata.Catalog, lo
 		}
 
 		for _, option := range question.Options {
-			language, err := previewLanguageFor(catalog, option.Language.ID, locale)
+			language, err := previewLanguageFor(languageNames, option.Language.ID, locale)
 			if err != nil {
 				return previewQuiz{}, err
 			}
@@ -132,8 +181,8 @@ func buildPreview(generatedQuiz quiz.GeneratedQuiz, catalog seeddata.Catalog, lo
 	return output, nil
 }
 
-func previewLanguageFor(catalog seeddata.Catalog, languageID string, locale string) (previewLanguage, error) {
-	names, ok := catalog.LanguageNames[languageID]
+func previewLanguageFor(languageNames map[string]map[string]string, languageID string, locale string) (previewLanguage, error) {
+	names, ok := languageNames[languageID]
 	if !ok {
 		return previewLanguage{}, fmt.Errorf("missing language names for %q", languageID)
 	}

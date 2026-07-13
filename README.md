@@ -53,6 +53,18 @@ Import validated seed data into PostgreSQL:
 go run ./cmd/seed-import
 ```
 
+Generate quiz preview from PostgreSQL:
+
+```bash
+go run ./cmd/quiz-preview --source database --seed 1 --locale en-US
+```
+
+Generate and store daily quizzes in PostgreSQL:
+
+```bash
+go run ./cmd/quiz-generator --from 2026-08-01 --days 7
+```
+
 Stop local services:
 
 ```bash

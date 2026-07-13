@@ -1,15 +1,13 @@
 package main
 
 import (
-	"bufio"
 	"context"
 	"flag"
 	"fmt"
 	"os"
-	"strconv"
-	"strings"
 	"time"
 
+	"discerne/backend/internal/database"
 	"discerne/backend/internal/seeddata"
 	"discerne/backend/internal/seedimport"
 
@@ -23,7 +21,7 @@ func main() {
 
 	connectionURL := *databaseURL
 	if connectionURL == "" {
-		connectionURL = databaseURLFromEnvironment()
+		connectionURL = database.URLFromEnvironment()
 	}
 	if connectionURL == "" {
 		fmt.Fprintln(os.Stderr, "DATABASE_URL is empty; set it in the environment, .env, or pass -database-url")
@@ -73,48 +71,4 @@ func main() {
 	}
 
 	fmt.Println("seed data imported")
-}
-
-func databaseURLFromEnvironment() string {
-	if value := os.Getenv("DATABASE_URL"); value != "" {
-		return value
-	}
-
-	for _, path := range []string{".env", "../.env"} {
-		value, err := readEnvValue(path, "DATABASE_URL")
-		if err == nil && value != "" {
-			return value
-		}
-	}
-
-	return ""
-}
-
-func readEnvValue(path string, name string) (string, error) {
-	file, err := os.Open(path)
-	if err != nil {
-		return "", err
-	}
-	defer file.Close()
-
-	scanner := bufio.NewScanner(file)
-	for scanner.Scan() {
-		line := strings.TrimSpace(scanner.Text())
-		if line == "" || strings.HasPrefix(line, "#") {
-			continue
-		}
-
-		key, value, ok := strings.Cut(line, "=")
-		if !ok || strings.TrimSpace(key) != name {
-			continue
-		}
-
-		value = strings.TrimSpace(value)
-		if unquoted, err := strconv.Unquote(value); err == nil {
-			value = unquoted
-		}
-		return value, nil
-	}
-
-	return "", scanner.Err()
 }
