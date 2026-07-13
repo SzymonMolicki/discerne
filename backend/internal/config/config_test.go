@@ -20,6 +20,14 @@ func TestLoadUsesDefaults(t *testing.T) {
 		t.Fatalf("AppTimezone = %q, want %q", cfg.AppTimezone.String(), "Europe/Warsaw")
 	}
 
+	if cfg.DeviceCookieName != "discerne_device" {
+		t.Fatalf("DeviceCookieName = %q, want %q", cfg.DeviceCookieName, "discerne_device")
+	}
+
+	if cfg.SecureCookies {
+		t.Fatal("SecureCookies = true, want false")
+	}
+
 	if cfg.DistractorWeights.Base != 10 {
 		t.Fatalf("DistractorWeights.Base = %d, want %d", cfg.DistractorWeights.Base, 10)
 	}
@@ -34,6 +42,8 @@ func TestLoadAllowsOverrides(t *testing.T) {
 		"APP_NAME=Local Discerne",
 		"APP_TIMEZONE=UTC",
 		"HTTP_ADDRESS=:9090",
+		"DEVICE_COOKIE_NAME=local_device",
+		"SECURE_COOKIES=true",
 		"DISTRACTOR_BASE_WEIGHT=12",
 		"DISTRACTOR_SAME_SCRIPT_WEIGHT=7",
 	})
@@ -51,6 +61,14 @@ func TestLoadAllowsOverrides(t *testing.T) {
 
 	if cfg.AppTimezone.String() != "UTC" {
 		t.Fatalf("AppTimezone = %q, want %q", cfg.AppTimezone.String(), "UTC")
+	}
+
+	if cfg.DeviceCookieName != "local_device" {
+		t.Fatalf("DeviceCookieName = %q, want %q", cfg.DeviceCookieName, "local_device")
+	}
+
+	if !cfg.SecureCookies {
+		t.Fatal("SecureCookies = false, want true")
 	}
 
 	if cfg.DistractorWeights.Base != 12 {
@@ -81,6 +99,13 @@ func TestLoadRejectsInvalidDistractorWeights(t *testing.T) {
 	}
 
 	_, err = Load([]string{"DISTRACTOR_SAME_SCRIPT_WEIGHT=not-a-number"})
+	if err == nil {
+		t.Fatal("Load() error = nil, want error")
+	}
+}
+
+func TestLoadRejectsInvalidBool(t *testing.T) {
+	_, err := Load([]string{"SECURE_COOKIES=maybe"})
 	if err == nil {
 		t.Fatal("Load() error = nil, want error")
 	}

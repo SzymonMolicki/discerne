@@ -2,7 +2,9 @@ package quizdb
 
 import (
 	"context"
+	"errors"
 	"fmt"
+	"time"
 
 	"discerne/backend/internal/quiz"
 	"discerne/backend/internal/seeddata"
@@ -10,25 +12,68 @@ import (
 	"github.com/jackc/pgx/v5"
 )
 
+// ErrDailyQuizNotFound means there is no generated quiz for the requested date.
+var ErrDailyQuizNotFound = errors.New("daily quiz not found")
+
+type queryer interface {
+	Query(ctx context.Context, sql string, args ...any) (pgx.Rows, error)
+}
+
+type storeDB interface {
+	queryer
+	Begin(ctx context.Context) (pgx.Tx, error)
+}
+
 // Catalog contains database data prepared for quiz generation.
 type Catalog struct {
 	Languages     []quiz.GenerationLanguage
 	LanguageNames map[string]map[string]string
 }
 
+// Store reads quiz data from PostgreSQL.
+type Store struct {
+	db storeDB
+}
+
+// DailyQuiz is a generated quiz ready to be shown to a player.
+type DailyQuiz struct {
+	QuizDate  string
+	Questions []DailyQuizQuestion
+}
+
+// DailyQuizQuestion is one prompt in a daily quiz.
+type DailyQuizQuestion struct {
+	ID       string
+	Position int
+	Text     string
+	Options  []DailyQuizOption
+}
+
+// DailyQuizOption is one localized answer option in a daily quiz.
+type DailyQuizOption struct {
+	LanguageID string
+	Position   int
+	Name       string
+}
+
+// NewStore creates a quiz store.
+func NewStore(db storeDB) Store {
+	return Store{db: db}
+}
+
 // LoadCatalog reads quiz generation inputs from PostgreSQL.
-func LoadCatalog(ctx context.Context, conn *pgx.Conn) (Catalog, error) {
-	names, err := loadLanguageNames(ctx, conn)
+func LoadCatalog(ctx context.Context, db queryer) (Catalog, error) {
+	names, err := loadLanguageNames(ctx, db)
 	if err != nil {
 		return Catalog{}, err
 	}
 
-	languages, err := loadLanguages(ctx, conn, names)
+	languages, err := loadLanguages(ctx, db, names)
 	if err != nil {
 		return Catalog{}, err
 	}
 
-	if err := loadTexts(ctx, conn, languages); err != nil {
+	if err := loadTexts(ctx, db, languages); err != nil {
 		return Catalog{}, err
 	}
 
@@ -38,12 +83,78 @@ func LoadCatalog(ctx context.Context, conn *pgx.Conn) (Catalog, error) {
 	}, nil
 }
 
+// LoadDailyQuiz reads a generated daily quiz without exposing correct answers.
+func (store Store) LoadDailyQuiz(ctx context.Context, quizDate time.Time, locale string) (DailyQuiz, error) {
+	rows, err := store.db.Query(
+		ctx,
+		`SELECT
+		   daily_quizzes.quiz_date::text,
+		   daily_quiz_questions.id::text,
+		   daily_quiz_questions.position,
+		   language_texts.content,
+		   daily_quiz_options.language_id::text,
+		   daily_quiz_options.position,
+		   language_names.name
+		 FROM daily_quizzes
+		 JOIN daily_quiz_questions ON daily_quiz_questions.daily_quiz_id = daily_quizzes.id
+		 JOIN language_texts ON language_texts.id = daily_quiz_questions.text_id
+		 JOIN daily_quiz_options ON daily_quiz_options.question_id = daily_quiz_questions.id
+		 JOIN language_names ON language_names.language_id = daily_quiz_options.language_id
+		 WHERE daily_quizzes.quiz_date = $1::date
+		   AND language_names.locale = $2
+		 ORDER BY daily_quiz_questions.position, daily_quiz_options.position`,
+		quizDate.Format("2006-01-02"),
+		locale,
+	)
+	if err != nil {
+		return DailyQuiz{}, fmt.Errorf("query daily quiz: %w", err)
+	}
+	defer rows.Close()
+
+	var dailyQuiz DailyQuiz
+	questionIndexes := make(map[string]int)
+
+	for rows.Next() {
+		var question DailyQuizQuestion
+		var option DailyQuizOption
+		if err := rows.Scan(
+			&dailyQuiz.QuizDate,
+			&question.ID,
+			&question.Position,
+			&question.Text,
+			&option.LanguageID,
+			&option.Position,
+			&option.Name,
+		); err != nil {
+			return DailyQuiz{}, fmt.Errorf("scan daily quiz row: %w", err)
+		}
+
+		questionIndex, exists := questionIndexes[question.ID]
+		if !exists {
+			question.Options = make([]DailyQuizOption, 0, quiz.DefaultOptionCount)
+			dailyQuiz.Questions = append(dailyQuiz.Questions, question)
+			questionIndex = len(dailyQuiz.Questions) - 1
+			questionIndexes[question.ID] = questionIndex
+		}
+
+		dailyQuiz.Questions[questionIndex].Options = append(dailyQuiz.Questions[questionIndex].Options, option)
+	}
+	if err := rows.Err(); err != nil {
+		return DailyQuiz{}, fmt.Errorf("read daily quiz: %w", err)
+	}
+	if len(dailyQuiz.Questions) == 0 {
+		return DailyQuiz{}, ErrDailyQuizNotFound
+	}
+
+	return dailyQuiz, nil
+}
+
 func loadLanguages(
 	ctx context.Context,
-	conn *pgx.Conn,
+	db queryer,
 	names map[string]map[string]string,
 ) ([]quiz.GenerationLanguage, error) {
-	rows, err := conn.Query(
+	rows, err := db.Query(
 		ctx,
 		`SELECT
 		   languages.id::text,
@@ -90,8 +201,8 @@ func loadLanguages(
 	return languages, nil
 }
 
-func loadLanguageNames(ctx context.Context, conn *pgx.Conn) (map[string]map[string]string, error) {
-	rows, err := conn.Query(
+func loadLanguageNames(ctx context.Context, db queryer) (map[string]map[string]string, error) {
+	rows, err := db.Query(
 		ctx,
 		`SELECT languages.id::text, language_names.locale, language_names.name
 		 FROM language_names
@@ -123,8 +234,8 @@ func loadLanguageNames(ctx context.Context, conn *pgx.Conn) (map[string]map[stri
 	return names, nil
 }
 
-func loadTexts(ctx context.Context, conn *pgx.Conn, languages []quiz.GenerationLanguage) error {
-	rows, err := conn.Query(
+func loadTexts(ctx context.Context, db queryer, languages []quiz.GenerationLanguage) error {
+	rows, err := db.Query(
 		ctx,
 		`SELECT languages.id::text, language_texts.id::text, language_texts.content, language_texts.approved
 		 FROM language_texts

@@ -10,9 +10,10 @@ import (
 )
 
 const (
-	defaultAppName     = "Discerne"
-	defaultHTTPAddress = ":8080"
-	defaultAppTimezone = "Europe/Warsaw"
+	defaultAppName          = "Discerne"
+	defaultHTTPAddress      = ":8080"
+	defaultAppTimezone      = "Europe/Warsaw"
+	defaultDeviceCookieName = "discerne_device"
 )
 
 // Config contains settings validated at startup.
@@ -20,6 +21,8 @@ type Config struct {
 	AppName           string
 	HTTPAddress       string
 	AppTimezone       *time.Location
+	DeviceCookieName  string
+	SecureCookies     bool
 	DistractorWeights quiz.DistractorWeights
 }
 
@@ -35,6 +38,16 @@ func Load(environ []string) (Config, error) {
 	httpAddress := strings.TrimSpace(values["HTTP_ADDRESS"])
 	if httpAddress == "" {
 		httpAddress = defaultHTTPAddress
+	}
+
+	deviceCookieName := strings.TrimSpace(values["DEVICE_COOKIE_NAME"])
+	if deviceCookieName == "" {
+		deviceCookieName = defaultDeviceCookieName
+	}
+
+	secureCookies, err := boolFromEnv(values, "SECURE_COOKIES", false)
+	if err != nil {
+		return Config{}, err
 	}
 
 	timezoneName := strings.TrimSpace(values["APP_TIMEZONE"])
@@ -56,6 +69,8 @@ func Load(environ []string) (Config, error) {
 		AppName:           appName,
 		HTTPAddress:       httpAddress,
 		AppTimezone:       location,
+		DeviceCookieName:  deviceCookieName,
+		SecureCookies:     secureCookies,
 		DistractorWeights: distractorWeights,
 	}, nil
 }
@@ -105,6 +120,19 @@ func intFromEnv(values map[string]string, key string, fallback int) (int, error)
 	value, err := strconv.Atoi(rawValue)
 	if err != nil {
 		return 0, fmt.Errorf("parse %s %q: %w", key, rawValue, err)
+	}
+	return value, nil
+}
+
+func boolFromEnv(values map[string]string, key string, fallback bool) (bool, error) {
+	rawValue := strings.TrimSpace(values[key])
+	if rawValue == "" {
+		return fallback, nil
+	}
+
+	value, err := strconv.ParseBool(rawValue)
+	if err != nil {
+		return false, fmt.Errorf("parse %s %q: %w", key, rawValue, err)
 	}
 	return value, nil
 }

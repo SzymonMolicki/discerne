@@ -65,6 +65,18 @@ Generate and store daily quizzes in PostgreSQL:
 go run ./cmd/quiz-generator --from 2026-08-01 --days 7
 ```
 
+Current daily quiz:
+
+```bash
+curl "http://localhost:8080/api/v1/quizzes/today?locale=en-US"
+```
+
+Start today's quiz attempt:
+
+```bash
+curl -i -X POST http://localhost:8080/api/v1/quizzes/today/attempt
+```
+
 Stop local services:
 
 ```bash

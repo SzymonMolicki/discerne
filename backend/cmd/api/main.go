@@ -11,7 +11,11 @@ import (
 	"time"
 
 	"discerne/backend/internal/config"
+	"discerne/backend/internal/database"
+	"discerne/backend/internal/quizdb"
 	httptransport "discerne/backend/internal/transport/http"
+
+	"github.com/jackc/pgx/v5/pgxpool"
 )
 
 func main() {
@@ -23,9 +27,32 @@ func main() {
 		os.Exit(1)
 	}
 
+	databaseURL := database.URLFromEnvironment()
+	if databaseURL == "" {
+		logger.Error("missing database url")
+		os.Exit(1)
+	}
+
+	startupCtx, startupCancel := context.WithTimeout(context.Background(), 10*time.Second)
+	defer startupCancel()
+
+	pool, err := pgxpool.New(startupCtx, databaseURL)
+	if err != nil {
+		logger.Error("connect database", "error", err)
+		os.Exit(1)
+	}
+	defer pool.Close()
+
+	if err := pool.Ping(startupCtx); err != nil {
+		logger.Error("ping database", "error", err)
+		os.Exit(1)
+	}
+
+	quizStore := quizdb.NewStore(pool)
+
 	server := &http.Server{
 		Addr:              cfg.HTTPAddress,
-		Handler:           httptransport.NewRouter(cfg, logger),
+		Handler:           httptransport.NewRouter(cfg, logger, quizStore),
 		ReadHeaderTimeout: 5 * time.Second,
 	}
 
