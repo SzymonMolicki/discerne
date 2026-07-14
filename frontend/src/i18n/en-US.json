@@ -1,0 +1,42 @@
+{
+  "app": {
+    "brand": "Discerne!"
+  },
+  "locale": {
+    "pl-PL": "PL",
+    "en-US": "EN",
+    "es-ES": "ES"
+  },
+  "quiz": {
+    "dateLabel": "Daily quiz",
+    "prompt": "What language is this?",
+    "questionProgress": "Question {{current}} of {{total}}",
+    "score": "Score {{score}} of {{total}}",
+    "answered": "{{answered}} of {{total}} answered",
+    "choose": "Choose an answer",
+    "loading": "Loading quiz",
+    "noQuiz": "There is no quiz for today yet.",
+    "start": "Start",
+    "submit": "Check",
+    "next": "Next",
+    "finish": "See result",
+    "restart": "Refresh",
+    "completed": "Completed",
+    "inProgress": "In progress",
+    "correct": "Correct",
+    "incorrect": "Incorrect",
+    "correctAnswer": "Correct answer: {{name}}",
+    "selected": "Selected",
+    "resultTitle": "Result",
+    "today": "Today"
+  },
+  "errors": {
+    "default": "The operation failed.",
+    "quiz_not_found": "There is no quiz for today yet.",
+    "attempt_not_found": "This attempt was not found.",
+    "answer_already_submitted": "This question already has an answer.",
+    "invalid_answer": "This answer does not belong to the question.",
+    "unsupported_locale": "This interface language is not supported.",
+    "network": "Could not connect to the API."
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "app": {
+    "brand": "Discerne!"
+  },
+  "locale": {
+    "pl-PL": "PL",
+    "en-US": "EN",
+    "es-ES": "ES"
+  },
+  "quiz": {
+    "dateLabel": "Quiz dnia",
+    "prompt": "Jaki to język?",
+    "questionProgress": "Pytanie {{current}} z {{total}}",
+    "score": "Wynik {{score}} z {{total}}",
+    "answered": "{{answered}} z {{total}} odpowiedzi",
+    "choose": "Wybierz odpowiedź",
+    "loading": "Ładowanie quizu",
+    "noQuiz": "Nie ma jeszcze quizu na dziś.",
+    "start": "Rozpocznij",
+    "submit": "Sprawdź",
+    "next": "Dalej",
+    "finish": "Zobacz wynik",
+    "restart": "Odśwież",
+    "completed": "Ukończono",
+    "inProgress": "W trakcie",
+    "correct": "Dobrze",
+    "incorrect": "Nieprawidłowo",
+    "correctAnswer": "Poprawna odpowiedź: {{name}}",
+    "selected": "Wybrano",
+    "resultTitle": "Wynik",
+    "today": "Dzisiaj"
+  },
+  "errors": {
+    "default": "Nie udało się wykonać operacji.",
+    "quiz_not_found": "Nie ma jeszcze quizu na dziś.",
+    "attempt_not_found": "Nie znaleziono tej próby.",
+    "answer_already_submitted": "To pytanie ma już zapisaną odpowiedź.",
+    "invalid_answer": "Ta odpowiedź nie pasuje do pytania.",
+    "unsupported_locale": "Ten język interfejsu nie jest obsługiwany.",
+    "network": "Nie można połączyć się z API."
+  }
+}

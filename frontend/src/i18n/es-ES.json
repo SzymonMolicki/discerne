@@ -1,0 +1,42 @@
+{
+  "app": {
+    "brand": "Discerne!"
+  },
+  "locale": {
+    "pl-PL": "PL",
+    "en-US": "EN",
+    "es-ES": "ES"
+  },
+  "quiz": {
+    "dateLabel": "Cuestionario diario",
+    "prompt": "¿Qué idioma es?",
+    "questionProgress": "Pregunta {{current}} de {{total}}",
+    "score": "Puntuación {{score}} de {{total}}",
+    "answered": "{{answered}} de {{total}} respondidas",
+    "choose": "Elige una respuesta",
+    "loading": "Cargando cuestionario",
+    "noQuiz": "Aún no hay cuestionario para hoy.",
+    "start": "Empezar",
+    "submit": "Comprobar",
+    "next": "Siguiente",
+    "finish": "Ver resultado",
+    "restart": "Actualizar",
+    "completed": "Completado",
+    "inProgress": "En curso",
+    "correct": "Correcto",
+    "incorrect": "Incorrecto",
+    "correctAnswer": "Respuesta correcta: {{name}}",
+    "selected": "Seleccionado",
+    "resultTitle": "Resultado",
+    "today": "Hoy"
+  },
+  "errors": {
+    "default": "No se ha podido completar la operación.",
+    "quiz_not_found": "Aún no hay cuestionario para hoy.",
+    "attempt_not_found": "No se ha encontrado este intento.",
+    "answer_already_submitted": "Esta pregunta ya tiene una respuesta guardada.",
+    "invalid_answer": "Esta respuesta no corresponde a la pregunta.",
+    "unsupported_locale": "Este idioma de interfaz no está admitido.",
+    "network": "No se ha podido conectar con la API."
+  }
+}
