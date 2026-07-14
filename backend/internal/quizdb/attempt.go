@@ -103,6 +103,25 @@ func dailyQuizIDForDate(ctx context.Context, tx pgx.Tx, quizDate string) (string
 }
 
 func insertAttempt(ctx context.Context, tx pgx.Tx, deviceID string, dailyQuizID string) (string, error) {
+	var completedAttemptExists bool
+	if err := tx.QueryRow(
+		ctx,
+		`SELECT EXISTS (
+		   SELECT 1
+		   FROM quiz_attempts
+		   WHERE device_id = $1::uuid
+		     AND daily_quiz_id = $2::uuid
+		     AND completed_at IS NOT NULL
+		 )`,
+		deviceID,
+		dailyQuizID,
+	).Scan(&completedAttemptExists); err != nil {
+		return "", fmt.Errorf("select completed quiz attempt: %w", err)
+	}
+	if completedAttemptExists {
+		return "", ErrAttemptAlreadyCompleted
+	}
+
 	var existingAttemptID string
 	err := tx.QueryRow(
 		ctx,

@@ -17,6 +17,9 @@ var (
 
 	// ErrAnswerAlreadySubmitted means the attempt already has an answer for the question.
 	ErrAnswerAlreadySubmitted = errors.New("answer already submitted")
+
+	// ErrAttemptAlreadyCompleted means the device already completed the daily quiz.
+	ErrAttemptAlreadyCompleted = errors.New("attempt already completed")
 )
 
 // SubmitAnswerInput contains the answer submitted by the player.

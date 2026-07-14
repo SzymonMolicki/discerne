@@ -1,98 +1,109 @@
 # Discerne
 
-Discerne is a browser-based daily language identification quiz. The backend is written in Go and the future frontend will be a TypeScript application.
+Discerne is a browser-based daily language identification quiz. The player sees a short text in an unknown language and chooses one of five answers. Each quiz has five questions and the quiz for a given day is the same for every player.
 
-## Run Backend
+The project does not require user accounts. Progress is tied to an anonymous identifier stored in an HTTP cookie and scoring is calculated on the server.
 
-Start PostgreSQL:
+## How The Quiz Works
+
+For each day, the generator selects five different languages and one approved text for each of them. Four distractors are selected for every correct answer. They are not sampled uniformly: languages that share the same family, group, subgroup, continent, or script get a higher weight, while unrelated languages still keep a non-zero chance of appearing.
+
+Texts and language metadata are stored as seed data in `backend/data`. The current MVP dataset has eight enabled languages: Arabic, English, French, German, Japanese, Polish, Russian and Spanish. The list comes from [backend/data/languages.yaml](backend/data/languages.yaml) and each enabled language has five texts.
+
+The interface is localized for:
+
+- `pl-PL`
+- `en-US`
+- `es-ES`
+
+Language names shown as answers are localized as well.
+
+## Repository Layout
+
+- `backend/` - Go HTTP API, PostgreSQL migrations, quiz generation logic, seed data validator and seed importer.
+- `backend/data/` - versioned language data: families, groups, scripts, localized names and quiz texts.
+- `frontend/` - React/Vite TypeScript application with three supported locales.
+- `docker-compose.yml` - local PostgreSQL service.
+
+The backend exposes a REST API under `/api/v1`. The main endpoints fetch today's quiz, start an attempt, submit an answer and read the result. Correct answers are not returned before the player submits an answer.
+
+## Local Setup
+
+Requirements: Go matching `backend/go.mod`, Node.js with npm, Docker and `goose` for migrations.
+
+First run:
 
 ```bash
+cp .env.example .env
 docker compose up -d postgres
-```
 
-From `backend/`:
-
-```bash
+cd backend
+set -a; source ../.env; set +a
+goose -dir ./migrations postgres "$DATABASE_URL" up
+go run ./cmd/seed-import
+go run ./cmd/quiz-generator --days 7
 go run ./cmd/api
 ```
 
-Health check:
+Start the frontend in a second terminal:
 
 ```bash
-curl http://localhost:8080/api/v1/health
+cd frontend
+npm install
+npm run dev
 ```
 
-Tests:
+By default, the API runs at `http://localhost:8080` and Vite runs at `http://localhost:5173`. The Vite proxy forwards `/api` requests to the backend.
+
+On later runs, you usually only need to start PostgreSQL, the API and the frontend in separate terminals:
 
 ```bash
+docker compose up -d postgres
+cd backend && go run ./cmd/api
+cd frontend && npm run dev
+```
+
+## Useful Tools
+
+`go run ./cmd/data-validator` checks whether seed data satisfies the rules.
+
+`go run ./cmd/quiz-preview --seed 1 --locale en-US` generates a quiz preview without writing to the database.
+
+`go run ./cmd/quiz-generator --days 7` stores future quizzes in PostgreSQL. By default, generation starts from the current date in the `Europe/Warsaw` timezone.
+
+## Configuration
+
+The most important settings are listed in `.env.example`:
+
+- `DATABASE_URL` - PostgreSQL connection URL.
+- `APP_TIMEZONE` - quiz publication timezone, defaulting to `Europe/Warsaw`.
+- `DEVICE_COOKIE_NAME` and `SECURE_COOKIES` - anonymous device cookie settings.
+- `DISTRACTOR_*_WEIGHT` - weights used when selecting distractors.
+
+## Verification
+
+Backend:
+
+```bash
+cd backend
 go test ./...
+go vet ./...
 ```
 
-Validate seed data:
+PostgreSQL integration test:
 
 ```bash
-go run ./cmd/data-validator
+docker compose up -d postgres
+cd backend
+set -a; source ../.env; set +a
+DISCERNE_TEST_DATABASE_URL="$DATABASE_URL" go test ./internal/transport/http -run TestDailyQuizHTTPFlowIntegration -count=1 -v
 ```
 
-Generate a deterministic quiz preview from seed data:
+
+Frontend:
 
 ```bash
-go run ./cmd/quiz-preview --seed 1 --locale en-US
-```
-
-Run database migrations:
-
-```bash
-source ../.env
-goose -dir ./migrations postgres "$DATABASE_URL" up
-```
-
-Import validated seed data into PostgreSQL:
-
-```bash
-go run ./cmd/seed-import
-```
-
-Generate quiz preview from PostgreSQL:
-
-```bash
-go run ./cmd/quiz-preview --source database --seed 1 --locale en-US
-```
-
-Generate and store daily quizzes in PostgreSQL:
-
-```bash
-go run ./cmd/quiz-generator --from 2026-08-01 --days 7
-```
-
-Current daily quiz:
-
-```bash
-curl "http://localhost:8080/api/v1/quizzes/today?locale=en-US"
-```
-
-Start today's quiz attempt:
-
-```bash
-curl -i -c cookies.txt -X POST http://localhost:8080/api/v1/quizzes/today/attempt
-```
-
-Submit an answer:
-
-```bash
-curl -i -b cookies.txt -X POST http://localhost:8080/api/v1/attempts/{attemptId}/answers \
-  -H "Content-Type: application/json" \
-  -d '{"questionId":"{questionId}","selectedLanguageId":"{languageId}","responseTimeMs":5400}'
-```
-
-Read attempt status and result:
-
-```bash
-curl -i -b cookies.txt http://localhost:8080/api/v1/attempts/{attemptId}
-```
-
-Stop local services:
-
-```bash
-docker compose down
+cd frontend
+npm run lint
+npm run build
 ```

@@ -18,6 +18,10 @@ type DailyQuizReader interface {
 	LoadDailyQuiz(rctx context.Context, quizDate time.Time, locale string) (quizdb.DailyQuiz, error)
 }
 
+type DailyQuizAttemptLoader interface {
+	LoadDailyQuizAttempt(rctx context.Context, quizDate time.Time, deviceID string) (quizdb.AttemptResult, error)
+}
+
 type AttemptStarter interface {
 	StartAttempt(rctx context.Context, quizDate string, deviceID string) (quizdb.Attempt, error)
 }
@@ -32,6 +36,7 @@ type AttemptLoader interface {
 
 type QuizService interface {
 	DailyQuizReader
+	DailyQuizAttemptLoader
 	AttemptStarter
 	AnswerSubmitter
 	AttemptLoader
@@ -76,7 +81,20 @@ func NewRouter(cfg config.Config, logger *slog.Logger, quizzes QuizService) http
 			return
 		}
 
-		if err := respondJSON(w, http.StatusOK, todayQuizResponseFromDailyQuiz(dailyQuiz)); err != nil {
+		attempt := quizdb.AttemptResult{Status: "not_started"}
+		if deviceID := deviceIDFromCookie(r, cfg.DeviceCookieName); deviceID != "" {
+			loadedAttempt, err := quizzes.LoadDailyQuizAttempt(r.Context(), quizDate, deviceID)
+			if err != nil && !errors.Is(err, quizdb.ErrAttemptNotFound) {
+				logger.Error("load today quiz attempt", "error", err)
+				respondError(w, http.StatusInternalServerError, "internal_error")
+				return
+			}
+			if err == nil {
+				attempt = loadedAttempt
+			}
+		}
+
+		if err := respondJSON(w, http.StatusOK, todayQuizResponseFromDailyQuiz(dailyQuiz, attempt)); err != nil {
 			logger.Error("write today quiz response", "error", err)
 		}
 	})
@@ -91,6 +109,10 @@ func NewRouter(cfg config.Config, logger *slog.Logger, quizzes QuizService) http
 		attempt, err := quizzes.StartAttempt(r.Context(), quizDate, deviceIDFromCookie(r, cfg.DeviceCookieName))
 		if errors.Is(err, quizdb.ErrDailyQuizNotFound) {
 			respondError(w, http.StatusNotFound, "quiz_not_found")
+			return
+		}
+		if errors.Is(err, quizdb.ErrAttemptAlreadyCompleted) {
+			respondError(w, http.StatusConflict, "attempt_already_completed")
 			return
 		}
 		if err != nil {
@@ -191,7 +213,19 @@ type todayQuizResponse struct {
 }
 
 type todayQuizAttempt struct {
-	Status string `json:"status"`
+	AttemptID     string                   `json:"attemptId,omitempty"`
+	Status        string                   `json:"status"`
+	AnsweredCount int                      `json:"answeredCount"`
+	QuestionCount int                      `json:"questionCount"`
+	Score         *int                     `json:"score"`
+	Answers       []todayQuizAttemptAnswer `json:"answers"`
+}
+
+type todayQuizAttemptAnswer struct {
+	QuestionID         string `json:"questionId"`
+	SelectedLanguageID string `json:"selectedLanguageId"`
+	CorrectLanguageID  string `json:"correctLanguageId"`
+	IsCorrect          bool   `json:"isCorrect"`
 }
 
 type todayQuizQuestion struct {
@@ -225,11 +259,12 @@ type submitAnswerResponse struct {
 }
 
 type attemptResultResponse struct {
-	AttemptID     string `json:"attemptId"`
-	Status        string `json:"status"`
-	AnsweredCount int    `json:"answeredCount"`
-	QuestionCount int    `json:"questionCount"`
-	Score         *int   `json:"score"`
+	AttemptID     string                   `json:"attemptId"`
+	Status        string                   `json:"status"`
+	AnsweredCount int                      `json:"answeredCount"`
+	QuestionCount int                      `json:"questionCount"`
+	Score         *int                     `json:"score"`
+	Answers       []todayQuizAttemptAnswer `json:"answers"`
 }
 
 type healthResponse struct {
@@ -243,12 +278,10 @@ type errorResponse struct {
 	Error string `json:"error"`
 }
 
-func todayQuizResponseFromDailyQuiz(dailyQuiz quizdb.DailyQuiz) todayQuizResponse {
+func todayQuizResponseFromDailyQuiz(dailyQuiz quizdb.DailyQuiz, attempt quizdb.AttemptResult) todayQuizResponse {
 	response := todayQuizResponse{
-		QuizDate: dailyQuiz.QuizDate,
-		Attempt: todayQuizAttempt{
-			Status: "not_started",
-		},
+		QuizDate:  dailyQuiz.QuizDate,
+		Attempt:   todayQuizAttemptFromAttempt(attempt, len(dailyQuiz.Questions)),
 		Questions: make([]todayQuizQuestion, 0, len(dailyQuiz.Questions)),
 	}
 
@@ -280,7 +313,42 @@ func attemptResultResponseFromAttempt(attempt quizdb.AttemptResult) attemptResul
 		AnsweredCount: attempt.AnsweredCount,
 		QuestionCount: attempt.QuestionCount,
 		Score:         attempt.Score,
+		Answers:       attemptAnswersResponse(attempt.Answers),
 	}
+}
+
+func todayQuizAttemptFromAttempt(attempt quizdb.AttemptResult, questionCount int) todayQuizAttempt {
+	status := attempt.Status
+	if status == "" {
+		status = "not_started"
+	}
+
+	if attempt.QuestionCount > 0 {
+		questionCount = attempt.QuestionCount
+	}
+
+	return todayQuizAttempt{
+		AttemptID:     attempt.ID,
+		Status:        status,
+		AnsweredCount: attempt.AnsweredCount,
+		QuestionCount: questionCount,
+		Score:         attempt.Score,
+		Answers:       attemptAnswersResponse(attempt.Answers),
+	}
+}
+
+func attemptAnswersResponse(answers []quizdb.AttemptAnswer) []todayQuizAttemptAnswer {
+	response := make([]todayQuizAttemptAnswer, 0, len(answers))
+	for _, answer := range answers {
+		response = append(response, todayQuizAttemptAnswer{
+			QuestionID:         answer.QuestionID,
+			SelectedLanguageID: answer.SelectedLanguageID,
+			CorrectLanguageID:  answer.CorrectLanguageID,
+			IsCorrect:          answer.IsCorrect,
+		})
+	}
+
+	return response
 }
 
 func supportedLocale(rawLocale string) (string, bool) {

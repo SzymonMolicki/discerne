@@ -142,6 +142,173 @@ func TestTodayQuizEndpoint(t *testing.T) {
 	}
 }
 
+func TestTodayQuizEndpointIncludesExistingAttempt(t *testing.T) {
+	location, err := time.LoadLocation("Europe/Warsaw")
+	if err != nil {
+		t.Fatalf("time.LoadLocation() error = %v", err)
+	}
+
+	score := 1
+	service := &fakeQuizService{
+		quiz: quizdb.DailyQuiz{
+			QuizDate: "2026-08-01",
+			Questions: []quizdb.DailyQuizQuestion{
+				{
+					ID:       "question-id",
+					Position: 1,
+					Text:     "Example text.",
+					Options: []quizdb.DailyQuizOption{
+						{LanguageID: "language-id", Position: 1, Name: "hiszpański"},
+						{LanguageID: "correct-language-id", Position: 2, Name: "polski"},
+					},
+				},
+			},
+		},
+		dailyAttempt: quizdb.AttemptResult{
+			ID:            "attempt-id",
+			Status:        "completed",
+			AnsweredCount: 1,
+			QuestionCount: 1,
+			Score:         &score,
+			Answers: []quizdb.AttemptAnswer{
+				{
+					QuestionID:         "question-id",
+					SelectedLanguageID: "language-id",
+					CorrectLanguageID:  "correct-language-id",
+					IsCorrect:          false,
+				},
+			},
+		},
+	}
+
+	router := NewRouter(config.Config{
+		AppName:          "Discerne",
+		HTTPAddress:      ":8080",
+		AppTimezone:      location,
+		DeviceCookieName: "discerne_device",
+	}, slog.New(slog.NewTextHandler(io.Discard, nil)), service)
+
+	request := httptest.NewRequest(http.MethodGet, "/api/v1/quizzes/today?locale=pl-PL", nil)
+	request.AddCookie(&http.Cookie{Name: "discerne_device", Value: "device-id"})
+	response := httptest.NewRecorder()
+
+	router.ServeHTTP(response, request)
+
+	if response.Code != http.StatusOK {
+		t.Fatalf("status = %d, want %d", response.Code, http.StatusOK)
+	}
+	if service.dailyAttemptDeviceID != "device-id" {
+		t.Fatalf("dailyAttemptDeviceID = %q, want %q", service.dailyAttemptDeviceID, "device-id")
+	}
+
+	var body struct {
+		Attempt struct {
+			AttemptID     string `json:"attemptId"`
+			Status        string `json:"status"`
+			AnsweredCount int    `json:"answeredCount"`
+			QuestionCount int    `json:"questionCount"`
+			Score         *int   `json:"score"`
+			Answers       []struct {
+				QuestionID         string `json:"questionId"`
+				SelectedLanguageID string `json:"selectedLanguageId"`
+				CorrectLanguageID  string `json:"correctLanguageId"`
+				IsCorrect          bool   `json:"isCorrect"`
+			} `json:"answers"`
+		} `json:"attempt"`
+	}
+	if err := json.Unmarshal(response.Body.Bytes(), &body); err != nil {
+		t.Fatalf("decode response: %v", err)
+	}
+
+	if body.Attempt.AttemptID != "attempt-id" {
+		t.Fatalf("AttemptID = %q, want %q", body.Attempt.AttemptID, "attempt-id")
+	}
+	if body.Attempt.Status != "completed" {
+		t.Fatalf("Status = %q, want %q", body.Attempt.Status, "completed")
+	}
+	if body.Attempt.AnsweredCount != 1 {
+		t.Fatalf("AnsweredCount = %d, want %d", body.Attempt.AnsweredCount, 1)
+	}
+	if body.Attempt.QuestionCount != 1 {
+		t.Fatalf("QuestionCount = %d, want %d", body.Attempt.QuestionCount, 1)
+	}
+	if body.Attempt.Score == nil || *body.Attempt.Score != 1 {
+		t.Fatalf("Score = %v, want %d", body.Attempt.Score, 1)
+	}
+	if len(body.Attempt.Answers) != 1 {
+		t.Fatalf("len(Answers) = %d, want %d", len(body.Attempt.Answers), 1)
+	}
+	answer := body.Attempt.Answers[0]
+	if answer.QuestionID != "question-id" {
+		t.Fatalf("QuestionID = %q, want %q", answer.QuestionID, "question-id")
+	}
+	if answer.SelectedLanguageID != "language-id" {
+		t.Fatalf("SelectedLanguageID = %q, want %q", answer.SelectedLanguageID, "language-id")
+	}
+	if answer.CorrectLanguageID != "correct-language-id" {
+		t.Fatalf("CorrectLanguageID = %q, want %q", answer.CorrectLanguageID, "correct-language-id")
+	}
+	if answer.IsCorrect {
+		t.Fatal("IsCorrect = true, want false")
+	}
+}
+
+func TestTodayQuizEndpointIgnoresMissingAttemptForCookie(t *testing.T) {
+	location, err := time.LoadLocation("Europe/Warsaw")
+	if err != nil {
+		t.Fatalf("time.LoadLocation() error = %v", err)
+	}
+
+	service := &fakeQuizService{
+		quiz: quizdb.DailyQuiz{
+			QuizDate: "2026-08-01",
+			Questions: []quizdb.DailyQuizQuestion{
+				{
+					ID:       "question-id",
+					Position: 1,
+					Text:     "Example text.",
+					Options: []quizdb.DailyQuizOption{
+						{LanguageID: "language-id", Position: 1, Name: "hiszpański"},
+					},
+				},
+			},
+		},
+		dailyAttemptErr: quizdb.ErrAttemptNotFound,
+	}
+
+	router := NewRouter(config.Config{
+		AppName:          "Discerne",
+		HTTPAddress:      ":8080",
+		AppTimezone:      location,
+		DeviceCookieName: "discerne_device",
+	}, slog.New(slog.NewTextHandler(io.Discard, nil)), service)
+
+	request := httptest.NewRequest(http.MethodGet, "/api/v1/quizzes/today?locale=pl-PL", nil)
+	request.AddCookie(&http.Cookie{Name: "discerne_device", Value: "stale-device-id"})
+	response := httptest.NewRecorder()
+
+	router.ServeHTTP(response, request)
+
+	if response.Code != http.StatusOK {
+		t.Fatalf("status = %d, want %d", response.Code, http.StatusOK)
+	}
+	if service.dailyAttemptDeviceID != "stale-device-id" {
+		t.Fatalf("dailyAttemptDeviceID = %q, want %q", service.dailyAttemptDeviceID, "stale-device-id")
+	}
+
+	var body struct {
+		Attempt struct {
+			Status string `json:"status"`
+		} `json:"attempt"`
+	}
+	if err := json.Unmarshal(response.Body.Bytes(), &body); err != nil {
+		t.Fatalf("decode response: %v", err)
+	}
+	if body.Attempt.Status != "not_started" {
+		t.Fatalf("Status = %q, want %q", body.Attempt.Status, "not_started")
+	}
+}
+
 func TestTodayQuizEndpointRejectsUnsupportedLocale(t *testing.T) {
 	location, err := time.LoadLocation("Europe/Warsaw")
 	if err != nil {
@@ -308,6 +475,40 @@ func TestStartAttemptEndpointReturnsNotFound(t *testing.T) {
 
 	if response.Code != http.StatusNotFound {
 		t.Fatalf("status = %d, want %d", response.Code, http.StatusNotFound)
+	}
+}
+
+func TestStartAttemptEndpointRejectsCompletedAttempt(t *testing.T) {
+	location, err := time.LoadLocation("Europe/Warsaw")
+	if err != nil {
+		t.Fatalf("time.LoadLocation() error = %v", err)
+	}
+
+	router := NewRouter(config.Config{
+		AppName:          "Discerne",
+		HTTPAddress:      ":8080",
+		AppTimezone:      location,
+		DeviceCookieName: "discerne_device",
+	}, slog.New(slog.NewTextHandler(io.Discard, nil)), &fakeQuizService{startErr: quizdb.ErrAttemptAlreadyCompleted})
+
+	request := httptest.NewRequest(http.MethodPost, "/api/v1/quizzes/today/attempt", nil)
+	request.AddCookie(&http.Cookie{Name: "discerne_device", Value: "device-id"})
+	response := httptest.NewRecorder()
+
+	router.ServeHTTP(response, request)
+
+	if response.Code != http.StatusConflict {
+		t.Fatalf("status = %d, want %d", response.Code, http.StatusConflict)
+	}
+
+	var body struct {
+		Error string `json:"error"`
+	}
+	if err := json.Unmarshal(response.Body.Bytes(), &body); err != nil {
+		t.Fatalf("decode response: %v", err)
+	}
+	if body.Error != "attempt_already_completed" {
+		t.Fatalf("Error = %q, want %q", body.Error, "attempt_already_completed")
 	}
 }
 
@@ -578,24 +779,32 @@ func TestGetAttemptEndpointReturnsNotFound(t *testing.T) {
 }
 
 type fakeQuizService struct {
-	quiz            quizdb.DailyQuiz
-	loadErr         error
-	locale          string
-	attempt         quizdb.Attempt
-	startErr        error
-	startDeviceID   string
-	answer          quizdb.AnswerSubmission
-	submitErr       error
-	submitInput     quizdb.SubmitAnswerInput
-	result          quizdb.AttemptResult
-	resultErr       error
-	resultAttemptID string
-	resultDeviceID  string
+	quiz                 quizdb.DailyQuiz
+	loadErr              error
+	locale               string
+	dailyAttempt         quizdb.AttemptResult
+	dailyAttemptErr      error
+	dailyAttemptDeviceID string
+	attempt              quizdb.Attempt
+	startErr             error
+	startDeviceID        string
+	answer               quizdb.AnswerSubmission
+	submitErr            error
+	submitInput          quizdb.SubmitAnswerInput
+	result               quizdb.AttemptResult
+	resultErr            error
+	resultAttemptID      string
+	resultDeviceID       string
 }
 
 func (reader *fakeQuizService) LoadDailyQuiz(_ context.Context, _ time.Time, locale string) (quizdb.DailyQuiz, error) {
 	reader.locale = locale
 	return reader.quiz, reader.loadErr
+}
+
+func (reader *fakeQuizService) LoadDailyQuizAttempt(_ context.Context, _ time.Time, deviceID string) (quizdb.AttemptResult, error) {
+	reader.dailyAttemptDeviceID = deviceID
+	return reader.dailyAttempt, reader.dailyAttemptErr
 }
 
 func (reader *fakeQuizService) StartAttempt(_ context.Context, _ string, deviceID string) (quizdb.Attempt, error) {

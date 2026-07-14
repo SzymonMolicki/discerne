@@ -12,10 +12,24 @@ export type QuizQuestion = {
   options: QuizOption[];
 };
 
+export type AttemptStatus = "not_started" | "in_progress" | "completed";
+
+export type AttemptAnswer = {
+  questionId: string;
+  selectedLanguageId: string;
+  correctLanguageId: string;
+  isCorrect: boolean;
+};
+
 export type TodayQuiz = {
   quizDate: string;
   attempt: {
-    status: string;
+    attemptId?: string;
+    status: AttemptStatus;
+    answeredCount: number;
+    questionCount: number;
+    score: number | null;
+    answers: AttemptAnswer[];
   };
   questions: QuizQuestion[];
 };
@@ -25,12 +39,7 @@ export type StartAttemptResponse = {
   status: "in_progress";
 };
 
-export type SubmitAnswerResponse = {
-  questionId: string;
-  selectedLanguageId: string;
-  correctLanguageId: string;
-  isCorrect: boolean;
-};
+export type SubmitAnswerResponse = AttemptAnswer;
 
 export type AttemptResult = {
   attemptId: string;
@@ -38,6 +47,7 @@ export type AttemptResult = {
   answeredCount: number;
   questionCount: number;
   score: number | null;
+  answers: AttemptAnswer[];
 };
 
 export class ApiError extends Error {

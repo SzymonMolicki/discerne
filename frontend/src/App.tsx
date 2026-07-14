@@ -42,22 +42,25 @@ export function App() {
   useEffect(() => {
     let active = true;
 
+    async function startAttempt(nextQuiz: TodayQuiz) {
+      const started = await startTodayAttempt();
+      const result = await loadAttempt(started.attemptId);
+      if (!active) {
+        return;
+      }
+
+      setAttemptId(result.attemptId);
+      setAttemptResult(result);
+      setAnswers(answerMapFromAnswers(result.answers));
+      setSelectedLanguageId(null);
+      setQuestionStartedAt(Date.now());
+      setShowResult(result.status === "completed");
+      setCurrentQuestionIndex(nextQuestionIndex(result, nextQuiz.questions.length));
+    }
+
     async function loadQuiz() {
       setIsLoading(true);
       setErrorCode(null);
-
-      async function startAttempt(nextQuiz: TodayQuiz) {
-        const started = await startTodayAttempt();
-        window.localStorage.setItem(attemptStorageKey(nextQuiz.quizDate), started.attemptId);
-        const result = await loadAttempt(started.attemptId);
-        if (!active) {
-          return;
-        }
-        setAttemptId(started.attemptId);
-        setAttemptResult(result);
-        setShowResult(false);
-        setCurrentQuestionIndex(nextQuestionIndex(result, nextQuiz.questions.length));
-      }
 
       try {
         const nextQuiz = await loadTodayQuiz(locale);
@@ -66,6 +69,7 @@ export function App() {
         }
 
         const sameQuizDate = quiz?.quizDate === nextQuiz.quizDate;
+        const existingAttempt = attemptResultFromTodayQuiz(nextQuiz);
         setQuiz(nextQuiz);
         if (!sameQuizDate) {
           setAnswers({});
@@ -74,36 +78,28 @@ export function App() {
           setShowResult(false);
         }
 
-        const storedAttemptId = window.localStorage.getItem(attemptStorageKey(nextQuiz.quizDate));
-        if (storedAttemptId === null) {
+        if (existingAttempt === null) {
+          setAttemptId(null);
+          setAttemptResult(null);
           await startAttempt(nextQuiz);
           return;
         }
 
-        try {
-          const result = await loadAttempt(storedAttemptId);
-          if (!active) {
-            return;
+        setAttemptId(existingAttempt.attemptId);
+        setAttemptResult(existingAttempt);
+        setAnswers(answerMapFromAnswers(existingAttempt.answers));
+        setShowResult((current) => {
+          if (sameQuizDate) {
+            return current;
           }
-          setAttemptId(storedAttemptId);
-          setAttemptResult(result);
-          if (!sameQuizDate) {
-            setShowResult(result.status === "completed");
+          return existingAttempt.status === "completed";
+        });
+        setCurrentQuestionIndex((current) => {
+          if (sameQuizDate) {
+            return Math.min(current, Math.max(nextQuiz.questions.length - 1, 0));
           }
-          setCurrentQuestionIndex((current) => {
-            if (sameQuizDate) {
-              return Math.min(current, Math.max(nextQuiz.questions.length - 1, 0));
-            }
-            return nextQuestionIndex(result, nextQuiz.questions.length);
-          });
-        } catch (error) {
-          if (error instanceof ApiError && error.code === "attempt_not_found") {
-            window.localStorage.removeItem(attemptStorageKey(nextQuiz.quizDate));
-            await startAttempt(nextQuiz);
-            return;
-          }
-          throw error;
-        }
+          return nextQuestionIndex(existingAttempt, nextQuiz.questions.length);
+        });
       } catch (error) {
         if (!active) {
           return;
@@ -112,6 +108,7 @@ export function App() {
         setQuiz(null);
         setAttemptId(null);
         setAttemptResult(null);
+        setAnswers({});
       } finally {
         if (active) {
           setIsLoading(false);
@@ -156,7 +153,9 @@ export function App() {
         ...previous,
         [answer.questionId]: answer,
       }));
-      setAttemptResult(await loadAttempt(attemptId));
+      const result = await loadAttempt(attemptId);
+      setAttemptResult(result);
+      setAnswers(answerMapFromAnswers(result.answers));
     } catch (error) {
       setErrorCode(errorCodeFromError(error));
     } finally {
@@ -377,8 +376,27 @@ function currentLocale(value: string): Locale {
   return "en-US";
 }
 
-function attemptStorageKey(quizDate: string) {
-  return `discerne_attempt_${quizDate}`;
+function attemptResultFromTodayQuiz(quiz: TodayQuiz): AttemptResult | null {
+  const status = quiz.attempt.status;
+  if (status === "not_started" || quiz.attempt.attemptId === undefined) {
+    return null;
+  }
+
+  return {
+    attemptId: quiz.attempt.attemptId,
+    status,
+    answeredCount: quiz.attempt.answeredCount,
+    questionCount: quiz.attempt.questionCount,
+    score: quiz.attempt.score,
+    answers: quiz.attempt.answers,
+  };
+}
+
+function answerMapFromAnswers(answers: SubmitAnswerResponse[]) {
+  return answers.reduce<AnswerMap>((result, answer) => {
+    result[answer.questionId] = answer;
+    return result;
+  }, {});
 }
 
 function nextQuestionIndex(result: AttemptResult, questionCount: number) {

@@ -34,6 +34,7 @@
     "default": "Nie udało się wykonać operacji.",
     "quiz_not_found": "Nie ma jeszcze quizu na dziś.",
     "attempt_not_found": "Nie znaleziono tej próby.",
+    "attempt_already_completed": "Ten quiz jest już ukończony.",
     "answer_already_submitted": "To pytanie ma już zapisaną odpowiedź.",
     "invalid_answer": "Ta odpowiedź nie pasuje do pytania.",
     "unsupported_locale": "Ten język interfejsu nie jest obsługiwany.",
