@@ -152,6 +152,36 @@ button {
   font-weight: 750;
 }
 
+.question-progress-frame {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 30px;
+  padding: 6px 8px;
+  border: 1px solid #3b3d42;
+  border-radius: 999px;
+  background: #1d1e21;
+}
+
+.question-progress-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.question-progress-dot--correct {
+  background: #45d06f;
+}
+
+.question-progress-dot--incorrect {
+  background: #f05e49;
+}
+
+.question-progress-dot--pending {
+  background: #727781;
+}
+
 .question-title {
   margin: 24px 0 0;
   color: #ffffff;
@@ -319,6 +349,32 @@ button {
   font-size: 34px;
   font-weight: 820;
   line-height: 1.1;
+}
+
+.result-dots {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 2px;
+}
+
+.result-dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.08);
+}
+
+.result-dot--correct {
+  background: #45d06f;
+}
+
+.result-dot--incorrect {
+  background: #f05e49;
+}
+
+.copy-result-button {
+  margin-top: 10px;
 }
 
 .spin {

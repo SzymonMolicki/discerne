@@ -1,4 +1,4 @@
-import { AlertCircle, ArrowRight, Loader2, RefreshCw } from "lucide-react";
+import { AlertCircle, ArrowRight, Check, Copy, Loader2, RefreshCw } from "lucide-react";
 import type { TFunction } from "i18next";
 import type { ReactNode } from "react";
 import { useEffect, useMemo, useState } from "react";
@@ -18,6 +18,7 @@ import {
 import { isSupportedLocale, supportedLocales } from "./i18n";
 
 type AnswerMap = Record<string, SubmitAnswerResponse>;
+type AnswerState = "correct" | "incorrect" | "pending";
 
 export function App() {
   const { t, i18n } = useTranslation();
@@ -224,7 +225,7 @@ export function App() {
       ) : quiz === null ? (
         <StatusPanel icon={<AlertCircle size={22} />} text={t("quiz.noQuiz")} />
       ) : completed && showResult && attemptResult !== null ? (
-        <ResultPanel result={attemptResult} total={quiz.questions.length} />
+        <ResultPanel quizDate={quiz.quizDate} result={attemptResult} total={quiz.questions.length} />
       ) : attemptId === null ? (
         <StatusPanel icon={<Loader2 className="spin" size={22} />} text={t("quiz.loading")} />
       ) : currentQuestion !== null ? (
@@ -235,6 +236,7 @@ export function App() {
           onAnswer={(languageId) => void handleSubmitAnswer(languageId)}
           onNext={handleNextQuestion}
           question={currentQuestion}
+          questionAnswerStates={questionAnswerStates(quiz.questions, answers)}
           questionCount={quiz.questions.length}
           selectedLanguageId={selectedLanguageId}
         />
@@ -250,6 +252,7 @@ type QuestionPanelProps = {
   onAnswer: (languageId: string) => void;
   onNext: () => void;
   question: QuizQuestion;
+  questionAnswerStates: AnswerState[];
   questionCount: number;
   selectedLanguageId: string | null;
 };
@@ -261,6 +264,7 @@ function QuestionPanel({
   onAnswer,
   onNext,
   question,
+  questionAnswerStates,
   questionCount,
   selectedLanguageId,
 }: QuestionPanelProps) {
@@ -273,6 +277,7 @@ function QuestionPanel({
     <section className="quiz-panel">
       <div className="panel-header">
         <StatusBadge>{t("quiz.questionProgress", { current: question.position, total: questionCount })}</StatusBadge>
+        <QuestionProgressDots states={questionAnswerStates} />
       </div>
 
       <h1 className="question-title">{t("quiz.prompt")}</h1>
@@ -342,15 +347,60 @@ function QuestionPanel({
   );
 }
 
-function ResultPanel({ result, total }: { result: AttemptResult; total: number }) {
+function QuestionProgressDots({ states }: { states: AnswerState[] }) {
   const { t } = useTranslation();
+
+  return (
+    <div className="question-progress-frame" aria-label={t("quiz.questionResults")}>
+      {states.map((state, index) => (
+        <span
+          aria-label={labelForAnswerState(state, t)}
+          className={`question-progress-dot question-progress-dot--${state}`}
+          key={index}
+          role="img"
+        />
+      ))}
+    </div>
+  );
+}
+
+function ResultPanel({ quizDate, result, total }: { quizDate: string; result: AttemptResult; total: number }) {
+  const { t } = useTranslation();
+  const [copied, setCopied] = useState(false);
   const score = result.score ?? 0;
+  const answerResults = Array.from({ length: total }, (_, index) => result.answers[index]?.isCorrect ?? false);
+  const shareLine = answerResults.map((isCorrect) => (isCorrect ? "🟢" : "🔴")).join("");
+  const shareText = `Discerne! ${quizDate}\n${shareLine}`;
+
+  async function handleCopyResult() {
+    try {
+      await copyTextToClipboard(shareText);
+      setCopied(true);
+      window.setTimeout(() => setCopied(false), 1800);
+    } catch {
+      setCopied(false);
+    }
+  }
 
   return (
     <section className="quiz-panel result-panel">
       <StatusBadge>{t("quiz.completed")}</StatusBadge>
       <h1>{t("quiz.resultTitle")}</h1>
       <div className="score-value">{score} / {total}</div>
+      <div className="result-dots" aria-label={t("quiz.questionResults")}>
+        {answerResults.map((isCorrect, index) => (
+          <span
+            aria-label={isCorrect ? t("quiz.correct") : t("quiz.incorrect")}
+            className={isCorrect ? "result-dot result-dot--correct" : "result-dot result-dot--incorrect"}
+            key={index}
+            role="img"
+          />
+        ))}
+      </div>
+      <button className="primary-button copy-result-button" onClick={() => void handleCopyResult()} type="button">
+        {copied ? <Check size={18} /> : <Copy size={18} />}
+        {copied ? t("quiz.resultCopied") : t("quiz.copyResult")}
+      </button>
     </section>
   );
 }
@@ -399,6 +449,16 @@ function answerMapFromAnswers(answers: SubmitAnswerResponse[]) {
   }, {});
 }
 
+function questionAnswerStates(questions: QuizQuestion[], answers: AnswerMap): AnswerState[] {
+  return questions.map((question) => {
+    const answer = answers[question.id];
+    if (answer === undefined) {
+      return "pending";
+    }
+    return answer.isCorrect ? "correct" : "incorrect";
+  });
+}
+
 function nextQuestionIndex(result: AttemptResult, questionCount: number) {
   return Math.min(Math.max(result.answeredCount, 0), Math.max(questionCount - 1, 0));
 }
@@ -409,6 +469,28 @@ function formatQuizDate(quizDate: string, locale: Locale) {
 
 function textDirection(text: string): "ltr" | "rtl" {
   return /[\u0590-\u05ff\u0600-\u06ff]/.test(text) ? "rtl" : "ltr";
+}
+
+async function copyTextToClipboard(text: string) {
+  if (navigator.clipboard !== undefined) {
+    await navigator.clipboard.writeText(text);
+    return;
+  }
+
+  const textArea = document.createElement("textarea");
+  textArea.value = text;
+  textArea.style.position = "fixed";
+  textArea.style.left = "-9999px";
+  textArea.style.top = "0";
+  document.body.appendChild(textArea);
+  textArea.focus();
+  textArea.select();
+
+  try {
+    document.execCommand("copy");
+  } finally {
+    document.body.removeChild(textArea);
+  }
 }
 
 function errorCodeFromError(error: unknown) {
@@ -422,4 +504,15 @@ function messageForError(code: string, t: TFunction) {
   const key = `errors.${code}`;
   const message = t(key);
   return message === key ? t("errors.default") : message;
+}
+
+function labelForAnswerState(state: AnswerState, t: TFunction) {
+  switch (state) {
+    case "correct":
+      return t("quiz.correct");
+    case "incorrect":
+      return t("quiz.incorrect");
+    case "pending":
+      return t("quiz.unanswered");
+  }
 }

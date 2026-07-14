@@ -23,11 +23,11 @@ Language names shown as answers are localized as well.
 - `backend/` - Go HTTP API, PostgreSQL migrations, quiz generation logic, seed data validator and seed importer.
 - `backend/data/` - versioned language data: families, groups, scripts, localized names and quiz texts.
 - `frontend/` - React/Vite TypeScript application with three supported locales.
-- `docker-compose.yml` - local PostgreSQL service.
+- `docker-compose.yml` - local PostgreSQL, backend, frontend and backend tool services.
 
 The backend exposes a REST API under `/api/v1`. The main endpoints fetch today's quiz, start an attempt, submit an answer and read the result. Correct answers are not returned before the player submits an answer.
 
-## Local Setup
+## Local Development
 
 Requirements: Go matching `backend/go.mod`, Node.js with npm, Docker and `goose` for migrations.
 
@@ -63,6 +63,37 @@ cd backend && go run ./cmd/api
 cd frontend && npm run dev
 ```
 
+## Docker Setup
+
+The Docker setup runs PostgreSQL, the Go API and the built frontend. The frontend is served by nginx and proxies `/api` to the backend service inside the Docker network.
+
+First run:
+
+```bash
+cp .env.example .env
+docker compose up -d postgres
+docker compose run --rm --interactive=false -T migrate
+docker compose run --rm --interactive=false -T data-validator
+docker compose run --rm --interactive=false -T seed-import
+docker compose run --rm --interactive=false -T quiz-generator
+docker compose up -d backend frontend
+```
+
+`--interactive=false -T` makes the one-off commands safe to paste as one block in a terminal.
+
+Then open:
+
+```text
+http://localhost:5173
+```
+
+
+If local Go or Vite processes already use the default ports, override them for Docker:
+
+```bash
+BACKEND_PORT=18080 FRONTEND_PORT=15173 docker compose up -d backend frontend
+```
+
 ## Useful Tools
 
 `go run ./cmd/data-validator` checks whether seed data satisfies the rules.
@@ -76,6 +107,7 @@ cd frontend && npm run dev
 The most important settings are listed in `.env.example`:
 
 - `DATABASE_URL` - PostgreSQL connection URL.
+- `BACKEND_PORT` and `FRONTEND_PORT` - host ports used by Docker Compose.
 - `APP_TIMEZONE` - quiz publication timezone, defaulting to `Europe/Warsaw`.
 - `DEVICE_COOKIE_NAME` and `SECURE_COOKIES` - anonymous device cookie settings.
 - `DISTRACTOR_*_WEIGHT` - weights used when selecting distractors.

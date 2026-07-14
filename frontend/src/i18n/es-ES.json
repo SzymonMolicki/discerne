@@ -25,9 +25,13 @@
     "inProgress": "En curso",
     "correct": "Correcto",
     "incorrect": "Incorrecto",
+    "unanswered": "Sin responder",
     "correctAnswer": "Respuesta correcta: {{name}}",
     "selected": "Seleccionado",
     "resultTitle": "Resultado",
+    "questionResults": "Resultado de cada pregunta",
+    "copyResult": "Copiar resultado",
+    "resultCopied": "Copiado",
     "today": "Hoy"
   },
   "errors": {
