@@ -23,8 +23,8 @@ func TestDistractorWeightUsesCumulativeMetadata(t *testing.T) {
 		t.Fatalf("DistractorWeight() error = %v", err)
 	}
 
-	if weight != 46 {
-		t.Fatalf("weight = %d, want %d", weight, 46)
+	if weight != 39 {
+		t.Fatalf("weight = %d, want %d", weight, 39)
 	}
 }
 
@@ -49,8 +49,8 @@ func TestDistractorWeightKeepsUnrelatedLanguagesSelectable(t *testing.T) {
 		t.Fatalf("DistractorWeight() error = %v", err)
 	}
 
-	if weight != 10 {
-		t.Fatalf("weight = %d, want %d", weight, 10)
+	if weight != 1 {
+		t.Fatalf("weight = %d, want %d", weight, 1)
 	}
 }
 

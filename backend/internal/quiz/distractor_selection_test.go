@@ -32,7 +32,7 @@ func TestSelectDistractorsUsesWeightedSamplingWithoutReplacement(t *testing.T) {
 		candidate("jpn", "japonic", "japanese", "japanese", "AS", "Jpan"),
 		candidate("arb", "afro-asiatic", "semitic", "central-semitic", "AS", "Arab"),
 	}
-	random := &fakeRandomSource{values: []int{0, 22, 22}}
+	random := &fakeRandomSource{values: []int{0, 21, 21}}
 
 	selected, err := SelectDistractors(correct, candidates, 3, DefaultDistractorWeights(), random)
 	if err != nil {
@@ -43,9 +43,9 @@ func TestSelectDistractorsUsesWeightedSamplingWithoutReplacement(t *testing.T) {
 		t.Fatalf("len(selected) = %d, want %d", len(selected), 3)
 	}
 
-	assertSelected(t, selected[0], "fra", 46)
-	assertSelected(t, selected[1], "jpn", 10)
-	assertSelected(t, selected[2], "arb", 10)
+	assertSelected(t, selected[0], "fra", 39)
+	assertSelected(t, selected[1], "jpn", 1)
+	assertSelected(t, selected[2], "arb", 1)
 }
 
 func TestSelectDistractorsFiltersIneligibleLanguages(t *testing.T) {
@@ -70,7 +70,7 @@ func TestSelectDistractorsFiltersIneligibleLanguages(t *testing.T) {
 		t.Fatalf("SelectDistractors() error = %v", err)
 	}
 
-	assertSelected(t, selected[0], "jpn", 10)
+	assertSelected(t, selected[0], "jpn", 1)
 }
 
 func TestSelectDistractorsRejectsDuplicateCandidates(t *testing.T) {

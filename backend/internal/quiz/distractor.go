@@ -21,12 +21,12 @@ type DistractorWeights struct {
 
 func DefaultDistractorWeights() DistractorWeights {
 	return DistractorWeights{
-		Base:          10,
-		SameFamily:    4,
+		Base:          1,
+		SameFamily:    6,
 		SameGroup:     8,
-		SameSubgroup:  16,
-		SameContinent: 3,
-		SameScript:    5,
+		SameSubgroup:  10,
+		SameContinent: 6,
+		SameScript:    8,
 	}
 }
 

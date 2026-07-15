@@ -28,12 +28,12 @@ func TestLoadUsesDefaults(t *testing.T) {
 		t.Fatal("SecureCookies = true, want false")
 	}
 
-	if cfg.DistractorWeights.Base != 10 {
-		t.Fatalf("DistractorWeights.Base = %d, want %d", cfg.DistractorWeights.Base, 10)
+	if cfg.DistractorWeights.Base != 1 {
+		t.Fatalf("DistractorWeights.Base = %d, want %d", cfg.DistractorWeights.Base, 1)
 	}
 
-	if cfg.DistractorWeights.SameSubgroup != 16 {
-		t.Fatalf("DistractorWeights.SameSubgroup = %d, want %d", cfg.DistractorWeights.SameSubgroup, 16)
+	if cfg.DistractorWeights.SameSubgroup != 10 {
+		t.Fatalf("DistractorWeights.SameSubgroup = %d, want %d", cfg.DistractorWeights.SameSubgroup, 10)
 	}
 
 	if cfg.MutationRateLimit.Requests != 30 {

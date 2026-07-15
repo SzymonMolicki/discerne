@@ -100,6 +100,21 @@ If local Go or Vite processes already use the default ports, override them for D
 BACKEND_PORT=18080 FRONTEND_PORT=15173 docker compose up -d backend frontend
 ```
 
+### Reset Docker Database
+
+To delete the local PostgreSQL database volume and recreate the database from seed data:
+
+```bash
+docker compose down -v --remove-orphans
+docker compose build backend
+docker compose up -d postgres
+docker compose run --rm --interactive=false -T migrate
+docker compose run --rm --interactive=false -T data-validator
+docker compose run --rm --interactive=false -T seed-import
+docker compose run --rm --interactive=false -T quiz-generator
+docker compose up -d backend frontend
+```
+
 ## Cloud Deployment
 
 The production deployment needs three runtime parts:
