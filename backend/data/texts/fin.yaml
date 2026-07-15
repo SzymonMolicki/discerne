@@ -1,0 +1,22 @@
+language: fin
+texts:
+  - content: "Miksi pieni matto on rullalla oven edessä? Lattia on kuiva, vaikka kengät ovat märät. Keittiöstä kuuluu hiljainen kolahdus."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "En löytänyt hopeista lusikkaa laatikosta. Se oli jäänyt pesualtaan viereen."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Jos verho olisi paksumpi, huone pysyisi viileämpänä. Päiväunet kestäisivät ehkä pidempään."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Jos taikina kohoaisi vielä hetken, pullista tulisi pehmeämpiä. Aamiainen tuntuisi silloin hitaammalta."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Varastossa tuoksui vanha paperi ja kuiva puu. Yksi kori oli puoliksi auki. Katosta roikkui lyhyt naru."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

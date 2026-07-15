@@ -1,0 +1,22 @@
+language: mon
+texts:
+  - content: "Жижиг гэрэл цонхны дэргэд яагаад анивчиж байна вэ? Ширээн дээр нээлттэй дэвтэр байна. Хөшиг аажуухан хөдөлнө."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Би хуучин түлхүүрийг хайрцагнаас олсонгүй. Дотор нь богино цагаан утас л үлдсэн байв."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Аягануудыг удаан угаагаад тавиур дээр буцааж тавь. Дараа нь тавиур дээрх усны мөрийг арч."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Бороо зогсвол хашаа хурдан хатна. Гуталд их шавар наалдахгүй."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Орой гал тогоонд халуун цайны үнэр тархав. Жижиг сав зуухан дээр байлаа. Гэр аажмаар намжив."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

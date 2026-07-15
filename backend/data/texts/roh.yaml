@@ -1,0 +1,22 @@
+language: roh
+texts:
+  - content: "Pertge trembla la pitschna glisch sper la fanestra? Il carnet è avert sin maisa. La tenda sa mova fitg plaun."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Jau n'hai betg chattà la clav veglia en la stgatla. Endadens era restà mo in curt fil alv."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Lava ils magiels plaun e metta els enavos sin la curuna. Suenter sienta ils fastizs d'aua dal tablet."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Sche la plievgia chala, vegn la curt sitga svelt. Ils chalzers na prendan betg tanta glitta."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "La saira savurava la cuschina da té chaud. Ina pitschna chazzetta steva sin il furnel. La chasa daventava quieta plaun a plaun."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

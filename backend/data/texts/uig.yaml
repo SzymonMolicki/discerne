@@ -1,0 +1,22 @@
+language: uig
+texts:
+  - content: "نېمە ئۈچۈن كىچىك لۆڭگە ئىشىك يېنىدا قالدى؟ ئۆي ئىچى تېخى جىمجىت. ئۈستەلدە بىر پارچە قۇرۇق قەغەز بار."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "مەن كونا ئاچقۇچنى ساندۇقتىن تاپالمىدىم. ئىچىدە پەقەت ئىنچىكە يىپلا قالغان ئىكەن."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "پىچاقنى يۇيۇپ، قۇرۇق لۆڭگە ئۈستىگە قوي. قاچىنى ئۈستەل چېتىگە يېقىن قويما."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "ئەگەر شامال پەسەيسە، كۆينەك تېزرەك قۇرۇيدۇ. كېيىن ئۇنى ئىشكاپقا سالىمىز."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "قىسقا خەت ئېھتىيات بىلەن ئوقۇلدى. ئاندىن كىتاب ئارىسىغا سېلىندى. سىياھنىڭ پۇرىقى تېخى بار ئىدى."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

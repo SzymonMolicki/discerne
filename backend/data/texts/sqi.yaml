@@ -1,0 +1,22 @@
+language: sqi
+texts:
+  - content: "Pse dera e dollapit hapet vetë natën? Menteshat kërcasin pak, dhe shalli i trashë rrëshqet poshtë. Në dysheme mbetet një vijë pluhuri."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Nuk e mora lugën e madhe nga rafti. Supa u përzie me një pirun, por shija mbeti e mirë."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Hape fletoren te faqja e pastër dhe shkruaj ngadalë. Lëre lapsin pranë gotës kur të mbarosh."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Rrobat u palosën para se të niste shiu. Më pas u vendosën në koshin pranë derës."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Në mëngjes, kuzhina mbante erë buke të thekur. Një pjatë e vogël priste mbi tavolinë. Drita hynte drejt nga perdet."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

@@ -1,0 +1,22 @@
+language: tso
+texts:
+  - content: "Ha yini nkumba lowutsongo wu ri ehansi ka xitulu? Rivoni ri timiwile khale. Eka tafula ku sele xipunu xin'we ntsena."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "A ndzi kumanga xilotlelo ebokisini. Endzeni a ku ri ni phepha ro olova ntsena."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Susa mati lama halakeke u tlhela u pfula fasitere katsongo. U nga tshiki nwana a rhetela laha."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Loko ku hola nimadyambu, hi ta vekela supu etlhelo. Xinkwa xi ta sala xi kufumela."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Rito ro koma ri tsariwile ehenhla ka phepha ra buraweni. Endzhaku phepha ri petsiwile kahle. Ri vekiwile ehansi ka buku."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

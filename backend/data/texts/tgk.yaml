@@ -1,0 +1,22 @@
+language: tgk
+texts:
+  - content: "Чаро косаи кабуд дар рафи боло истодааст? Ҳеҷ кас онро истифода набурд, вале канораш тар аст. Дар поён дастмоле овезон аст."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Ман садои зангро нашунидам. Вақте ба роҳрав баромадам, чароғ аллакай хомӯш буд."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Куртаро овезон кун ва пойафзолро аз дар дуртар гузор. Фаршро баъд бо латтаи хушк пок кун."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Агар нон дертар пазад, мо аввал чой менӯшем. Суҳбат оромтар мешавад."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Расми хурд бо эҳтиёт печонда шуд. Баъд онро ба ҷевони боло гузоштанд. Риштааш ҳоло кушода нашудааст."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

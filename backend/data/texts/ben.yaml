@@ -1,0 +1,22 @@
+language: ben
+texts:
+  - content: "ছোট বাতিটা এত দ্রুত নিভে গেল কেন? টেবিলের ওপর খোলা খাম পড়ে আছে। জানালার পাশে পাতলা পর্দা দুলছে।"
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "আমি পুরোনো চাবিটা বাক্সে পাইনি। ভেতরে শুধু নরম কাপড়ের টুকরো ছিল।"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "কাপগুলো ধীরে ধীরে ধুয়ে তাকের ওপর রাখো। পরে ভেজা দাগটা শুকনো কাপড়ে মুছে দিও।"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "পাতলা পর্দাটা সকালে ধোয়া হয়েছিল। বিকেলে সেটি ভাঁজ করে আলমারির ভেতরে রাখা হয়।"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "রান্নাঘরে আদার গন্ধ ভেসে আসছিল। হাঁড়ির ঢাকনা আস্তে আস্তে কাঁপছিল। ঘরটা ধীরে ধীরে উষ্ণ হয়ে উঠল।"
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

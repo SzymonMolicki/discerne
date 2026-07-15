@@ -1,0 +1,22 @@
+language: abk
+texts:
+  - content: "Избан алашара лассы-лассы ицәо? Ашәҭқәа асаркьаҿы игылоуп. Аԥша аԥенџьыр иаҭахәыуеит."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Сара аҵәыца хәыҷы сымбеит. Ашәҟәқәа рыҵаҟа ақьаад заҵәык ыҟан."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Ашә аартны, ауадахь аҳауа ҭышәҵа. Анаҩсан ақьаадқәа еидкыланы астол иашьҭашәҵа."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Аҭра иҭагылоу ачаи ԥхарра амоуп. Ауаа ҭынчӡа итәаны, ирҳәаша иазҿлымҳауп."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Ауха ақәа маҷк аауит. Амҩаҿы аӡы хәыҷы бжьысуеит. Ашә ду хәыҷы-хәыҷла аатуеит."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

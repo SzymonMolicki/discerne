@@ -1,0 +1,22 @@
+language: swe
+texts:
+  - content: "Varför hänger nyckelringen på gardinstången? Ingen verkar ha märkt den, fast solen redan når golvet. På hyllan ligger dessutom ett tomt fodral."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Jag glömde inte att stänga frysen. Det var bara en låda som stod snett."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Lägg filten över soffan och vädra kudden en stund. Torka sedan bort smulorna från bordet."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Om mötet blev kortare, skulle vi hinna laga middag utan stress. Annars får degen vila till senare."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "En ny etikett sattes på burken. Den gamla texten täcktes noggrant med papper. Burken flyttades sedan till skafferiet."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

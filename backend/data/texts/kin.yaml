@@ -1,0 +1,22 @@
+language: kin
+texts:
+  - content: "Kuki ingoma nto iri hafi y'urukuta? Uruhu rwayo rwumye neza. Hasi hari udusate tw'ibiti tubiri."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Sinatetse ibishyimbo bya nijoro. Inkono yari igipfundikiye, ariko nta mwotsi wavaga hejuru."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Tonda uduseke ku murongo umwe, maze ushyire iruhande igisabo gito. Ntukandagire ku byatsi biri ku muryango."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Iyo urusyo rutaza gucika, twari gusya ifu mbere y'umwijima. None turabanza gushaka ikindi gikoresho."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Akabindi k'ibumba kahanaguwe n'agatambaro koroshye. Imbere hashyizwemo amazi make. Karahise gashyirwa mu gicucu."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

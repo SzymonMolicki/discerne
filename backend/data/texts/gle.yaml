@@ -1,0 +1,22 @@
+language: gle
+texts:
+  - content: "Cén fáth a bhfuil an solas beag ag preabadh? Tá leabhar nótaí oscailte ar an mbord. Bogann an cuirtín leis an ngaoth bhog."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Níor aimsigh mé an eochair shean sa bhosca. Ní raibh istigh ann ach píosa gearr snáithe."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Nigh na cupáin go mall agus cuir ar ais ar an tseilf iad. Ansin triomaigh an tráidire leis an éadach."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Dá stadfadh an bháisteach, thriomódh an clós níos tapúla. Ní bheadh an oiread láibe ar na bróga."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Tráthnóna, bhí boladh tae te sa chistin. Sheas pota beag in aice leis an sorn. D'éirigh an teach ciúin."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

@@ -1,0 +1,22 @@
+language: cha
+texts:
+  - content: "Sa' hafa na lampan dikike' ha' tinilaika? I lepblu gaige gi hilo' lamasa. I manglo' ha na'la'la' i papet."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Ti hu sodda' i yabe ni maolek gi kahon. Un pedason magagu ha' gaige sanhilo'."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Fa'gasi i baso siha yan po'lo gi sagan-niha. Despues na'gasgas i lamasa ni paño."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Yanggen para i uchan, i chalan para u makmåta. I sapatos ti para u puno' ni fango."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Gi pupuengi, i kusina sumasaga ni asngon gollai. I katdera ha na'brabu dikike'. I gima' mampos tahdong."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

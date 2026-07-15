@@ -1,0 +1,22 @@
+language: sna
+texts:
+  - content: "Sei dengu remichero rakasara pasi pechigaro? Hapana akadzoka kuzoriona. Patafura pane kapepa kebhuruu."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Handina kuisa peni muhomwe yejasi. Ndakazoiwana pedyo nebheseni risina mvura."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Vhara hwindo zvishoma, woisa jira rakanyorova panze. Usasiya chigero pedyo nemucheto wetafura."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Kana moto ukadzikira, sadza richaramba richidziya muhari. Tichadya gare gare pasina kukurumidza."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Tsamba pfupi yakanyorwa papepa rakakora. Yakapetwa kaviri, ikaiswa mubhegi diki. Munhuwi weingi wakaramba uri pamunwe."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

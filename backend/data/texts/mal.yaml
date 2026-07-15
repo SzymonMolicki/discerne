@@ -1,0 +1,22 @@
+language: mal
+texts:
+  - content: "ചെറിയ വിളക്ക് ജനലിനരികിൽ എന്തിന് മിന്നുന്നു? മേശപ്പുറത്ത് തുറന്ന കുറിപ്പുപുസ്തകം കിടക്കുന്നു. തിരശ്ശീല മന്ദമായി അലയുന്നു."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "പെട്ടിക്കുള്ളിൽ പഴയ താക്കോൽ കണ്ടില്ല. അകത്ത് ചെറിയ വെള്ള നൂൽ മാത്രം ഉണ്ടായിരുന്നു."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "കപ്പുകൾ സാവധാനം കഴുകി ഷെൽഫിലേക്ക് തിരികെ വയ്ക്കൂ. പിന്നെ തട്ടിലെ വെള്ളപ്പാടുകൾ തുടച്ചുകളയൂ."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "മഴ നിന്നാൽ മുറ്റം വേഗം ഉണങ്ങും. ചെരുപ്പിൽ അധികം ചെളി ഒട്ടുകയില്ല."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "വൈകുന്നേരം അടുക്കളയിൽ ഇഞ്ചിയുടെ മണം നിറഞ്ഞു. പാത്രത്തിന്റെ മൂടി മൃദുവായി കുലുങ്ങി. വീട് പതുക്കെ നിശ്ശബ്ദമായി."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

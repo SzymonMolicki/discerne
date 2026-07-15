@@ -1,0 +1,22 @@
+language: slv
+texts:
+  - content: "Zakaj majhna luč utripa ob oknu? Zvezek je odprt na mizi. Zavesa se komaj premika."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Starega ključa nisem našel v škatli. V njej je ostala samo kratka bela nit."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Počasi operi skodelice in jih vrni na polico. Nato obriši sledi vode s pladnja."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Če bi dež ponehal, bi se dvorišče hitro posušilo. Čevlji ne bi pobrali toliko blata."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Zvečer je kuhinja dišala po toplem čaju. Majhen lonec je stal na štedilniku. Hiša je počasi utihnila."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

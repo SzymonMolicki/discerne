@@ -1,0 +1,22 @@
+language: ssw
+texts:
+  - content: "Kungani sikhwama setincwadzi sisele eceleni kwemnyango? Phansi kuhlantekile, kodvwa umsindvo uphuma ekamelweni. Etafuleni kunenkomishi lengakasebentiswa."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Angizange ngivule likhabethe ekuseni. Ngitfole liphepha lelincane kuphela etafuleni."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Bopha intambo kahle bese ususa sitja eduze nelitsango. Ungayishiyi lapho bantfwana badlala khona."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Nangabe emanti afutfumala masinyane, sitawugeza tindishi ngaphambi kwekudla. Umsebenti utawuphela ngekuthula."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Umlayeto lomfishane wabhalwa ephepheni lelimhlophe. Ngemuva kwaloko wafakwa emkhatsini wencwadzi. Uyawugcinwa endzaweni leyomile."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

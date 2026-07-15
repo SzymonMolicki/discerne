@@ -1,0 +1,22 @@
+language: arg
+texts:
+  - content: "Per qué chirria lo caxón quan s'ubre despacio? Aintro bi ha fuellas plegadas y un lapicero curt. A luz deixa una linia fina en a taula."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "No trobéi a cullara chicota en o calaixo. A sopa continó calda, pero dengún se'n queixó."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Si lo viento baixase, a camisa se secaría antis. Dimpués a cambra quedaría mas ampla y clara."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "As servilletas estioron plegadas con muito cuenta. Dimpués estioron posadas en a cesta baixa."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "En o cantón d'a sala, una cadiera baxa aguardaba sin ruido. A manta teneba olor de jabón. Lo fuego ya yera apagau."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

@@ -1,0 +1,22 @@
+language: kal
+texts:
+  - content: "Sooq qulliq mikisoq igalaap eqqaani qamittarpa? Allattuiffik nerriviup qaavani ammasoqippoq. Anori sakkukitsoq saagumik aalatitsivoq."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Matuersaatitoqaq karsimi nassaanngilara. Iluani qaqortumik annoraamineq mikisoq kisiat qalerpoq."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Puuguttat arriitsumik errukkit, ilisivimmullu utertikkit. Kingorna nerrivik panertumik allarteruk."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Sialuk unippat, aqqusineq sukkasuumik panissaaq. Kamippaat marraqarpallaassanngillat."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Unnukkut igaffik tiitorfimmik kissartumik tipigippoq. Igaq mikisoq kissarsuummiippoq. Illu nipaarukkiartorpoq."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

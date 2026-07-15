@@ -1,0 +1,22 @@
+language: kik
+texts:
+  - content: "Nĩ kĩĩ gĩtũma ciondo kĩnyinyi gĩikare hau thĩinĩ wa kĩhingo? Mũtĩ mũũru nĩũgũikarania na rũthingo. Mbura njũru nĩyarehaga mĩgambo mĩnene."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Ndironire gĩkombe kĩu gĩtheru rũciinĩ. Kĩarĩ kĩigĩtwo thĩinĩ wa gĩtanda, kĩhumbĩtwo na nguo."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Humbĩra irio na gĩtambaya kĩrĩa kĩngʼũ, na ũtige mũtĩ mũkũũru hau nja. Coka ũhinge kĩhingo gĩthaka kĩtonye thĩinĩ."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Angĩkorwo rũhuho rũrĩa rũnene rũkahurũka, tũgũkaania nguo hau nja. Rĩrĩa rĩu nyũmba nĩĩkũgĩa na mũtarakwa mwega."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Marũa manini nĩmandĩkĩtwo na rangi mũiru. Thuutha ũcio magĩkunjwo wega, magĩikwo thĩinĩ wa gĩtĩ kĩnene. Ndĩrĩ ya karamu nĩyatigirwo igũrũ rĩa metha."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

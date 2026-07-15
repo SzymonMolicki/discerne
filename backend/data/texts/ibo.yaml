@@ -1,0 +1,22 @@
+language: ibo
+texts:
+  - content: "Gịnị mere fanị rafia ji dị n'akụkụ mgbidi? Aka ya agbagọla obere. N'okpuru ya, aja dị ka ntụ ntụ."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "A gwaghị m ka m bepụ ahịhịa taa. Agụba nta ahụ ka dị n'ime nkata."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Wepụ mkpụrụ osisi kpọrọ nkụ n'elu akwa ma kee ha n'akpa. Ejila efere gbawara agbawa were ha."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Ọ bụrụ na akwa ahụ agbapụtaghị n'ụtụtụ, anyị ga-akpọpụ ya n'anyanwụ ọzọ. Ọ ga-adị nro tupu mgbede."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "A kpara obere akpa ahụ site n'ahịhịa siri ike. E tinyere mkpụrụ ose n'ime ya. A mechiri ọnụ ya n'iji eriri ojii."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

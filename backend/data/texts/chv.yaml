@@ -1,0 +1,22 @@
+language: chv
+texts:
+  - content: "Мӗншӗн пӗчӗк лампа час-час ҫунса илет? Сӗтел ҫинче уҫӑ ҫыру выртать. Чӳрече патӗнче ҫил пӑшӑлтатать."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Эпӗ кивӗ ключа пӗчӗк яшӑкран тупмарӑм. Унта анчах шурӑ ҫип пурччӗ."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Стакансене майлӑ ҫу та полка ҫине ларт. Унтан сӗтел ҫинчи шыва типӗ тутӑрпа шӑл."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Ҫумӑр чарӑнсан, урам хӑвӑрт типӗнӗ. Атӑсем те нумай пӑтрак пулмӗҫ."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Каҫхине кухньӑра ӑшӑ чай шӑрши сарӑлчӗ. Кӑстрӳл хуплашки пӑртак юрлатчӗ. Пӳлӗм тӑванла шӑпланчӗ."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

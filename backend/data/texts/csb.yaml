@@ -1,0 +1,22 @@
+language: csb
+texts:
+  - content: "Nowé sedzenié òstało ùstôwioné blós niedôwno. Jesz nikt z niegò nie kòrzëstôł. Mòże wnet bãdze baro przëdôwné."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Czë më dzysô mdzemë na spacér? Jo ju jem gotowi."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Nié wszëtkò je prosté. Czasã lepi jesz chwilkã pòczekac."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Òtemknij dwiérze, proszã. Na dwòrze je baro zëmno."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Jeżlë bãdze słuńce, wëńdzemë na dłudżi spacér. Jinaczi òstaniemë w dodómie. To téż mòże bëc dobri dzéń."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

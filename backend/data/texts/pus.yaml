@@ -1,0 +1,22 @@
+language: pus
+texts:
+  - content: "دا کوچنی څراغ ولې د کړکۍ ترڅنګ ځلېږي؟ پر مېز پرانیستې کتابچه پرته ده. پرده ورو ورو خوځيږي."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "ما زوړ کیلي په بکس کې پیدا نه کړ. دننه یوازې لنډ سپین تار پاتې و."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "پیالې ورو ومینځه او بېرته یې په المارۍ کې کېږده. بیا د پتنوس د اوبو نښې پاکې کړه."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "که باران ودرېږي، انګړ به ژر وچ شي. بوټان به ډېر خټې وانخلي."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "ماښام پخلنځي کې د تود چای بوی خپور شو. کوچنی دیګ پر نغري ولاړ و. کور ورو ورو چوپ شو."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

@@ -1,0 +1,22 @@
+language: heb
+texts:
+  - content: "למה המנורה הקטנה מהבהבת ליד החלון? המחברת פתוחה על השולחן. רוח קלה מזיזה את הווילון."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "לא מצאתי את המפתח הישן בקופסה. בפנים נשאר רק חוט לבן קצר."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "שטוף את הכוסות לאט והחזר אותן למדף. אחר כך נגב את סימני המים מהמגש."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "המגבות נשטפו במים חמימים. לאחר מכן הן נתלו ליד הדלת כדי להתייבש."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "בערב היה במטבח ריח של תה חם. סיר קטן עמד על הכיריים. הבית נעשה שקט בהדרגה."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

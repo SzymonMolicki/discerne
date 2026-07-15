@@ -1,0 +1,22 @@
+language: kau
+texts:
+  - content: "Me yasa ƙaramin fitila yana walƙiya kusa da taga? Littafi ya buɗe a kan teburi. Iska mai sanyi ta shigo hankali."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Ngəla mərəm kəltiro ba. Kutu ro nəmba fəro yaye kəltu."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Kəla suro məlam, kənyi rənga kəltə. Dəga teburi ro ruwa nyəma fəro."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Ruwa dəga ngəlaro, hanya kəsku kəla. Kəma suwo ba kəji ro məlam."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Suru fəle, dəji ro shayi kəla nyəma. Kəta kəskuro fəro. Gana ro səssəma gəna."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

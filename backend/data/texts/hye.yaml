@@ -1,0 +1,22 @@
+language: hye
+texts:
+  - content: "Ինչո՞ւ է փոքրիկ ժամացույցը կանգ առել հենց հիմա։ Սեղանի վրա բաց նամակ կա։ Պատուհանից սառը օդ է գալիս։"
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Ես չգտա բարակ ասեղը կարի տուփում։ Կոճակները մնացին սփռված, իսկ թելը կախվեց աթոռից։"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Եթե լույսը ավելի մոտ լիներ, ձեռագիրը հեշտ կկարդացվեր։ Աչքերը քիչ կհոգնեին։"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Սրբիչները լվացվեցին տաք ջրով։ Հետո դրանք կախվեցին դռան մոտ, որ արագ չորանան։"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Երեկոյան պահարանում մեղմ հոտ կար։ Փոքր ամանի մեջ չորացած ծաղիկներ էին։ Տունը կամաց-կամաց խաղաղվեց։"
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

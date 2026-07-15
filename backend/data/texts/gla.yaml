@@ -1,0 +1,22 @@
+language: gla
+texts:
+  - content: "Carson a tha an lampa bheag a' priobadh ri taobh na h-uinneige? Tha an leabhar-notaichean fosgailte air a' bhòrd. Tha an cùirtear a' gluasad gu mall."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Cha do lorg mi an seann iuchair anns a' bhogsa. Cha robh ann ach snàth geal goirid."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Nigh na cupannan gu socair agus cuir air ais air an sgeilp iad. An uair sin tiormaich na comharran uisge air an treidhe."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Nam biodh an t-uisge a' stad, thiormaicheadh an gàrradh gu luath. Cha bhiodh na brògan cho làn de pholl."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Air an fheasgar, bha fàileadh tì blàth sa chidsin. Bha poit bheag ri taobh na teine. Dh'fhàs an taigh sàmhach."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

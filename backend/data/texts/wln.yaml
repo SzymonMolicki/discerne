@@ -1,0 +1,22 @@
+language: wln
+texts:
+  - content: "Poqwè l' pitit drap est-i so l' tchèyire? Li pîce est dja tote rnetiyîye. I gn a co on plat vude sol tåve."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Dji n' a nén trové l' vî cizea dins l' tirwè. I gn aveut seulmint on p'tit boket d' papî."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Metez les assietes so l' plantche et rascoyîz les mietes. Ni leyîz nén l' verre trop près do bord."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Si l' vint toume al nute, li linço serè sec pus rade. Adon li tchambe sintira pus bon."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "On court messaedje a stî scrît sol papî blanc. Après, il a stî ployî tot doûçmint. Li papî a stî catchî dins on live."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

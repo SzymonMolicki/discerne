@@ -1,0 +1,22 @@
+language: hau
+texts:
+  - content: "Me ya sa ƙaramin fitila yake walƙiya haka? Littafi a buɗe yake a kan tebur. Iska mai sanyi tana shigowa ta taga."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Ban sami tsohon maɓalli a cikin akwati ba. A ciki akwai ƙaramin zane fari kaɗai."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Idan ruwan sama ya tsaya, hanya za ta bushe da sauri. Takalma ba za su ɗauki laka da yawa ba."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Da safe, ƙamshin shayi mai zafi ya cika ɗakin girki. Kofi ɗaya ya rage a gefen tebur."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Da yamma, inuwa ta faɗa a kan bango. Kujera ɗaya ta tsaya kusa da ƙofa. Gidan ya yi shiru a hankali."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

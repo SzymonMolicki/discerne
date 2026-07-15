@@ -1,0 +1,22 @@
+language: ipk
+texts:
+  - content: "Suna pillugu qulliq mikisoq qamittarpa? Aglaaq ammasoq nerriviup qaavaniippoq. Anuri sakkukitsoq igalaakkut iserpoq."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Uanga matuersaatitoqaq puumi nassaanngilara. Iluanilu annoraamineq qaqortoq kisimiippoq."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Erngutit arriitsumik errortukkit, taava ilisivimmut utertikkit. Kingorna nerriviup imaa panertumik allarteruk."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Sialuk unippat, aqqusineq sukkasuumik panissaaq. Kamippaat marrarmik ulikkaassanngillat."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Unnukkut iglu nipaarpoq. Tiitorfik kissartoq igaffimmiippoq. Igalaaq saniani assiaqutaq aalavoq."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

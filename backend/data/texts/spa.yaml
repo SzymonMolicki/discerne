@@ -1,22 +1,22 @@
 language: spa
 texts:
-  - content: "Después de la lluvia, la acera olía a hojas húmedas. En una panadería pequeña encendieron la luz antes de que la calle despertara del todo."
+  - content: "¿Por qué la libreta tiene arena entre las páginas? Alguien la sacude sobre el suelo, y caen granos muy finos. La cubierta queda áspera al tacto."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "No encontré las gafas en la mesilla. Al final aparecieron dentro de una cesta de lana."
     sentence_count: 2
     license: "Project-owned"
     approved: true
-  - content: "Un niño ordenó los lápices de colores sobre la mesa. El primer dibujo mostraba un jardín tranquilo y una valla torcida."
+  - content: "Barre el balcón antes de regar las macetas. Luego sacude la alfombra pequeña lejos de la puerta."
     sentence_count: 2
     license: "Project-owned"
     approved: true
-  - content: "El reloj viejo del pasillo se paró justo antes del mediodía. Nadie lo notó hasta que la casa quedó extrañamente silenciosa."
+  - content: "Si la persiana bajara mejor, la habitación estaría más fresca. La siesta sería más larga y tranquila."
     sentence_count: 2
     license: "Project-owned"
     approved: true
-  - content: "La sopa caliente humeaba en un cuenco hondo. Alguien dejó pan recién hecho al lado y cerró la ventana de la cocina."
-    sentence_count: 2
-    license: "Project-owned"
-    approved: true
-  - content: "Al anochecer, el sendero junto al agua quedó vacío. Una niebla fina subía despacio y suavizaba la luz de las farolas."
-    sentence_count: 2
+  - content: "En el comedor olía a cáscara de naranja. Una servilleta doblada marcaba el sitio vacío. El vaso reflejaba una línea de sol."
+    sentence_count: 3
     license: "Project-owned"
     approved: true

@@ -1,0 +1,22 @@
+language: cym
+texts:
+  - content: "Pam mae'r fasged wag wrth ymyl y drws? Mae'r llawr wedi sychu'n barod. Mae olion bach o flawd ar y silff."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Wnes i ddim gadael y gannwyll yn llosgi. Dim ond arogl mwg ysgafn oedd yn yr ystafell."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Rho'r tywel gwlyb dros y gadair a chau'r cwpwrdd yn dawel. Paid â symud y bowlen wydr."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Pe bai'r bara yn codi'n gynt, byddai'r popty yn barod cyn cinio. Byddai'r bwrdd hefyd yn aros yn lân."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Cafodd y nodyn bach ei blygu'n ofalus. Wedyn fe'i rhoddwyd rhwng dwy dudalen sych. Arhosodd y pensil ar y silff."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

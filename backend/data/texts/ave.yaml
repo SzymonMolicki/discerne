@@ -1,0 +1,22 @@
+language: ave
+texts:
+  - content: "𐬐𐬆𐬭𐬆𐬥𐬀 𐬭𐬀𐬊𐬗𐬵𐬆 𐬀𐬙𐬀𐬭𐬆 𐬫𐬀𐬊𐬙𐬀? 𐬎𐬴𐬙𐬀 𐬀𐬵𐬨𐬀𐬌 𐬯𐬀𐬭𐬆 𐬛𐬀𐬵𐬌𐬙𐬌. 𐬀𐬯𐬨𐬀𐬥𐬆 𐬬𐬀𐬙𐬀 𐬨𐬀𐬌𐬥𐬌."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "𐬥𐬀 𐬀𐬵𐬨𐬀𐬌 𐬛𐬀𐬙𐬀 𐬐𐬀𐬭𐬆𐬙𐬌 𐬫𐬀𐬊𐬙𐬀. 𐬯𐬭𐬀𐬎𐬴𐬀 𐬎𐬙𐬀 𐬡𐬀𐬵𐬌𐬙𐬌."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "𐬫𐬀𐬌 𐬬𐬀𐬙𐬀 𐬀𐬥𐬙𐬀𐬭𐬆 𐬯𐬀𐬭𐬆, 𐬀𐬙𐬀𐬭𐬆 𐬭𐬀𐬊𐬗𐬵𐬆 𐬛𐬀𐬵𐬌𐬙𐬌. 𐬀𐬵𐬨𐬀𐬌 𐬨𐬀𐬥𐬀 𐬬𐬊𐬵𐬎 𐬫𐬀𐬊𐬙𐬀."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "𐬀𐬞𐬀 𐬵𐬀𐬫𐬀𐬥𐬆 𐬯𐬀𐬭𐬆 𐬛𐬀𐬙𐬀. 𐬎𐬭𐬬𐬀𐬭𐬀 𐬫𐬀𐬊𐬙𐬀 𐬭𐬀𐬊𐬗𐬵𐬆 𐬥𐬌𐬫𐬀𐬙𐬌."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "𐬫𐬆𐬨𐬀 𐬯𐬀𐬭𐬆 𐬀𐬵𐬨𐬀𐬌 𐬨𐬀𐬥𐬀 𐬀𐬭𐬆𐬙𐬌. 𐬭𐬀𐬊𐬗𐬵𐬆 𐬵𐬀𐬫𐬀𐬥𐬆 𐬀𐬙𐬀𐬭𐬆 𐬯𐬙𐬀. 𐬞𐬀𐬌𐬙𐬌 𐬎𐬙𐬀 𐬫𐬀𐬊𐬙𐬀."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

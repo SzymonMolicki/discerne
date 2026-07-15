@@ -1,0 +1,22 @@
+language: mri
+texts:
+  - content: "He aha te take e kōmuramura ai te rama iti i te matapihi? Kei runga i te tēpu tētahi pukapuka tuwhera. Ka neke mārie te ārai."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Kāore au i kite i te kī tawhito i roto i te pouaka. I toe noa iho tētahi miro mā poto."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Horoia ngā kapu kia āta, ā, whakahokia ki te whata. Kātahi ka muru i ngā tohu wai o te paepae."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Ki te mutu te ua, ka tere maroke te marae. Kāore ngā hū e mau paru nui."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "I te ahiahi, ka hongi te kīhini ki te tī wera. I tū tētahi kōhua iti ki te taha o te ahi. Ka tau te whare."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

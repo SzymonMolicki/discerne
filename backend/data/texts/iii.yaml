@@ -1,0 +1,22 @@
+language: iii
+texts:
+  - content: "ꀋꂿꑍꃅꄉꇬꀉꄂꌠꇁꇬ? ꃅꏸꇬꄯꒉꀕꌠꀉꁌ. ꑌꑿꌠꇬꑟꌠꀉꆹꄂ."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "ꉢꀋꃀꑌꄜꌠꀋꉆ. ꃅꄷꇬꀊꏀꑌꁱꂷꌠꀕ."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "ꃅꑌꉻꂷꌠꄉꑌꌠꇬꊂ. ꈧꌠꃅꏸꇬꇉꁧꄉꅽ."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "ꈍꃅꆪꌠꀋꄉ, ꀉꄂꇬꎭꌠꐛ. ꀊꏀꑌꄜꌠꀋꉆꃅꇬꄉ."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "ꃅꇢꇬꑌꉻꂷꌠꑌꁧ. ꂷꌠꇬꊂꇁꄷꌠꀉꁌ. ꀉꄂꌠꇬꈴꁧꄉꄷ."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

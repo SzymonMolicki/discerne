@@ -1,22 +1,22 @@
 language: jpn
 texts:
-  - content: "雨上がりの歩道は、湿った葉の匂いがした。小さなパン屋では、通りが目を覚ます前に明かりがともった。"
+  - content: "この音は換気扇から出ているのだろうか。台所の空気はまだ少し湿っている。湯気は天井の近くで薄く消えた。"
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "約束の紙はどこにも見つからなかった。棚の上には、古い封筒だけが残っていた。"
     sentence_count: 2
     license: "Project-owned"
     approved: true
-  - content: "子どもは色鉛筆を机の上にきれいに並べた。最初の絵には、静かな庭と少し傾いた柵が描かれていた。"
+  - content: "電池を替えれば、この小さな時計はまた動くだろう。針の音も少し明るく聞こえるかもしれない。"
     sentence_count: 2
     license: "Project-owned"
     approved: true
-  - content: "廊下の古い時計は、正午の少し前に止まった。家の中が妙に静かになるまで、誰もそれに気づかなかった。"
+  - content: "机の端で、消しゴムのかすが小さく丸まっていた。窓から入る風が紙を少し動かした。"
     sentence_count: 2
     license: "Project-owned"
     approved: true
-  - content: "深い器の中で、温かいスープから湯気が上がっていた。誰かがそばに焼きたてのパンを置き、台所の窓を閉めた。"
-    sentence_count: 2
-    license: "Project-owned"
-    approved: true
-  - content: "夕暮れになると、水辺の道には人影がなくなった。薄い霧がゆっくり立ちのぼり、街灯の光をやわらげた。"
-    sentence_count: 2
+  - content: "静かな読書室で、椅子が一つだけ机から離れていた。誰かが忘れたしおりが本の間に見えた。蛍光灯の音が低く続いた。"
+    sentence_count: 3
     license: "Project-owned"
     approved: true

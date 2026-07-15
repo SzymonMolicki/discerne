@@ -1,0 +1,22 @@
+language: cat
+texts:
+  - content: "Per què la llibreta fa olor de pols humida? Algú l'ha deixada prop de la finestra. A fora, el vent mou una persiana fluixa."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "No vaig trobar el mocador dins la bossa. Era sota la cadira, plegat d'una manera estranya."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Obre el calaix amb compte i guarda-hi les agulles. Després apaga el llum petit."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Els plats van ser rentats abans de sopar. Després es van deixar sobre un drap clar."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Al passadís hi havia olor de taronja i sabó. Una jaqueta penjava massa baixa. La casa semblava més ampla en silenci."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

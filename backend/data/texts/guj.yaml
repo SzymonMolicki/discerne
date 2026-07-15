@@ -1,0 +1,22 @@
+language: guj
+texts:
+  - content: "નાની દીવો વારંવાર કેમ ઝબૂકે છે? મેજ પર ખુલ્લી ચીઠ્ઠી પડી છે. બારી પાસે પડદો ધીમે હલે છે."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "મને જૂની ચાવી ડબ્બામાં મળી નહીં. અંદર ફક્ત સફેદ દોરાનો ટુકડો હતો."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "જો વરસાદ બંધ થાય, તો આંગણું જલદી સૂકાઈ જશે. ચપ્પલમાં પણ ઓછો કાદવ લાગશે."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "રસોડામાં આદુ અને ગરમ દૂધની સુગંધ આવી રહી હતી. ઢાંકણું ધીમે ધીમે ખખડતું હતું."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "સાંજે દીવાલ પર લાંબી છાયા પડી. ખુરશી પાસે વાદળી થેલી હતી. ઘરમાં ધીમે ધીમે શાંતિ છવાઈ."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

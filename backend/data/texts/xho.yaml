@@ -1,0 +1,22 @@
+language: xho
+texts:
+  - content: "Kutheni ibhasikithi ingenanto isecaleni komnyango? Umgangatho sele womile. Phezu kwetafile kukho icephe elincinane."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Andiyifumananga incwadi endala eshelufini. Ndibone kuphela iphepha elisongiweyo ngaphakathi."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Beka iikomityi ezicocekileyo phezulu uze usule amanzi aseleyo. Musa ukutyhala isitulo endleleni."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Ukuba amafu avuleka emini, ingubo iya koma ngokukhawuleza. Siya kuyibuyisela egumbini kamva."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Umyalezo omfutshane wabhalwa ngepensile. Emva koko iphepha lasongwa ngononophelo. Lafakwa phakathi kwencwadi encinane."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

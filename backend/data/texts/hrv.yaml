@@ -1,0 +1,22 @@
+language: hrv
+texts:
+  - content: "Zašto se sjenilo lampe njiše bez dodira? Prozor je zatvoren, ali zrak u sobi nije miran. Na stolu se hladi čaj."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Nisam pronašao sitni vijak ispod police. Ostala je samo mala ogrebotina u prašini."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Pospremi bilježnice u ladicu i poravnaj stolnjak. Nakon toga otvori vrata da uđe svjež zrak."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Da je jutro toplije, prozori bi se ranije otvorili. Miris kave brže bi ispunio stan."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "U spremištu je mirisalo na jabuke i karton. Na podu je ležala smotana vrpca. Koraci su odjekivali kratko."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

@@ -1,0 +1,22 @@
+language: hin
+texts:
+  - content: "छोटी बत्ती इतनी देर से क्यों झपक रही है? मेज पर खुला लिफाफा पड़ा है। खिड़की के पास परदा धीरे हिलता है।"
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "मुझे पुरानी चाबी डिब्बे में नहीं मिली। अंदर केवल सफेद धागे का छोटा टुकड़ा था।"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "कपों को धीरे धोकर वापस शेल्फ पर रख दो। फिर सूखे कपड़े से पानी के निशान पोंछ देना।"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "अगर बारिश रुक जाए, तो आंगन जल्दी सूख जाएगा। जूतों पर ज्यादा कीचड़ नहीं लगेगा।"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "शाम को रसोई में अदरक की खुशबू फैल गई। ढक्कन हल्के से खड़खड़ा रहा था। कमरा धीरे-धीरे गर्म हो गया।"
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

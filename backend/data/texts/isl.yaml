@@ -1,0 +1,22 @@
+language: isl
+texts:
+  - content: "Af hverju tifar klukkan svona lágt í horninu? Glugginn er lokaður. Samt hreyfist blaðið á borðinu."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Ég fann ekki litla burstann í skúffunni. Liturinn hafði þornað á brún pappírsins."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Lokaðu krukkunni varlega og settu hana aftur á hilluna. Þurrkaðu síðan borðið með hreinum klút."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Ef vindurinn lægði, myndi peysan þorna fyrr. Herbergið yrði líka hlýrra."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Um kvöldið ilmaði eldhúsið af ristuðu brauði. Bolli stóð einn við vaskinn. Úti dofnaði birtan hægt."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

@@ -1,0 +1,22 @@
+language: kan
+texts:
+  - content: "ಚಿಕ್ಕ ದೀಪವು ಕಿಟಕಿಯ ಬಳಿಯಲ್ಲಿ ಏಕೆ ಮಿನುಗುತ್ತಿದೆ? ಮೇಜಿನ ಮೇಲೆ ತೆರೆದ ಪತ್ರವಿದೆ. ತೆರೆ ನಿಧಾನವಾಗಿ ಅಲುಗಾಡುತ್ತದೆ."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "ನನಗೆ ಹಳೆಯ ಕೀಲಿ ಪೆಟ್ಟಿಗೆಯಲ್ಲಿ ಸಿಗಲಿಲ್ಲ. ಒಳಗೆ ಚಿಕ್ಕ ಬಿಳಿ ದಾರ ಮಾತ್ರ ಇತ್ತು."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "ಕಪ್‌ಗಳನ್ನು ನಿಧಾನವಾಗಿ ತೊಳೆದು ಮತ್ತೆ ಶೆಲ್ಫ್ ಮೇಲೆ ಇಡು. ನಂತರ ಮೇಜಿನ ನೀರಿನ ಗುರುತುಗಳನ್ನು ಒರೆಸು."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "ಮಳೆ ನಿಂತರೆ, ಅಂಗಳ ಬೇಗ ಒಣಗುತ್ತದೆ. ಚಪ್ಪಲಿಗಳಿಗೆ ಹೆಚ್ಚು ಕೆಸರು ಅಂಟುವುದಿಲ್ಲ."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "ಸಂಜೆ ಅಡಿಗೆಮನೆಯಲ್ಲಿ ಶುಂಠಿಯ ವಾಸನೆ ತುಂಬಿತು. ಪಾತ್ರೆಯ ಮುಚ್ಚಳ ನಿಧಾನವಾಗಿ ಕದಿಯಿತು. ಮನೆ ಮೌನವಾಗತೊಡಗಿತು."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

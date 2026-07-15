@@ -1,0 +1,22 @@
+language: ell
+texts:
+  - content: "Γιατί τρίζει τόσο χαμηλά το συρτάρι; Το τραπέζι είναι καθαρό. Ένα κουμπί γυαλίζει δίπλα στο πιάτο."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Δεν βρήκα το μικρό πινέλο μέσα στο κουτί. Το χρώμα είχε στεγνώσει στην άκρη του χαρτιού."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Αν το φως ήταν πιο δυνατό, το γράμμα θα διαβαζόταν εύκολα. Τα μάτια δεν θα κουράζονταν τόσο."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Στο ράφι περίμενε ένα μπολ με ξηρούς καρπούς. Η πετσέτα δίπλα του μύριζε καθαριότητα."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Το βράδυ, ο διάδρομος γέμισε με ζεστή σιωπή. Μια ομπρέλα στέγνωνε κοντά στην πόρτα. Το πάτωμα έλαμπε αχνά."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

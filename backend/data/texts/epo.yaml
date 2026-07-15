@@ -1,0 +1,22 @@
+language: epo
+texts:
+  - content: "Kial la horloĝo subite silentis? Sur la breto staras tri malpezaj tasoj. Tra la pordo venas odoro de freŝa sapo."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Mi ne trovis la verdan krajonon en la sako. Sub la tablo kuŝis nur faldita bileto."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Se la fenestro restus fermita, la ĉambro varmiĝus pli rapide. La plantoj ne tremus pro la vento."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "La kovrilo estis lavita antaŭ la vespero. Poste ĝi estis pendigita apud la seka mantuko."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Matene la planko brilis post longa purigado. Malgranda korbo atendis apud la sofo. Ĉio aspektis surprize vasta."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

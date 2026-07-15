@@ -1,0 +1,22 @@
+language: ind
+texts:
+  - content: "Mengapa lampu kecil itu berkedip di dekat jendela? Buku catatan terbuka di atas meja. Angin pelan menggerakkan tirai."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Saya tidak menemukan kunci lama di dalam kotak. Di sana hanya ada sepotong kain putih."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Cuci gelas itu perlahan dan taruh kembali di rak. Setelah itu lap bekas air di nampan."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Handuk kecil itu dicuci dengan air hangat. Kemudian digantung di dekat pintu agar cepat kering."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Sore hari, dapur berbau jahe dan nasi hangat. Tutup panci bergetar pelan. Rumah menjadi tenang."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

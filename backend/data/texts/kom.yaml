@@ -1,0 +1,22 @@
+language: kom
+texts:
+  - content: "Мыйла ичӧтик лампа ӧшинь дорын дзирдалӧ? Пызан вылын восьса тетрадь куйлӧ. Зэв ньӧжйӧ тӧв занавескаӧс вӧрзьӧдӧ."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Ме эз аддзы важ ключ коробкаысь. Пыщкӧсас кольӧма сӧмын дженьыдик еджыд нитка."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Чашкаяссӧ ньӧжйӧ мыськы да бӧр сувтӧд полка вылӧ. Сы бӧрын пызан вылысь ва пассӧ чышкы."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Кӧ зэр дугдас, туйыс ӧдйӧ косьмас. Кӧмъяс оз босьтны уна няйт."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Рытнас кухняын шоныд чай дук лолалӧ. Ичӧт кастрюля плита вылын сулалӧ. Керкаыс ньӧжйӧ ланьтӧ."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

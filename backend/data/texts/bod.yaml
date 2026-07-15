@@ -1,0 +1,22 @@
+language: bod
+texts:
+  - content: "ཅིའི་ཕྱིར་སྒོའི་འགྲམ་དུ་སྒམ་ཆུང་ཞིག་བཞག་ཡོད། ནང་དུ་དེབ་གསར་པ་མེད། རས་དཀར་པོ་ཞིག་མ་གཏོགས་མཐོང་མ་སོང།"
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "ངས་དེ་རིང་སྒྲོན་མེ་ཆེན་པོ་མ་སྤར། ཁང་པའི་ནང་ད་དུང་འོད་ཉུང་ཉུང་འདུག།"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "དཀར་ཡོལ་རྣམས་ག་ལེར་བཀྲུས་ནས་སྟེགས་བུའི་སྟེང་ལ་ཞོག། དེ་ནས་ཆུའི་ཤུལ་རྣམས་ཕྱིས།"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "གལ་ཏེ་རླུང་ཞི་ན། གོས་རྣམས་ཕྱི་ལོགས་སུ་མགྱོགས་པོར་སྐམ་ངེས། ང་ཚོས་སྒམ་རྣམས་རྗེས་སུ་སྤོ་ཆོག།"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "ཡི་གེ་ཐུང་ཐུང་ཞིག་ཤོག་བུའི་སྟེང་བྲིས་འདུག། དེ་དེབ་ཆུང་གི་ནང་ལ་བཅུག་འདུག། སྣག་ཚའི་དྲི་མ་ད་དུང་ཡོད།"
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

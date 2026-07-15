@@ -1,0 +1,22 @@
+language: nbl
+texts:
+  - content: "Kubayini itreyi yeenhlalu iseduze kweluko? Iinhlalu ezimbili ziwele phasi. Iwindi elincani livulekele phezulu."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Angikabeki isibuko esincani ekhabetheni. Ngisithole sifihleke ngemva kwesikhwama sendwangu."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Qoqa iinhlalu ezincani bese uzifaka esitsheni esivalekako. Ungavuli isikhwama sombala omnyama."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Nangabe intambo itjhelela, iluko lizakuphuma emgqeni. Sizakuyibopha kabutjha ngaphambi kokuhlwa."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Ibhoksi lezinalidi lavulwa ngokucophelela. Iinalidi zabekwa ngokobude bazo. Isivalo saphindiselwa endaweni yaso."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

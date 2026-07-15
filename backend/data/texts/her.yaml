@@ -1,0 +1,22 @@
+language: her
+texts:
+  - content: "Ongwaye etemba etititi riri ku nyanda? Ombapira yakutukuka iri po metuwa. Ombepo ondjewa iri ku huka mondundu."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Ami hi munine okapaturure kokuru mokakutu. Mo mwa ri okatjise kaperi kose."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Tura omafuta pendje, nu yandja orupapura pehi. Kombanda, koha etuwa norutjise orukukutu."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Nge ombura ya pu, ondjira mai kukuta oruveze orusupi. Ovihuna mbi soku kara mbi hina otjitata otyingi."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Kongurova, ondjuwo yokurira ya hwama ombombo ondjewa. Oruveze rwa kara porumbere. Omuti omutiti wa tengerere pomuvero."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

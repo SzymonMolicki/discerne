@@ -1,0 +1,22 @@
+language: yid
+texts:
+  - content: "פארוואס ליגט דער קליינער לעפל אונטערן טיש? קיינער האט אים נישט געזוכט. אין צימער איז שטיל."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "איך האב נישט געעפנט דאס פענצטער היינט אינדערפרי. דער קאלטער ווינט איז געקומען דורך דער טיר."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "לייג די ריינע טעלער אויפן פאליצע און וויש אוועק די ברעקלעך. לאז נישט דאס גלאז ביים עק."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "אויב די זופּ בלייבט נאך אביסל אויף דער הרובע, וועט זי ווערן בעסער. דער שמעק וועט זיך פארשפרייטן שטילערהייט."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "דער קורצער צעטל איז געשריבן געווארן מיט בלויער טינט. דערנאך איז ער צוזאמענגעפאלט געווארן. מען האט אים געלייגט צווישן בלעטער."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

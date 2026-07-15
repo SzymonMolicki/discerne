@@ -1,0 +1,22 @@
+language: fij
+texts:
+  - content: "Na cava e cila vakamalua kina na cina lailai? E dua na ivola e dola tu ena dela ni teveli. E curu mai e dua na cagi malumu."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Au sega ni kunea na ki makawa ena kato. E tiko ga kina e dua na tiki ni isulu savasava."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Savata vakamalua na bilo ka biuta tale ena vatavata. Oti qai qusia na wai ena dela ni teveli."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Na ibe lailai a savati ena wai katakata. E qai vakamamacataki ena yasa ni katuba."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Ena yakavi, e boi vinaka na kakana katakata mai valenikuro. Na kuro e yavala vakalailai. E vakanomodi na loma ni vale."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

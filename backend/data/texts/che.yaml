@@ -1,0 +1,22 @@
+language: che
+texts:
+  - content: "ХӀунда цхьа жима лампа кхин а цӀаьрга йоьлху? Стол тӀехь цхьа кехат схьаелла латта. Коьрта йистехула хьуьн хийла ду."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Со шенна гӀирс лаьттачу яьшка чохь карийна вац. Чохь цхьа бӀаьргашна йоьлхуш хийла хьажкӀа мара яцара."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Коса шен-шена чуьра дӀачуьйса, полка тӀе дӀаехка. ТӀаккха стол тӀера хий дӀадаккха."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "ДогӀа сацахь, некъ сихха кхушур бу. ТӀаккха когашна лой цӀеххьана йоцур яра."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Сарахь кухне чохь имбирех лаьцна хьожа яра. Кастрюлан когаш текхна лелара. ЦӀа юкъара шорта дуьйладелира."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

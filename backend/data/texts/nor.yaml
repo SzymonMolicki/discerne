@@ -1,0 +1,22 @@
+language: nor
+texts:
+  - content: "Hvorfor blinker den lille lampen ved vinduet? Notatboken ligger åpen på bordet. Gardinen beveger seg nesten ikke."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Jeg fant ikke den gamle nøkkelen i boksen. Inni lå bare en kort hvit tråd."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Vask koppene langsomt og sett dem tilbake på hyllen. Tørk deretter vannmerkene av brettet."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Hvis regnet stopper, tørker gårdsplassen raskt. Skoene får ikke så mye gjørme på seg."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Om kvelden luktet kjøkkenet av varm te. En liten kjele stod på komfyren. Huset ble gradvis stille."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

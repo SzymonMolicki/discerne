@@ -1,0 +1,22 @@
+language: lit
+texts:
+  - content: "Kodėl maža lempa mirksi prie lango? Ant stalo guli atverstas sąsiuvinis. Užuolaida juda beveik nepastebimai."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Seno rakto dėžėje neradau. Viduje liko tik trumpas baltas siūlas."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Lėtai išplauk puodelius ir padėk juos atgal į lentyną. Tada nuvalyk vandens žymes nuo padėklo."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Jei lietus liautųsi, kiemas greitai išdžiūtų. Batai neprisirinktų tiek purvo."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Vakare virtuvėje kvepėjo šilta arbata. Mažas puodas stovėjo ant viryklės. Namai pamažu nutilo."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

@@ -1,0 +1,22 @@
+language: eus
+texts:
+  - content: "Zergatik geratu da ate txikia erdi irekita? Haize finak paperak mugitzen ditu mahai gainean. Aulkia isilik dago hormaren ondoan."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Ez dut koaderno urdina apalean aurkitu. Orrialde solte bat zegoen saski barruan."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Euria lehenago geldituko balitz, bidea azkarrago lehortuko litzateke. Oinetakoak ez lirateke hain lokaztuko."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Edalontziak ur epelarekin garbitu ziren. Gero trapu zuri baten gainean jarri ziren."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Arratsaldean ogi txigortuaren usaina zabaldu zen sukaldean. Leihoan lurrun mehea bildu zen. Denek apal hitz egiten zuten."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

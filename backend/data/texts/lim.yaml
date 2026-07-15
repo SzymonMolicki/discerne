@@ -1,0 +1,22 @@
+language: lim
+texts:
+  - content: "Woei knippert dat kleine lampke bie de venster? 't Schrift ligk oape op de taofel. De gardien beweeg mer heel zach."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Ich höb de awwe sleutel neet in de doos gevónje. Dao laog mer ein kort wit draodje in."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Was de taske rustig aaf en zet ze trök op de plank. Veeg daonao de waotersjtraope van 't blad."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Es de raegen ophöldj, dreugt de plaots gauw op. De sjoon kriege dan neet zoe väöl modder."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Tege de aovend rook de keuken nao warme thee. Ein lepel laog naeve de spoelbak. 't Hoes waor stillekes kalm."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

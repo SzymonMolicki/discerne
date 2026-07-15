@@ -1,0 +1,22 @@
+language: ton
+texts:
+  - content: "Ko e hā ʻoku ʻataʻatā ai ʻa e sea ʻi he veʻe matapā? ʻOku kei māfana ʻa e ipu inu. ʻOku to ʻa e maama vaivai ki he fala."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Naʻe ʻikai ke u tuku ʻa e meʻa fua ʻi he puha. Naʻe ʻi loto pē ha konga pepa molū."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Fakamaʻa ʻa e laulau pea fakafoki ʻa e ngaahi peleti ki he funga fata. ʻOua ʻe tuku ʻa e ipu ofi ki he tapa."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Kapau ʻe mālie ange ʻa e ʻea efiafi, te tau fakaava ʻa e matapā ki mui. ʻE ʻalu māmālie ʻa e nanamu vela."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Naʻe faʻo ʻa e tohi nounou ki he ʻuufi pepa. Naʻe toki tuku ia ʻi he loto kato. Naʻe kei mālohi ʻa e līpine ʻi tuʻa."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

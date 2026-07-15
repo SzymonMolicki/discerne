@@ -1,0 +1,22 @@
+language: lat
+texts:
+  - content: "Cur parva lucerna ad fenestram tremit? Liber apertus in mensa iacet. Velum levi aura movetur."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Clavem veterem in arca non inveni. Intus tantum breve filum album manebat."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Pocula lente lava et in pluteum repone. Deinde vestigia aquae de tabula terge."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Si imber cesset, area cito siccescat. Calcei minus luti ferant."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Vespere culina panem calidum olebat. Cochlear iuxta catinum manebat. Domus paulatim tacebat."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

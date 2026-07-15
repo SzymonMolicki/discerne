@@ -1,0 +1,22 @@
+language: uzb
+texts:
+  - content: "Nega yupqa ro'mol tokchada qolib ketdi? Xona hali salqin. Deraza oldida qurigan gul yaprog'i turibdi."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Men eski qoshiqni idishda ko'rmadim. Ichida faqat ozgina un qolgan edi."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Piyolalarni sekin yuving va sochiq ustiga teskari qo'ying. Stol chetiga shisha idishni qo'ymang."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Agar shamol tushdan keyin tinchisa, gilam tezroq quriydi. Keyin uni xonaga qaytaramiz."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Qisqa xabar oq qog'ozga yozildi. Keyin qog'oz ehtiyotkorlik bilan buklandi. U kichik qutiga solindi."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

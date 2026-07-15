@@ -1,22 +1,22 @@
 language: deu
 texts:
-  - content: "Nach dem Regen roch der Gehweg nach feuchten Blättern. In einer kleinen Bäckerei ging früh das Licht an, bevor die Straße richtig erwachte."
+  - content: "Weshalb summt die Lampe über dem Schreibtisch so leise? Die Mappen liegen sortiert, doch die Schatten zittern an der Wand. Im Flur riecht es nach warmer Farbe."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Das Paket kam nicht am Vormittag an. Die Nachbarin stellte die Pflanzen zurück ans Fenster und wartete weiter."
     sentence_count: 2
     license: "Project-owned"
     approved: true
-  - content: "Ein Kind legte Buntstifte ordentlich auf den Tisch. Die erste Zeichnung zeigte einen ruhigen Garten und einen schiefen Zaun."
+  - content: "Wenn der Stoff dünner wäre, ließe sich der Mantel leichter flicken. Die Nähte würden fast unsichtbar bleiben."
     sentence_count: 2
     license: "Project-owned"
     approved: true
-  - content: "Die alte Uhr im Flur blieb kurz vor Mittag stehen. Niemand bemerkte es, bis das Haus ungewöhnlich still wurde."
+  - content: "Die leeren Flaschen wurden nach Farben sortiert. Danach wurde der Korb an die Wand geschoben, damit der Boden frei blieb."
     sentence_count: 2
     license: "Project-owned"
     approved: true
-  - content: "Heiße Suppe dampfte in einer tiefen Schale. Jemand legte frisches Brot daneben und schloss das Küchenfenster."
-    sentence_count: 2
-    license: "Project-owned"
-    approved: true
-  - content: "Bei Dämmerung wurde der Weg am Wasser leer. Ein feiner Nebel stieg langsam auf und machte das Licht der Laternen weich."
-    sentence_count: 2
+  - content: "Im Treppenhaus roch es nach nassem Stein. Eine Tasche stand neben dem Geländer. Von oben fiel warmes Licht auf die Stufen."
+    sentence_count: 3
     license: "Project-owned"
     approved: true

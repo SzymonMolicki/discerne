@@ -1,0 +1,22 @@
+language: nav
+texts:
+  - content: "Haʼátʼííshąʼ bíighahgi chʼíníłtłʼizhii bikʼijįʼ naashá? Naaltsoos bikááʼ dah sinil. Níyol łikanígíí tłʼóóʼdi yílwoł."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Sháłchínígíí bįįh góyaa naasháa da. Tʼááłáʼí bitsįʼ yishtłizhígíí baa nináházʼą́."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Tó bikááʼígíí bikʼehgo bił dah niníłʼį́. Dóó bikááʼgi tó yishtłizhígíí bee náhástʼį́."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Náátsʼíílid bikʼehgo tʼááłáʼígo naʼníłkaad. Tłʼoh bikááʼ kʼehgo doo haʼátʼíí da."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Chʼíníłtłʼizhii bił naashágo hooghan biyiʼ łikan. Łééchąąʼí bikááʼgi dah sinil. Tʼáadoo leʼégo shínaaí nitsékees."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

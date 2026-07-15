@@ -1,0 +1,22 @@
+language: oci
+texts:
+  - content: "Perqué la pichona lampa tremola près de la fenèstra? Lo quasèrn es dobèrt sus la taula. Lo ridèu bolega plan doçament."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Ai pas trobat la vièlha clau dins la boita. Dedins demorava sonque un fil blanc cort."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Lava los veires lentament e torna los metre sus l'estatja. Puèi eissuga las marcas d'aiga del platèu."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Se la pluèja s'arrestava, lo pati secariá lèu. Las cauçaduras prendrián pas tant de fanga."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Lo ser, la cosina flairava lo pan caud. Una culhièr demorava près de l'aiguièr. L'ostal venguèt pauc a pauc silenciós."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

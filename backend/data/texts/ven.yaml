@@ -1,0 +1,22 @@
+language: ven
+texts:
+  - content: "Ndi ngani tshitulu tshituku tshi tsini na vothi? Fhasi ho no oma. Kha thebulu hu na tshifhinga tsha khaphu tshi si na tshithu."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "A thi ngo wana khii ya kale kha bokisi. Ngomu ho sala thambo pfufhi fhedzi."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Vhea zwibya kha shelefu nga vhulenda, u kone u phumule madi. U songo sia ngilasi tsini na lumeme."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Arali mvula ya ima nga matsheloni, zwiambaro zwi do oma nga u tavhanya. Ri do zwi peta nga madekwana."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Mulaedza mupfufhi wo nwalwa kha bammbiri litshena. Nga murahu bammbiri lo petwa zwavhudi. Lo vhewa vhukati ha bugu."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

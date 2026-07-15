@@ -1,0 +1,22 @@
+language: bos
+texts:
+  - content: "Zašto se mala vrata ormara sama otvaraju? Šarka tiho škripi. Na polici stoji zdjela puna suhih listova."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Nisam našao tanku četku u kutiji. Boja se već osušila, ali stol je ostao čist."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Zatvori prozor prije nego što se soba ohladi. Onda složi deku preko naslona stolice."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Kad bi peć grijala slabije, cvijeće na polici ne bi venulo. Zrak bi bio ugodniji za čitanje."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "U hodniku je mirisalo na mokre cipele i sapun. Kišobran se sušio kraj zida. Svjetlo je padalo preko pločica."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

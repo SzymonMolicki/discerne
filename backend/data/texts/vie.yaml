@@ -1,0 +1,22 @@
+language: vie
+texts:
+  - content: "Vì sao chiếc khăn mỏng nằm cạnh cửa? Sàn nhà đã khô. Trên kệ còn một hộp giấy mở nắp."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Tôi không đặt cây bút cũ vào ngăn kéo. Bên trong chỉ có một mảnh dây nhỏ."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Rửa bát nhẹ tay rồi úp chúng lên khăn sạch. Đừng kéo ghế sát mép bàn."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Nếu trời bớt gió vào chiều nay, tấm chăn sẽ khô nhanh hơn. Khi đó căn phòng cũng thơm hơn."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Mẩu giấy nhỏ được gấp lại cẩn thận. Sau đó nó được đặt vào giữa quyển sổ. Mùi mực vẫn còn rất nhẹ."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

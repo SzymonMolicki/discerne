@@ -1,0 +1,22 @@
+language: kur
+texts:
+  - content: "Çima çiraya biçûk li rex pencereyê dibiriqe? Defterek vekirî li ser maseyê ye. Perde bi bayê hêdî digere."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Min kilîta kevn di qutiyê de nedît. Tenê perçeyek tayê spî lê mabû."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Piyaleyan hêdî bişo û wan vegerîne ser refê. Paşê şopa avê ji ser tepsiyê paqij bike."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Heke baran raweste, hewş zû hişk dibe. Pêlav jî gelek heriyê nagirin."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Êvarê metbex bêhna nanê germ dida. Kevçiyek li kêleka firaxê mabû. Mal hêdî hêdî bêdeng bû."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

@@ -1,0 +1,22 @@
+language: ita
+texts:
+  - content: "Perché la piccola lampada vibra vicino alla finestra? Il quaderno è aperto sul tavolo. Una tenda sottile si muove piano."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Non ho trovato la vecchia chiave nella scatola. Dentro c'era solo un breve filo bianco."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Lava i bicchieri con calma e rimettili sul ripiano. Poi asciuga il vassoio con il panno pulito."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Gli asciugamani sono stati lavati con acqua tiepida. Poi sono stati appesi vicino alla porta."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "La sera, la cucina profumava di pane caldo. Un cucchiaio restava accanto al lavello. La casa diventava silenziosa."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

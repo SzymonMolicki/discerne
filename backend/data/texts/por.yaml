@@ -1,0 +1,22 @@
+language: por
+texts:
+  - content: "Porque a pequena lâmpada pisca junto à janela? O caderno está aberto sobre a mesa. A cortina mexe-se devagar."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Não encontrei a chave antiga dentro da caixa. Lá dentro ficou apenas um fio branco curto."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Lava os copos com calma e volta a colocá-los na prateleira. Depois limpa as marcas de água no tabuleiro."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Se a chuva parasse, o pátio secaria depressa. Os sapatos não ficariam tão cheios de lama."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "À noite, a cozinha cheirava a chá quente. Uma colher ficou junto ao lava-loiça. A casa tornou-se silenciosa aos poucos."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

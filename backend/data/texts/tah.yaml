@@ -1,0 +1,22 @@
+language: tah
+texts:
+  - content: "Nō te aha e hāmama noa ai te ha'amāramarama i te pō? Ua topa te ahu māmā i ni'a i te pārahiraa. Te haere mālie ra te hau i roto i te piha."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Aita vau i tu'u i te ipu pape i raro i te iri. Te vai ra hoê punu iti noa i reira."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "A tapiri i te 'ūputa, e a ha'aputu i te mau pāpie i roto i te pūtē. Eiaha e vaiiho i te reira i ni'a i te tahua."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Mai te peu e marū te mata'i āpōpō, e marō vave te ahu i rapae. E nehenehe hoʻi te fare e hau atu i te mā."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Ua pāpa'ihia te parau poto i ni'a i te 'api mā. I muri iho, ua tu'uhia te 'api i roto i te buka. Ua marō te inita i muri a'e."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

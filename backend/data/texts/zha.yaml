@@ -1,0 +1,22 @@
+language: zha
+texts:
+  - content: "Geizgwnq maz miz faenx neix mbouj? Daengzndoengq ndaw ranz dwg sim. Raemx ndeu miz youq gwnz daiz."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Gou mbouj raen cawx ndeu youq ndaw hap. Ndaw de miz riengz ndeu raeuz caemh."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Cingj ndaej bouxgwnz daiz, couh sawq raemx youq gwnz. Mbouj yungh bawxgwnz gyangh gwnz."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Daengzngoenz mbwn rongh, faex byaij couh gonq. Raeuz caemh ndaej hawj ndaw ranz siengq."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Saw ndeu daj nyienh youq gwnz ciengz. Aen ciengz couh hap hwnj. De miz youq gwnz bonj."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

@@ -1,0 +1,22 @@
+language: mar
+texts:
+  - content: "लहान दिवा खिडकीजवळ का लुकलुकतो आहे? टेबलावर उघडी वही पडली आहे. पडदा हळूच हलतो आहे."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "मला जुनी किल्ली डब्यात सापडली नाही. आत फक्त पांढऱ्या दोऱ्याचा छोटा तुकडा होता."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "कप हळू धुऊन परत कपाटात ठेव. मग ट्रेवरील पाण्याचे डाग पुस."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "पाऊस थांबला तर अंगण लवकर सुकते. चपलांना जास्त चिखल लागणार नाही."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "संध्याकाळी स्वयंपाकघरात आल्याचा वास पसरला. भांड्याचे झाकण हलके खडखडले. घर हळूहळू शांत झाले."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

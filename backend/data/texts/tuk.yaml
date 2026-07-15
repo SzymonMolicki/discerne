@@ -1,0 +1,22 @@
+language: tuk
+texts:
+  - content: "Näme üçin kiçi gapyçak açyk galdy? Otagda hiç kim ýokdy. Penjiräniň öňünde gurak ýaprak dur."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Men köne depderi tekjede tapmadym. Onuň ýerine diňe inçe galam ýatyrdy."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Çäýnegi ýuwaşja stola goý we gapagy berk ýap. Ýyly suw bilen seresap bol."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Eger bulutlar açylsa, düşekler günortana çenli gurar. Soňra otagda täze ys bolar."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Kiçi bellik arassa kagyza ýazyldy. Soňra ol kitap arasynda goýuldy. Syýanyň ysy entek gitmändi."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

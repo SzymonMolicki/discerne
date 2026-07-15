@@ -1,0 +1,22 @@
+language: zul
+texts:
+  - content: "Kungani ithawula elincane liseduze komnyango? Phansi sekumile. Etafuleni kukhona ipuleti elingenalutho."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Angiyitholanga incwadi endala eshalofini. Ngibone iphepha eligoqiwe kuphela phakathi."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Geza izinkomishi kancane bese uzibeka phezu kwendwangu ehlanzekile. Ungashiyi amanzi phansi."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Uma amafu evuleka ntambama, ingubo izoma ngokushesha. Sizoyibuyisela ekamelweni kamuva."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Umlayezo omfushane wabhalwa ngepensela. Ngemva kwalokho iphepha lagoqwa ngokucophelela. Lafakwa phakathi kwencwadi encane."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

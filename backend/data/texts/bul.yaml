@@ -1,0 +1,22 @@
+language: bul
+texts:
+  - content: "Защо малката лампа премигва до леглото? Книгата е отворена на последната страница. От коридора идва мирис на сапун."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Не намерих синята чаша в шкафа. Тя стоеше до мивката, пълна с хладка вода."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Премести стола по-близо до масата и отвори тетрадката. После остави молива върху чистата страница."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Ако вятърът утихне, завесите ще спрат да се движат. Стаята ще изглежда по-топла."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "В мазето миришеше на дърво и студена пръст. По рафта имаше буркан с копчета. Стъпките звучаха глухо."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

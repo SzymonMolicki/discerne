@@ -1,0 +1,22 @@
+language: pli
+texts:
+  - content: "कस्मा खुड्डदीपो वातपानसमीपे कम्पति? पोत्थको मेजस्मिं विवटो तिट्ठति। पटो मन्दवातेन चलति।"
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "अहं पुराणं कुञ्चिकं पेटिकायं न अद्दसं। अन्तो केवलं ओदातं सुत्तं अवसिस्सि।"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "पात्रानि सणिकं धोवित्वा पुन पाटियं ठपेहि। ततो उदकरेखं पटेन पमज्ज।"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "सचे मेघो उपरमेय्य, अङ्गणं खिप्पं सुक्खेय्य। पादुका बहुं कललं न गहेय्युं।"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "सायं पाकसालायं उण्हचायगन्धो अहोसि। खुड्डकं भाजनं अग्गिसमीपे अट्ठासि। गेहं सणिकं तुण्ही अहोसि।"
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

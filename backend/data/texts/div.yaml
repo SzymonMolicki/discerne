@@ -1,0 +1,22 @@
+language: div
+texts:
+  - content: "މި ކުޑަ ބައްތިވެލި ހީވަނީ ކީއްވެ ފިލާތޯ؟ މޭޒު މަތީގައި ފޮތެއް ހުޅުވިފައި އެބައިން. ދޮރު ކައިރީގައި ހިމޭން ވަޔެއް ދަނީ."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "އަހަރެން ކުޑަ ތަޅުދަނޑި ފޮށީގައި ނުފެނުނު. އެތެރޭގައި ހުރީ އެއް ރީތި ފޮތި ކޮޅެއް."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "ތަށިތައް ހެމުން ދޮވެ ރޭކަށް ލާށެވެ. ދެން މޭޒު މަތީ ހުންނަ ފެން ފޮހެލާށެވެ."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "ފެން ވެއްޓުނު ތަން ފޮހެލެވުނު. ދެން ކަނޑުގައި ފޮތިތައް ރީތިކޮށް ލެވުނު."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "ހަވީރު ކާނާގޭގައި އަލަށް ހެދި ބަތުގެ ވަސް އެބައަރާ. ތަށި މަތީ ފިނި ދުމެއް ހުރި. ގޭތެރެ ހިނިތުން ވި."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

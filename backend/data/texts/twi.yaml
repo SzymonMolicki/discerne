@@ -1,0 +1,22 @@
+language: twi
+texts:
+  - content: "Adɛn nti na kanea ketewa no da so rehyerɛn wɔ pono no ho? Mframa bɔ fɛfɛɛfɛ. Krataa fitaa bi gu fam."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Mannya safe dedaw no wɔ adaka no mu. Mede me nsa kaa ahama tuntum ketewa bi nko ara."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Fa kuruwa no to baabi a ɛhɔ yɛ dɛ na pepa nsu no. Mma mmofra no mfa wɔn nan nnantew wɔ hɔ."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Sɛ osu no gyae anɔpa a, ntama no bɛwo ntɛm. Yɛbɛtumi de apampam no asie akyiri yi."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Wɔkyerɛw asɛm tiawa no wɔ krataa tuntum so. Afei wɔbobɔɔ no brɛoo. Wɔde hyɛɛ nhoma ketewa no mu."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

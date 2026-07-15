@@ -1,0 +1,22 @@
+language: ron
+texts:
+  - content: "De ce pâlpâie lampa mică lângă fereastră? Caietul stă deschis pe masă. Perdeaua se mișcă abia vizibil."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Nu am găsit cheia veche în cutie. Înăuntru rămăsese doar un fir alb scurt."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Spală cănile încet și pune-le la loc pe raft. Apoi șterge urmele de apă de pe tavă."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Dacă ploaia s-ar opri, curtea s-ar usca repede. Pantofii nu s-ar umple de noroi."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Seara, bucătăria mirosea a ceai cald. O oală mică stătea pe aragaz. Casa devenea liniștită treptat."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

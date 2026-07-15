@@ -1,0 +1,22 @@
+language: amh
+texts:
+  - content: "ይህ ትንሽ መብራት ለማንበብ ይበቃል? ወረቀቱ በጠረጴዛው ላይ ቀስ ብሎ ተንቀሳቀሰ። ከመስኮቱ አጠገብ ነፋስ ገባ።"
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "የቁልፉን ቦታ አላስታወስኩም። በትንሽ ሳጥን ውስጥ ጥቂት ክሮች ብቻ ነበሩ።"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "ሳህኖቹን በጥንቃቄ አድርግ። ከዚያ እጅህን አጠብ እና ጠረጴዛውን አጽዳ።"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "ዝናቡ ቢቆም መንገዱ ፈጥኖ ይደርቃል። ሰዎቹም ወደ ውጭ በደስታ ይወጣሉ።"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "በማታ ወቅት ቤቱ በጣም ጸጥ አለ። በማዕድ ቤት ውስጥ ውሃ ቀስ ብሎ ፈላ። የሻይ ሽታ ተሰማ።"
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

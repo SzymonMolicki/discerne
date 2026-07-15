@@ -1,0 +1,22 @@
+language: bre
+texts:
+  - content: "Perak e chom ar prenestr bihan digor? Ar gouloù a gouezh war ar solier kozh. Ur paper plegennet a vrall war an daol."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Ne gavjen ket an alc'hwez er voest. Un neuden wenn hepken a oa chomet e-barzh."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Lak ar skudell war an daol ha serr ar sac'h. Goude-se, diverk ar roudoù dour gant ul lien sec'h."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Ma vije siouloc'h ar straed, e c'hallfen lenn pelloc'h. Ar c'hador a chomfe tost d'ar prenestr."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Da noz, e c'hwezh ar gegin ouzh avaloù poazh. Ar pod bras a chom war an tan. Ar familh a gomz izel."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

@@ -1,0 +1,22 @@
+language: kor
+texts:
+  - content: "작은 등이 왜 창가에서 깜빡일까? 책상 위에는 접힌 편지가 놓여 있다. 커튼은 거의 움직이지 않는다."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "나는 상자 안에서 오래된 열쇠를 찾지 못했다. 안에는 짧은 흰 실만 남아 있었다."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "컵을 천천히 씻고 선반 위에 다시 놓아라. 그런 다음 쟁반의 물자국을 닦아라."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "비가 그치면 마당은 빨리 마를 것이다. 신발에도 진흙이 많이 묻지 않을 것이다."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "저녁에는 부엌에서 생강 냄새가 났다. 냄비 뚜껑이 가볍게 떨렸다. 집 안은 조금씩 조용해졌다."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

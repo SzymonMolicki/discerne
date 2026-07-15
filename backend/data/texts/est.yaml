@@ -1,0 +1,22 @@
+language: est
+texts:
+  - content: "Miks seisab tass aknalaual tagurpidi? Klaasil on üks väike veetilk. Toa nurgas kuivab hall vihmavari."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Ma ei leidnud õhukest nõela karbist. Põhjas olid ainult kaks nööpi ja lühike niit."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Kui ahi soojeneks kiiremini, saaks leib varem valmis. Köök lõhnaks juba enne õhtut magusalt."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Akna all olevad taimed kasteti hommikul. Hiljem tõsteti nad varju, et lehed ei kuivaks."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Õhtul kostis koridorist madal sumin. Lambivari oli veidi viltu. Keegi jättis toolile villase salli."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

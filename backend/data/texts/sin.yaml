@@ -1,0 +1,22 @@
+language: sin
+texts:
+  - content: "කුඩා පහන ජනේලය අසල ඇයි මිනිමිනි කරන්නේ? මේසය මත විවෘත පොතක් තියෙයි. තිරය හෙමින් සෙලවේ."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "මට පැරණි යතුර පෙට්ටියේ හමු නොවුණි. ඇතුළේ තිබුණේ කෙටි සුදු නූලක් පමණි."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "කෝප්ප සෙමින් සෝදා නැවත රාක්කයට තබන්න. ඉන්පසු තැටියේ ජල ලකුණු පිස දමන්න."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "වැස්ස නතර වුවහොත් මිදුල ඉක්මනින් වියළෙයි. සපත්තු වලට බොහෝ මඩ නොඇලේ."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "සවස මුළුතැන්ගෙයි උණු තේ සුවඳ පැතිරුණි. කුඩා භාජනයක් උදුන මත තිබුණි. ගෙය ටිකෙන් ටික නිහඬ විය."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

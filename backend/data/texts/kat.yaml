@@ -1,0 +1,22 @@
+language: kat
+texts:
+  - content: "რატომ ჩერდება პატარა საათი ასე ხშირად? მაგიდაზე გახსნილი რვეული დევს. ფანჯარასთან თეთრი ფარდა ნელა ირხევა."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "ძველი გასაღები ყუთში ვერ ვიპოვე. შიგნით მხოლოდ მოკლე ძაფი იყო დარჩენილი."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "თუ წვიმა შეწყდება, ეზო სწრაფად გაშრება. ფეხსაცმელიც ნაკლებ ტალახს აიკრავს."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "თუ კარი უფრო ჩუმად დაიხურებოდა, ოთახი მშვიდად დარჩებოდა. კითხვა აღარ შეწყდებოდა."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "საღამოს სამზარეულოში თბილი პურის სუნი იდგა. თეფშები სუფთა რიგად ეწყო. კედელზე ჩრდილი ნელა გრძელდებოდა."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

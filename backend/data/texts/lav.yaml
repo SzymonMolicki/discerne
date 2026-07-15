@@ -1,0 +1,22 @@
+language: lav
+texts:
+  - content: "Kāpēc mazā lampa mirgo pie loga? Uz galda guļ atvērta burtnīca. Aizkars kustas pavisam lēni."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Es neatradu veco atslēgu kastē. Iekšā bija palicis tikai īss balts diegs."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Nomazgā krūzes lēnām un noliec tās atpakaļ plauktā. Pēc tam noslauki ūdens pēdas no paplātes."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Ja lietus beigtos, pagalms ātri izžūtu. Kurpes nepieliptu ar tik daudz dubļiem."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Vakarā virtuvē smaržoja silta tēja. Uz plīts stāvēja mazs katls. Māja pamazām kļuva klusa."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

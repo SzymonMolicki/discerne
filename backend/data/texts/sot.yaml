@@ -1,0 +1,22 @@
+language: sot
+texts:
+  - content: "Hobaneng lefielo le lekgutshwane le itshetlehile ka kgato ya lejwe? Lerole le bokane pela lona. Ka hodimo ho kgato ho na le letshwao le lesesane."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Ha ke a pata letsopa ka tlasa benche. Ke fumane bolo e nyane ya lona e omme pela pitsa."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Kgaola thapo e telele ka dikarolo tse pedi, mme o di behe hodima lebokose. O se ke wa kopanya dikarolo tseo hape."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Ha lebone le ka tima hape, re tla sebetsa pela fensetere. Lesedi la motshehare le tla lekana."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Letshwao le letjha le ile la kgomaretswa hodima lebokose. La hatellwa ka seatla se ommeng. Sekwahelo sa lona sa dula se kwetswe."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

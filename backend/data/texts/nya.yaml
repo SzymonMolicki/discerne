@@ -1,0 +1,22 @@
+language: nya
+texts:
+  - content: "N'chifukwa chiyani dengu la chimanga lili pafupi ndi khoma? Masamba ake auma kwambiri. Pansi pali njere zitatu zokhazokha."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Sindinayale nsalu ya tebulo masana. Inapezeka m'mwamba mwa chitseko, itamangiriridwa ndi chingwe."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Bweretsani mbale yakuya ndipo muike mkate wouma mkati. Musagwiritse ntchito mpeni wosongoka pano."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Ngati nkhuni zanyowa, moto udzachedwa kuyaka. Tidzadikirira mpweya utatentha pang'ono."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Chisoti cha udzu chinapachikidwa pamthunzi. Mphepete yake inakonzedwa ndi singano yaing'ono. Munthu wina anasiya ulusi pansi."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

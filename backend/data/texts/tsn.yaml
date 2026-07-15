@@ -1,0 +1,22 @@
+language: tsn
+texts:
+  - content: "Ke eng fa kobo e le mo setulong se se kwa morago? Lebati le tswetswe sentle. Mo tafoleng go sa ntse go na le kopi e e se nang sepe."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Ga ke a ka ka bona sekere mo laeng. Ke fitlhetse pampiri e nnye fela fa thoko ga dibuka."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Phutha dikobo pele o bula fensetere. Se tlogele dieta tse di metsi mo gare ga tsela."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Fa letsatsi le ka tlhaga gape, diaparo di tla oma ka bonako. Re tla kgona go di baya mo rakaeng pele ga bosigo."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Molaetsa o mokhutshwane o ne wa kwalwa mo pampiring e tshweu. Morago ga moo wa tsenngwa mo bukeng. Pene e ne ya bewa kwa thoko."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

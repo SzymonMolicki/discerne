@@ -1,0 +1,22 @@
+language: mlg
+texts:
+  - content: "Nahoana ilay jiro kely no mitsilopilopy eo akaikin'ny varavarankely? Misokatra eo ambony latabatra ny kahie. Mihetsika moramora ny lamba manify."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Tsy hitako tao anaty boaty ilay fanalahidy taloha. Tady fotsy fohy ihany no tavela tao."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Sasao moramora ireo kaopy ary avereno eo amin'ny talantalana. Avy eo fafao ny soritry ny rano eo amin'ny lovia."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Raha mijanona ny orana, ho maina haingana ny tokotany. Tsy hiraikitra fotaka be amin'ny kiraro."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Hariva, namerovero dite mafana ny lakozia. Vilany kely iray no teo akaikin'ny afo. Nangina tsikelikely ny trano."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

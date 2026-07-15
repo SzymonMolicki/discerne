@@ -1,0 +1,22 @@
+language: oji
+texts:
+  - content: "Aaniin wenji-biindigeyaang waasechiganing bangii giizhigad? Mazina'igan apii asemaa onji-bagidinigaade. Noodin biinji-bimose waaboozheyaabikoonsing."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Nimikaawaasii akiikong gaa-izhiwebak waaboozheyaabikoons. Mii eta go memengwaa-mazinaakizon biindig."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Bimiwidoon minikwaganan geyaabi bezhigwan. Giiwedinong ishkwaa, biindig biitoon ishkwaandem."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Gii-pagidinaawaa mitigoon apii ishkwaa-anwebig. Gii-zaaga'igaadewan gegoonan ji-baashkineg."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Onaagoshi-giizhigad, wiigwaasi-makakoon gii-onji-mino-bagidinigaade. Asemaa-noondaagoziwin gii-ayaa biindig. Akiikoon gii-bangishimoog."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

@@ -1,0 +1,22 @@
+language: wym
+texts:
+  - content: "Wir müsa fu der fröed denkia. Dower cyzoma gyłyk sienkia. Maj siaocła kom endłich cy mir."
+    sentence_count: 3
+    license: "CC BY-SA 3.0"
+    approved: true
+  - content: "Güty naocht, güty naocht maj siejn kynd. Güty naocht maj łiw, dü byst waot a zynd."
+    sentence_count: 2
+    license: "CC BY-SA 3.0"
+    approved: true
+  - content: "Śłöf güt, śłöf güt an traojm fu mir. Wen ych śłöfa gej, denk ych fu dir."
+    sentence_count: 2
+    license: "CC BY-SA 3.0"
+    approved: true
+  - content: "Es błajt by mir siun uf inda. Maj traojrigkajt wyt zich enda."
+    sentence_count: 2
+    license: "CC BY-SA 3.0"
+    approved: true
+  - content: "Dejch ken ych fu wajt dajna siejna gaong. Wir weła do es zu błajt. Dos yns ny ej cy baong."
+    sentence_count: 3
+    license: "CC BY-SA 3.0"
+    approved: true

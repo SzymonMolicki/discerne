@@ -1,0 +1,22 @@
+language: oss
+texts:
+  - content: "Цыма цъæх лампæ фæзынди равдисгæ кæны? Стъолыл равзæрд къæмттæ ис. Зæххыл фæлмæн хуыз æмæлд."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Æз нæ федтон зæронд ключы къаппы. Дæлæмæ æрхæццæ кодта цъæх нæлгоймаг."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Чашкæтæ фæлмæнæй ныууадз æмæ полкæмæ фæстæмæ æрæвæр. Уый фæстæ стъолыл дон хæццæ кæн."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Кæд зæнхæ баст уыдзæн, двор рауадздзæн тагъд. Къахдзæвгæтæ фылдæр грязь нæ æрцахсынц."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Изæрмæ кухонæйы хъæздыг цайы дымгæ уыд. Гыццыл кастрюлæ плитæйыл исты. Хæдзар фæлмæнæй суадзырд."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

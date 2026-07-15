@@ -1,0 +1,22 @@
+language: nde
+texts:
+  - content: "Kungani ibhande elimnyama liboshelwe esibayeni esidala? Ibhakede elingenalutho limi eceleni. Phezu kwalo kunothuli oluncane."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Angigoqanga ingubo emanzi ekuseni. Ngiyithole ivulekile phezu kocansi olomile."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Bopha isaka likakolweni ngentambo emfushane bese ulibeka phezulu. Ungalivuli ngaphambi kokuba izandla zome."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Uma isivalo singangena kahle, amanzi ngeke achitheke endleleni. Sizophatha imbiza ngokuqapha."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Umnyango omncane wapendwa ngombala okhanyayo. Womiswa ngaphambi kokuba uthintwe. Isipikili sokugcina safakwa ntambama."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

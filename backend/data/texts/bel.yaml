@@ -1,0 +1,22 @@
+language: bel
+texts:
+  - content: "Чаму тонкая фіранка раптам варухнулася? Акно было зачынена, але ў пакоі адчуваўся халадок. На стале ляжаў чысты аркуш."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Я не знайшоў шклянку на звыклай паліцы. Яна стаяла ў місцы побач з мокрай лыжкай."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Пакладзі ручнік бліжэй да батарэі і распраў куты. Потым правер, ці сухая падлога."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Калі б дзверы зачыняліся цішэй, дзіця спала б даўжэй. У доме было б менш мітусні."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "У шафе пахла мылам і старой паперай. На ніжняй паліцы стаяла пустая скрынка. Вечар павольна цямнеў за шклом."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

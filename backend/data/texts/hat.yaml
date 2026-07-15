@@ -1,0 +1,22 @@
+language: hat
+texts:
+  - content: "Poukisa ti lanp lan ap bat konsa? Gen yon kaye ouvè sou tab la. Van dous antre bò fenèt la."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Mwen pa jwenn ansyen kle a nan bwat la. Te gen sèlman yon moso twal blan andedan."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Si lapli a sispann, lakou a ap seche vit. Soulye yo pap pran twòp labou."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Nan maten, sant kafe cho te plen kwizin nan. Yon tas vid te rete bò recho a."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Aswè a, rido yo t ap danse dousman. Yon chèz te rete anba limyè a. Kay la te vin trankil."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

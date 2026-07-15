@@ -1,0 +1,22 @@
+language: aar
+texts:
+  - content: "Macah tama lafitte saakuuk gexa? Qasaari inti addal qasa le, gubat qadoora sugte. Cadoh hawo baxa baxa tatre."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Anu sidiica kitaab ma geyne. Qangara kaxxa ma hinnay, kinni baxa maktabal sugte."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Sariira gubak saaku elle hayis. Uddur mango hinnay, qasaari inti edde ab."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Ari qawar xiqa iyya, namma bari ciggiila keenih raqta. Away qadoora maxcoh gubat yemeete."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Migaq sinni xaagu buxa addal daffeyte. Qadoora qasaari fanah taturte. Saaku mango nabah akkuk sugte."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

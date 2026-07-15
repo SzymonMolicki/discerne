@@ -1,0 +1,22 @@
+language: ewe
+texts:
+  - content: "Nu ka ta akaɖi sue la le dzɔdzɔm ɖe kplɔ̃ la dzi? Agbalẽ aɖe le eme kple nuŋɔŋlɔ suewo. Ya fa aɖe tso fesre la me va."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Nye menya afi si safui xoxo la le o. Avɔ kɔkɔe sue aɖe ko le agbalẽkɔ la me."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Ne tsi la dzi, mɔ la akɔ kaba. Afɔkpa lawo magatsɔ anyigba geɖe o."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Kɔpɔwo woklɔ kple tsi mekpɔkpɔe. Emegbe wode wo ɖe avɔ kɔkɔe dzi."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Fiẽ la, dze bubu aɖe nɔ xɔme. Kplɔ̃ la ŋu nɔ dzadzɛ. Ameawo nɔ nu ƒom gbe bɔbɔe."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

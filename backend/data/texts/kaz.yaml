@@ -1,0 +1,22 @@
+language: kaz
+texts:
+  - content: "Неге кішкентай шам терезе жанында жыпылықтай береді? Үстелде ашық дәптер жатыр. Перде баяу қозғалады."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Мен ескі кілтті қораптан таппадым. Ішінде тек қысқа ақ жіп қалды."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Кеселерді жайлап жуып, қайта сөреге қой. Содан кейін науадағы су ізін сүрт."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Егер жаңбыр тоқтаса, аула тез кебеді. Аяқ киімге көп балшық жабыспайды."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Кешке асүйден жылы шайдың иісі шықты. Кішкентай қазан пеш үстінде тұрды. Үй біртіндеп тына қалды."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

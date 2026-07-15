@@ -1,0 +1,22 @@
+language: khm
+texts:
+  - content: "ហេតុអ្វីបានជាចង្កៀងតូចនេះភ្លឺៗងងឹតៗ? ក្រដាសមួយសន្លឹកនៅលើតុ។ ខ្យល់ស្រាលចូលតាមបង្អួច។"
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "ខ្ញុំមិនបានឃើញកូនសោចាស់ក្នុងប្រអប់ទេ។ នៅខាងក្នុងមានតែខ្សែពណ៌សមួយប៉ុណ្ណោះ។"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "លាងកែវយឺតៗ ហើយដាក់វាលើធ្នើ។ បន្ទាប់មកជូតតុដោយក្រណាត់ស្ងួត។"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "បើភ្លៀងឈប់ ផ្លូវនឹងស្ងួតលឿន។ ស្បែកជើងនឹងមិនប្រឡាក់ដីច្រើនទេ។"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "ពេលល្ងាច ផ្ទះបាយមានក្លិនខ្ញី។ គម្របឆ្នាំងរង្គើតិចៗ។ បន្ទប់ក្តៅឡើងបន្តិចម្តងៗ។"
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

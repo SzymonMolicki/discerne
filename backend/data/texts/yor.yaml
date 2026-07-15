@@ -1,0 +1,22 @@
+language: yor
+texts:
+  - content: "Kí ló dé tí aṣọ kékeré wà lẹ́gbẹ̀ẹ́ ilẹ̀kùn? Ilẹ̀ ti gbẹ tán. Àwo òfo kan wà lórí tábìlì."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Mi ò rí kọ́kọ́rọ́ àtijọ́ nínú àpótí náà. Okùn funfun kékeré kan ṣoṣo ló wà níbẹ̀."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Fọ́ àwọn ife náà rọra, kí o sì fi wọn sí orí aṣọ tó mọ́. Má fi omi sílẹ̀ lórí ilẹ̀."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Tí afẹ́fẹ́ bá rọ̀ ní ọ̀sán, aṣọ yóò gbẹ yarayara. A ó tún ṣètò yàrá náà lẹ́yìn náà."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Ìwé kékeré kan ni a kọ sórí bébà funfun. Lẹ́yìn náà, a pọ̀ ọ́ díẹ̀díẹ̀. A fi sí abẹ́ ìwé ńlá kan."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

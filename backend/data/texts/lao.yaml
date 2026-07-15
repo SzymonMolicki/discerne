@@ -1,0 +1,22 @@
+language: lao
+texts:
+  - content: "ເປັນຫຍັງໂຄມໄຟນ້ອຍຈຶ່ງກະພິບຢູ່ຂ້າງປ່ອງຢ້ຽມ? ສົມຸດເປີດຢູ່ເທິງໂຕະ. ຜ້າມ່ານຂະຍັບຊ້າໆ."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "ຂ້ອຍບໍ່ພົບກະແຈເກົ່າໃນກ່ອງ. ຂ້າງໃນມີແຕ່ດ້າຍສີຂາວສັ້ນໆ."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "ລ້າງຈອກຊ້າໆ ແລ້ວວາງຄືນໃສ່ຊັ້ນ. ຈາກນັ້ນເຊັດຮອຍນ້ຳເທິງຖາດ."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "ຖ້າຝົນຢຸດ ລານຈະແຫ້ງໄວ. ເກີບຈະບໍ່ຕິດຂີ້ຕົມຫຼາຍ."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "ຕອນແລງ ຫ້ອງຄົວມີກິ່ນຂີງອຸ່ນ. ຝາຫມໍ້ຂະຍັບເບົາໆ. ເຮືອນຄ່ອຍໆງຽບລົງ."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

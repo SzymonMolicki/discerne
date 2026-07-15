@@ -1,0 +1,22 @@
+language: swa
+texts:
+  - content: "Kwa nini kivuli cha pazia kinatetemeka ukutani? Taa ya mezani imezimwa, lakini chumba bado kina mwanga hafifu. Kwenye kona, kiti kimoja kimeachwa wazi."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Sikukumbuka kuweka chumvi karibu na unga. Nilipofungua kabati, niliona bakuli tupu tu."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Panga matunda kwenye sahani na funika mkate kwa kitambaa safi. Usisukume kikombe karibu na ukingo."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Kama upepo utapungua jioni, tutaanika shuka nje kwa muda mfupi. Harufu ya sabuni itaondoka taratibu."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Mchoro mdogo ulibandikwa nyuma ya mlango. Baadaye uliondolewa kwa uangalifu ili ukuta usiharibike. Rangi yake bado inaonekana vizuri."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

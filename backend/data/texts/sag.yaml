@@ -1,0 +1,22 @@
+language: sag
+texts:
+  - content: "Ngbanga ti nyen la lamba kete ake yeke wara tanga tanga? Buku so ayeke yuru na gbe ti tabulu. Pepe kete ake kpe rideau."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Mbi hinga clé ti mbiko pepe na ndako ti sanduku. Na gbe ni, singa pembe kete oko la asigigi."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Sukula kopo so na nduru, na zia i so na etajere. Na pekoni, pika tanga ti ngu na plateau."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Tongana ngu ti zere asara, place ayeke yoro fani fani. Sapatu ayeke buba na poto mingi pepe."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Na lakui, kuisine ayeke na nzoni nduru ti ti chaud. Poto kete ayeke na gbe ti feu. Ndako akoma na siriri."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

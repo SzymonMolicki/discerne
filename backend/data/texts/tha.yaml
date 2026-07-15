@@ -1,0 +1,22 @@
+language: tha
+texts:
+  - content: "ทำไมผ้าผืนเล็กจึงวางอยู่บนเก้าอี้? หน้าต่างปิดสนิทแล้ว. ในห้องยังมีกลิ่นสบู่อ่อนๆ."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "ฉันไม่ได้เก็บช้อนเงินไว้ในลิ้นชัก. ตอนเปิดออกมา มีเพียงกระดาษพับอยู่ข้างใน."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "ล้างแก้วให้สะอาดแล้ววางคว่ำบนผ้าแห้ง. อย่าดันถาดเข้าไปชิดผนังเกินไป."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "ถ้าฝนหยุดก่อนเย็น เราจะย้ายกระถางไปไว้ข้างนอก. ดินคงแห้งเร็วขึ้นเล็กน้อย."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "กล่องไม้ถูกเปิดอย่างระมัดระวัง. เมล็ดแห้งถูกเทลงในชามเล็ก. ฝาปิดถูกวางไว้ข้างๆ."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

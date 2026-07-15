@@ -1,0 +1,22 @@
+language: mkd
+texts:
+  - content: "Зошто малата светилка трепка крај прозорецот? На масата лежи отворена тетратка. Завесата се движи многу бавно."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Не го најдов стариот клуч во кутијата. Внатре остана само краток бел конец."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Измиј ги чашите полека и врати ги на полицата. Потоа избриши ги трагите од вода на послужавникот."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Ако дождот престане, дворот брзо ќе се исуши. Чевлите нема да соберат многу кал."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Навечер кујната мирисаше на топол чај. Мал сад стоеше на шпоретот. Домот полека се смируваше."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

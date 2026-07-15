@@ -1,0 +1,22 @@
+language: slk
+texts:
+  - content: "Prečo malá lampa bliká pri okne? Zošit leží otvorený na stole. Záclona sa pohybuje len veľmi pomaly."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Nenašiel som starý kľúč v krabici. Vnútri zostala iba krátka biela niť."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Umy poháre pomaly a polož ich späť na policu. Potom utrieš stopy vody z podnosu."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Keby dážď prestal, dvor by rýchlo vyschol. Topánky by nenabrali toľko blata."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Večer kuchyňa voňala teplým čajom. Malý hrniec stál na sporáku. Dom postupne stíchol."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

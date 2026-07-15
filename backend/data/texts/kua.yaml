@@ -1,0 +1,22 @@
+language: kua
+texts:
+  - content: "Omolandu gwashike okashola ka kala poshitaafula? Omumati ka shi ko, ihe omukalo gwakwo ogu li mo. Pohi pwa kala omukanda gwa pewa."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Kandi na tula oshikoti mokambashu. Onda mono ashike oshikaha shokulyata popepi nepata."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Tula omakaya gomalovu kokule nefano, opo u pate oshiyelo. Ino etha ombapila yi kale momeva."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Ngele etango lya holoka kombinga yomutenya, oshikutu otashi yuma nale. Opo tatu shi tula mokati."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Omuvalelo omushona gwa nyolwa komukanda omutoka. Konima gwa patwa neendelelo. Gwa tulwa pokati komambo gavali."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

@@ -1,22 +1,22 @@
 language: fra
 texts:
-  - content: "Après la pluie, le trottoir sentait les feuilles humides. Une petite boulangerie a allumé sa lumière avant que la rue ne se réveille vraiment."
+  - content: "Pourquoi le miroir se couvre-t-il de buée si vite ? La salle est encore chaude, et la serviette glisse du crochet. Une goutte tombe dans le lavabo."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Je n'ai pas touché aux assiettes depuis ce matin. Pourtant, une trace de farine blanche restait sur la table."
     sentence_count: 2
     license: "Project-owned"
     approved: true
-  - content: "Un enfant a rangé des crayons de couleur sur la table. Son premier dessin montrait un jardin calme et une clôture penchée."
+  - content: "Si la cour était moins bruyante, la lecture avancerait plus vite. Même les pages sembleraient tourner avec plus de douceur."
     sentence_count: 2
     license: "Project-owned"
     approved: true
-  - content: "La vieille horloge du couloir s'est arrêtée juste avant midi. Personne ne l'a remarqué avant que la maison devienne étrangement silencieuse."
+  - content: "Les volets ont été repeints avant les premières chaleurs. Une couche claire a été choisie pour garder la chambre plus douce."
     sentence_count: 2
     license: "Project-owned"
     approved: true
-  - content: "Une soupe chaude fumait dans un bol profond. Quelqu'un a posé du pain frais à côté et a fermé la fenêtre de la cuisine."
-    sentence_count: 2
-    license: "Project-owned"
-    approved: true
-  - content: "Au crépuscule, le chemin près de l'eau s'est vidé. Une brume légère montait lentement et adoucissait la lumière des lampes."
-    sentence_count: 2
+  - content: "Dans un panier plat, des noix sèches craquaient sous les doigts. Une serviette bleue recouvrait le bol. Le goûter attendait sans bruit."
+    sentence_count: 3
     license: "Project-owned"
     approved: true

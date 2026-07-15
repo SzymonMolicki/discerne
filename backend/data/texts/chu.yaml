@@ -1,0 +1,22 @@
+language: chu
+texts:
+  - content: "Почто свѣтильникъ малъ тако трепещетъ? На трапезѣ лежитъ листъ разгънутъ. Вѣтръ тихъ движетъ завѣсу."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Не обрѣтохъ ключа ветхаго въ ковчежьци. Вънутрь лежаше токмо нить бѣла."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Оумый чаши тихо и постави я на полицу. Потомъ отри воду съ трапезы сухою ризою."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Аще дождь престанетъ, путь скоро изсъхнетъ. Обувь не будетъ полна брения."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Вечеромъ въ храминѣ пахняше травами сухыми. Малъ сосудъ стояше при стѣнѣ. Тишина помалу наполняше домъ."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

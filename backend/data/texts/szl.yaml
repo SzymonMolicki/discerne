@@ -1,0 +1,22 @@
+language: szl
+texts:
+  - content: "Nowo ławka była postawiōnŏ na placu. Niy była jeszcze używanŏ. Może tam prziszydnie nojwiyncyj ludzi."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Je żeś już gotowy? To możemy zarŏz wylyźć z dōma."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Niy wszyjsko idzie po naszyj myśli. Czasym trza poczkać trochã dłij."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Zawrzij dźwiyrze przed wylyzyniym. Na dworze je dziś fest zimno."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Jeźli bydzie jutro sucho, pódymy na dugi szpacyr. Inaczij zostaniymy w dōmie. To tyż może być fajny dziyń."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

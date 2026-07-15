@@ -1,0 +1,22 @@
+language: hun
+texts:
+  - content: "Miért villog a kis lámpa az ablak mellett? A füzet nyitva fekszik az asztalon. A függöny alig mozdul."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Nem találtam meg a régi kulcsot a dobozban. Csak egy rövid fehér cérna maradt benne."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Mosd el lassan a poharakat, és tedd vissza őket a polcra. Utána töröld szárazra a tálcát."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "A párnák reggel ki lettek rázva. Délután a huzatok is ki lettek cserélve."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Este a kamrában alma és papír illata volt. A felső polcon üres üveg állt. A csend lassan betöltötte a lakást."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

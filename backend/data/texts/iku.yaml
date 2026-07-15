@@ -1,0 +1,22 @@
+language: iku
+texts:
+  - content: "ᓱᒻᒪᑦ ᖃᐅᒪᓂᖅ ᒥᑭᔪᖅ ᑕᐃᒪ ᓄᖅᑲᓚᖓᕙ? ᐅᖃᓕᒫᒐᖅ ᐅᒃᑯᐃᖓᔪᖅ ᓂᕿᕕᒻᒥ ᐃᒻᒥᒃᑯᑦ. ᐊᓄᕆ ᐊᑦᑎᑲᐃᑦᑐᖅ ᐃᒐᓛᖅᑎᒍᑦ ᐃᓯᖅᑐᖅ."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "ᓇᓂᓯᓐᖏᑦᑐᖓ ᑮᓇᐅᔭᖅᑕᖅ ᐱᑐᖃᖅ ᖃᐅᔨᒪᔭᕋᓂ. ᐃᓗᐊᓂ ᐊᓐᓄᕌᖅ ᖃᑯᖅᑐᖅ ᒥᑭᔪᖅ ᑭᓯᐊᓂ ᐃᓚᐅᔪᖅ."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "ᐃᒥᕐᓂᒃ ᐊᓪᓚᐅᑎᒃᑯᑦ ᓴᓗᒻᒪᖅᓴᕆᑦ ᑕᐃᒪ ᐊᑐᕐᕕᒻᒧᑦ ᐃᓕᓗᒋᑦ. ᑭᖑᓂᐊᒍᑦ ᐃᒪᖅ ᓂᕿᕕᒻᒥ ᐊᓪᓚᓗᒍ."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "ᐊᓐᓄᕌᖅ ᒥᑭᔪᖅ ᐆᓇᖅᑐᒥᒃ ᐃᒥᕐᒥᒃ ᐅᐊᓴᖅᑕᐅᔪᖅ. ᑭᖑᓂᐊᒍᑦ ᒪᑐᒧᑦ ᓴᓂᐊᓂ ᐃᓕᔭᐅᔪᖅ."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "ᐅᓐᓄᒃᑯᑦ ᐃᒡᓗᖅ ᓂᐱᖃᓐᖏᑦᑐᖅ. ᐆᓇᖅᑐᖅ ᑏ ᓂᕿᕕᒻᒥ ᐅᖅᑰᔪᖅ. ᐊᓪᓚᕕᒃ ᒥᑭᔪᖅ ᑭᐱᓯᒪᔪᖅ."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

@@ -1,0 +1,22 @@
+language: sme
+texts:
+  - content: "Manne unna lámpa čuovgá ná láse luhtte? Girji lea rahpas beavddi alde. Rievssat lihkada hui suohkanit."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "In gávdnan boares čoavdagiid bovssas. Sis lei dušše oanehis vilges árpu."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Bassá gávttiid njozet ja bijat daid fas hillui. Dasto sihko čáhcečuoggáid beavddis."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Jus arvi nohkká, šillju goiká johtilit. Gápmagat eai váldde nu ollu lođa."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Eahketbeaivvi hivssegis lei liegga teaja hádja. Unna gárri lei omana lahka. Dállu šattai njozet jaskat."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

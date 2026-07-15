@@ -1,0 +1,22 @@
+language: lin
+texts:
+  - content: "Mpo na nini monyama ya koboma mbisi etandami na nse ya mesa? Nsinga moko ekangami na lokolo ya kiti. Na saani ezali na loso ya kokauka."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Nakatisi te bitape ya kokauka na ntongo. Mopanga ya moke etikali pembeni ya libulu ya mabele."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Bimisa nkasa ya mobesu na sani mpe kangisa yango na nsinga. Kotika te mbuma ebeba na moyi."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Soki nzete ya molayi ekwei te, tokoki kotia elamba likoló na yango. Ekosalisa yango ekauka malamu."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Biloko ya kopona mbuma epangusamaki na elamba ya kala. Mbuma ya moke etyamaki na katikati. Basukaki na kokanga saki ya pamba."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

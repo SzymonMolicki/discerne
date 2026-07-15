@@ -1,22 +1,22 @@
 language: eng
 texts:
-  - content: "The morning air felt cool after the rain. A small bakery opened early, and the street slowly filled with voices."
+  - content: "Will the old radio catch a clear signal tonight? The dial turns slowly, and a thin crackle fills the room. Someone lowers the volume before speaking."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "The notebook was not in the drawer. A loose page lay under the chair, covered with neat numbers."
     sentence_count: 2
     license: "Project-owned"
     approved: true
-  - content: "A child arranged colored pencils on the table. The first drawing showed a quiet garden and a crooked fence."
+  - content: "Rinse the berries gently and leave them in the bowl. Wipe the counter before the juice dries."
     sentence_count: 2
     license: "Project-owned"
     approved: true
-  - content: "The old clock in the hall stopped just before noon. Nobody noticed until the room became unusually silent."
+  - content: "The cracked tile was replaced before the floor was polished. A warning sign was left nearby until the surface dried."
     sentence_count: 2
     license: "Project-owned"
     approved: true
-  - content: "Warm soup steamed in a wide bowl. Someone placed fresh bread beside it and closed the kitchen window."
-    sentence_count: 2
-    license: "Project-owned"
-    approved: true
-  - content: "At dusk, the path near the water became empty. A thin mist rose from the surface and softened the lamps."
-    sentence_count: 2
+  - content: "The hallway smelled of soap and warm metal. A folded umbrella dried beside the door. By noon, the floor shone again."
+    sentence_count: 3
     license: "Project-owned"
     approved: true

@@ -1,0 +1,22 @@
+language: tur
+texts:
+  - content: "Neden ince battaniye kapının arkasında duruyor? Oda henüz ısınmadı. Masanın üstünde yarım dolu bir bardak var."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Eski makası çekmecede bulamadım. Sadece kurumuş bir yaprak defterin arasında kalmıştı."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Tabağı yavaşça rafa koy ve kırıntıları bezle sil. Fırın kapağını açık bırakma."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Yağmur akşama doğru dinerirse, minderleri dışarı çıkarırız. Böylece kumaştaki nem daha çabuk gider."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Küçük kutu dikkatle açıldı. İçindeki düğmeler ayrı bir kaseye döküldü. Kapak tekrar yerine oturtuldu."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

@@ -1,0 +1,22 @@
+language: pan
+texts:
+  - content: "ਛੋਟਾ ਦੀਵਾ ਖਿੜਕੀ ਕੋਲ ਕਿਉਂ ਟਿਮਟਿਮਾ ਰਿਹਾ ਹੈ? ਮੇਜ਼ ਉੱਤੇ ਖੁੱਲ੍ਹੀ ਕਾਪੀ ਪਈ ਹੈ। ਪਰਦਾ ਹੌਲੀ ਹੌਲੀ ਹਿਲਦਾ ਹੈ।"
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "ਮੈਨੂੰ ਪੁਰਾਣੀ ਚਾਬੀ ਡੱਬੇ ਵਿੱਚ ਨਹੀਂ ਮਿਲੀ। ਅੰਦਰ ਸਿਰਫ਼ ਛੋਟਾ ਚਿੱਟਾ ਧਾਗਾ ਸੀ।"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "ਕੱਪਾਂ ਨੂੰ ਹੌਲੀ ਧੋ ਕੇ ਵਾਪਸ ਸ਼ੈਲਫ਼ ਉੱਤੇ ਰੱਖੋ। ਫਿਰ ਟਰੇ ਤੋਂ ਪਾਣੀ ਦੇ ਨਿਸ਼ਾਨ ਪੂੰਝੋ।"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "ਜੇ ਮੀਂਹ ਰੁਕ ਜਾਵੇ, ਤਾਂ ਅੰਗਣ ਜਲਦੀ ਸੁੱਕ ਜਾਵੇਗਾ। ਜੁੱਤਿਆਂ ਨਾਲ ਵਧੇਰੇ ਚਿੱਕੜ ਨਹੀਂ ਲੱਗੇਗਾ।"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "ਸ਼ਾਮ ਨੂੰ ਰਸੋਈ ਵਿੱਚ ਗਰਮ ਚਾਹ ਦੀ ਖੁਸ਼ਬੂ ਸੀ। ਛੋਟਾ ਭਾਂਡਾ ਚੁੱਲ੍ਹੇ ਉੱਤੇ ਪਿਆ ਸੀ। ਘਰ ਹੌਲੀ ਹੌਲੀ ਚੁੱਪ ਹੋ ਗਿਆ।"
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

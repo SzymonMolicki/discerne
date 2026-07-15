@@ -1,0 +1,22 @@
+language: orm
+texts:
+  - content: "Maaliif ibsaan xiqqoon foddaa biratti ifa jijjiira? Kitaabni baname tokko minjaala irra jira. Golgaan suuta socho'a."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Ani furtuu moofaa sanduuqa keessaa hin arganne. Keessatti funyoo adii gabaabaa qofatu hafe."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Kubbaayyoowwan suuta dhiqiitii bakka isaaniitti deebisi. Sana booda mallattoo bishaanii saanii irraa haqi."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Yoo roobni dhaabbate, dallaan daftee gogdi. Kopheenis dhoqqee baay'ee hin fudhatu."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Galgala, mana nyaataa keessaa fooliin buna ho'aa dhaga'ame. Qodaan xiqqaan ibidda bira ture. Manichi suuta callise."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

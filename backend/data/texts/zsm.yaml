@@ -1,0 +1,22 @@
+language: zsm
+texts:
+  - content: "Mengapa lampu kecil itu berkelip di tepi tingkap? Buku nota terbuka di atas meja. Langsir bergerak perlahan."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Saya tidak menemukan kunci lama di dalam kotak. Di dalamnya hanya tinggal seutas benang putih pendek."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Basuh cawan itu perlahan-lahan dan letakkan semula di rak. Kemudian lap kesan air pada dulang."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Jika hujan berhenti, halaman akan cepat kering. Kasut tidak akan membawa banyak lumpur."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Pada waktu petang, dapur berbau teh panas. Periuk kecil berada di atas dapur. Rumah menjadi sunyi perlahan-lahan."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

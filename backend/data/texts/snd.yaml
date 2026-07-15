@@ -1,0 +1,22 @@
+language: snd
+texts:
+  - content: "هي ننڍڙو ڏيئو دريءَ ڀرسان ڇو ٽمٽمائي ٿو؟ ميز تي کليل ڪاپي پئي آهي. پردو آهستي لڏي ٿو."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "مون پراڻي چاٻي دٻي ۾ نه لڌي. اندر رڳو ننڍو اڇو ڌاڳو بچيو هو."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "پيالا آهستي ڌوءِ ۽ واپس شيلف تي رک. پوءِ ٽري تان پاڻي جا نشان اگهه."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "جيڪڏهن مينهن بيهي وڃي، اڱڻ جلدي سڪي ويندو. جوتن تي گهڻي مٽي نه لڳندي."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "شام جو رڌڻي ۾ گرم چانهه جي خوشبو هئي. ننڍو ديڳڙو چلهي تي هو. گهر آهستي خاموش ٿيو."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

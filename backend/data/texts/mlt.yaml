@@ -1,0 +1,22 @@
+language: mlt
+texts:
+  - content: "Għaliex il-lampa żgħira qed tteptep ħdejn it-tieqa? In-notebook miftuħ jinsab fuq il-mejda. Il-purtiera tiċċaqlaq bil-mod."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Ma sibtx iċ-ċavetta l-qadima fil-kaxxa. Ġewwa kien fadal biss ħajt abjad qasir."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Aħsel it-tazzi bil-mod u erġa' poġġihom fuq l-ixkaffa. Imbagħad imsaħ it-trej b'ċarruta niexfa."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Jekk tieqaf ix-xita, il-bitħa tinxef malajr. Iż-żraben ma jiġbrux ħafna tajn."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Filgħaxija, il-kċina kienet tfuħ bit-te sħun. Borma żgħira kienet fuq il-forn. Id-dar saret kwieta bil-mod."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

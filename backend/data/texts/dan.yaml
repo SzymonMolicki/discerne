@@ -1,0 +1,22 @@
+language: dan
+texts:
+  - content: "Hvorfor ligger der krummer i den rene skål? Bordet er ellers tørret af. En ske hviler skråt mod kanten."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Jeg hørte ikke klokken i entreen. Katten sov videre, mens teen blev lunken."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Luk låget forsigtigt og stil krukken tilbage. Tør derefter hænderne i det lille håndklæde."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Den våde frakke blev hængt op ved døren. Gulvet blev tørret, før nogen gik videre."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Om morgenen var ruden dækket af fine dråber. En cykelklokke lød nede fra gaden. Køkkenet duftede af ristet brød."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

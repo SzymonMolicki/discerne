@@ -1,0 +1,22 @@
+language: aze
+texts:
+  - content: "Niyə pəncərənin kənarında xırda daşlar yığılıb? Pərdə azca tərpənir. Masanın üstündə yarımçıq bir qeyd qalıb."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Mən köhnə açarı cibimdə tapmadım. Çantanın dibində yalnız qatlanmış bir dəsmal vardı."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Stəkanları yavaşca rəfə düz və qapını ört. Sonra yaş izi təmiz salfetlə sil."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Əgər külək səngisəydi, nazik paltar daha tez quruyardı. Axşam otaqda rütubət qalmazdı."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Səhər dəhlizdə sabun iyi duyulurdu. Ayaqqabılar qapının yanında səliqəli dayanmışdı. Divardakı kölgə yavaş-yavaş çəkildi."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

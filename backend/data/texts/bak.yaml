@@ -1,0 +1,22 @@
+language: bak
+texts:
+  - content: "Ниңә бәләкәй сәғәт тағы туҡтаны? Өҫтәлдә асыҡ хат ята. Тәҙрә янында һалҡын ел һиҙелә."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Мин йоҡа энәне тегеү ҡумтаһынан тапманым. Төймәләр иҙәнгә һибелде, ә еп ултырғыста эленеп ҡалды."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Ишекте әкрен генә яп һәм лампаны һүндер. Аҙаҡ китаптарҙы кәштәгә теҙеп ҡуй."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Иҫке таҫтамалдар йылы һыуҙа йыуылды. Һуңынан улар ишек янында киптерергә эленде."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Киске бүлмәлә үлән сәйе еҫе таралды. Тәҙрә төбөндә бәләкәй сынаяҡ тора ине. Тышта тауыштар әкренәйҙе."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

@@ -1,0 +1,22 @@
+language: ukr
+texts:
+  - content: "Чому тонкий рушник лежить біля порога? Підлога вже висохла. На полиці лишилася відкрита коробка."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Я не залишав ложку біля чашки. У шухляді була тільки складена серветка."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Постав тарілки на верхню полицю і витри мокре місце під ними. Не зачиняй вікно надто різко."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Якби тісто піднялося раніше, ми спекли б хліб до вечора. Тоді кухня пахла б тепліше."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Короткий список було написано олівцем. Потім аркуш обережно склали. Його поклали під чисту миску."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

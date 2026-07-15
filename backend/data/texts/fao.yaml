@@ -1,0 +1,22 @@
+language: fao
+texts:
+  - content: "Hví liggur ein votur lykil á vindeygakarminum? Glasið er tómt, men borðið er enn heitt. Ein bók stendur opin við lampuna."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Eg fann ikki ta reyðu húgvuna í skápinum. Hon lá kroyst undir einum teppi."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Lat hurðina aftur og set skógvarnar undir bonkin. Turka síðani vatnið av gólvinum."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Klæðini vórðu hongd upp í túninum. Seinni vórðu tey tikin inn, áðrenn luftin kólnaði."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Um kvøldið angaði stovuni av turrum grasi. Ein lítil taska hekk á stólinum. Eldri trappan knarraði spakuliga."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

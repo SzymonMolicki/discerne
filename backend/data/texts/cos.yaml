@@ -1,0 +1,22 @@
+language: cos
+texts:
+  - content: "Perchè u picculu lume tremula vicinu à u lettu? U quaternu hè apertu nant'à u tavulinu. Da a finestra entre un filu d'aria."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Ùn aghju trovu a chjave vechja in a scatula. Dentru c'era solu un pezzu di tela bianca."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Lava i bichjeri pianu è rimetteli nant'à u scaffale. Dopu asciuva l'acqua cù u pannu seccu."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "S'è a pioggia finisse prestu, u cortile s'asciucaria nanzu. I scarpi ùn piglierianu tantu fangu."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "A sera, in cucina si sintia odore di mele cotte. U piattu era sempre caldu. A casa parlava à voce bassa."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

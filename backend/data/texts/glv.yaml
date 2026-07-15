@@ -1,0 +1,22 @@
+language: glv
+texts:
+  - content: "Cre'n fa ta'n soilshey beg soilshean liorish yn uinnag? Ta lioar-lioar foshlit er y voayrd. Ta'n skianaghey gleashaghey dy moal."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Cha dooar mee yn ogher shenn ayns y phox. Va snaie bane giare ny lomarcan er-mayrn."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Niee ny cappyn dy moal as cur ad reesht er y skell. Lurg shen, glen ny cowraghyn ushtey jeh'n traaie."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Dy beagh yn fliaghey ny stad, veagh y chooyrt chirrym dy tappee. Cha beagh lane laagh er ny braagyn."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Ec yn astyr, va soar tea cheh ayns y chaggey. Va poit veg rish yn aile. Haink shee er y thie."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

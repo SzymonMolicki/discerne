@@ -1,0 +1,22 @@
+language: srp
+texts:
+  - content: "Зашто мала лампа трепери поред прозора? Свеска је отворена на столу. Завеса се једва помера."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Нисам нашао стари кључ у кутији. Унутра је остала само кратка бела нит."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Полако опери шоље и врати их на полицу. Затим обриши трагове воде са послужавника."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Ако киша стане, двориште ће се брзо осушити. Ципеле неће покупити много блата."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Увече је кухиња мирисала на топао чај. Мала шерпа стајала је на шпорету. Кућа је постала тиха."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

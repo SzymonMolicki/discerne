@@ -1,0 +1,22 @@
+language: nep
+texts:
+  - content: "सानो बत्ती झ्यालछेउ किन झिलिमिली गर्छ? टेबलमा खुला कापी छ। पर्दा बिस्तारै हल्लिन्छ।"
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "मैले पुरानो साँचो बाकसमा भेटिनँ। भित्र छोटो सेतो धागो मात्र थियो।"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "कपहरू बिस्तारै धोएर फेरि तख्तामा राख। त्यसपछि ट्रेमा भएको पानीको दाग पुछ।"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "पानी रोकिए आँगन छिट्टै सुक्छ। जुत्तामा धेरै हिलो टाँसिँदैन।"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "साँझ भान्सामा तातो चियाको बासना फैलियो। सानो भाँडो चुलोमा थियो। घर बिस्तारै शान्त भयो।"
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

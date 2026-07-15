@@ -1,0 +1,22 @@
+language: ori
+texts:
+  - content: "ଛୋଟ ଦୀପଟି ଜାଲା ପାଖରେ କାହିଁକି ଝଲମଲ କରୁଛି? ଟେବୁଲ ଉପରେ ଖୋଲା ଖାତା ପଡ଼ିଛି। ପରଦା ଧୀରେ ହଲୁଛି।"
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "ମୁଁ ପୁରୁଣା ଚାବିଟି ବାକ୍ସରେ ପାଇଲି ନାହିଁ। ଭିତରେ କେବଳ ଛୋଟ ଧଳା ସୂତା ଥିଲା।"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "କପଗୁଡ଼ିକୁ ଧୀରେ ଧୋଇ ଆଲମାରିରେ ରଖ। ପରେ ଥାଳିର ପାଣି ଚିହ୍ନ ପୋଛିଦିଅ।"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "ବର୍ଷା ଥାମିଲେ ଅଗଣା ଶୀଘ୍ର ଶୁଖିଯିବ। ଜୋତାରେ ଅଧିକ କାଦୁ ଲାଗିବ ନାହିଁ।"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "ସନ୍ଧ୍ୟାରେ ରସୋଇଘରରେ ଅଦାର ଗନ୍ଧ ଭରିଗଲା। ହାଣ୍ଡିର ଢାକଣା ଧୀରେ କମ୍ପିଲା। ଘର ଶାନ୍ତ ହେଲା।"
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

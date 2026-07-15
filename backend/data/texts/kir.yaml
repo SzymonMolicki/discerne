@@ -1,0 +1,22 @@
+language: kir
+texts:
+  - content: "Эмне үчүн кичинекей шам терезенин жанында бүлбүлдөйт? Үстөлдө ачык дептер жатат. Парда акырын кыймылдайт."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Мен эски ачкычты кутудан таппадым. Ичинде кыска ак жип гана калган."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Чыныларды жай жууп, кайра текчеге кой. Андан кийин табактагы суу изин сүрт."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Жамгыр токтосо, короо тез кургайт. Бут кийимге көп ылай жабышпайт."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Кечинде ашканада ысык чайдын жыты чыкты. Кичинекей казан меште турду. Үй акырын тынчып калды."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

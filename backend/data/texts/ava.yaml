@@ -1,0 +1,22 @@
+language: ava
+texts:
+  - content: "Щай цӏияб лампа гӀодобе цӀвазе бугеб? Къалам столалде къвале кколеб буго. РакӀалде цӏар гьечӀеб тетрадь букӀана."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Дица хӀалтӀухъан кӀудияб къалам батичӀо. Кагъатал руччабазда гъоркь рукӀана."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Гьава бекьарабани, нух тӀад рехьел хӀалтӀизе бокьила. ЦӀунул бакӀалда гӀодобе хъахӀаб хъизан букӀина."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Чедалъул хъахӀаб кӀалал ракӀалда рагьана. Гьаб цӏакъго тӀаде ккун, хъизан кьурулда бугеб буго."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Ракьалда къо лъикӀаб хӀухьел букӀана. ГьитӀинаб гӀанкӀу гъоркь чӀвана. Цӏумадул цӀва ракӀалда къваригӀана."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

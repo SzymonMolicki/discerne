@@ -1,0 +1,22 @@
+language: ido
+texts:
+  - content: "Pro quo la mikra lampo tremas apud la pordo? La tablo esas pura. Un folio falis sub la sidilo."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Me ne trovis la anciena klefo en la buxeto. Nur kurta blanka filo restis interne."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Se la pluvo cesus, la korto sikigus rapide. La shui ne portus tanta koto."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "La kovrilo esis lavita per tepida aquo. Pose ol esis pendigita apud la fenestro."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Matine la chambro odoris ye sapono e mento. Un mikra korbo restis apud la muro. La aero semblis plu klara."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

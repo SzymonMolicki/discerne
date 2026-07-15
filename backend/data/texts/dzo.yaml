@@ -1,0 +1,22 @@
+language: dzo
+texts:
+  - content: "འོད་ཆུང་འདི་ག་ཅི་སྦེ་འདར་འདར་འབདཝ་སྨོ? ཅོག་ཙེ་གུ་ཤོག་ལེབ་གཅིག་ཁ་ཕྱེ་སྟེ་ཡོད། སྒོ་འགྲམ་ལས་རླུང་འཇམ་ཏོང་ཏོ་འོངས།"
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "ང་གིས་ལྡེ་མིག་རྙིངམ་འདི་སྒྲོམ་ནང་མ་མཐོང་། ནང་ན་རས་དཀརཔོ་ཆུང་ཀུ་གཅིག་རང་འདུག།"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "ཕོརཔ་ཚུ་དལ་བུར་བཀྲུས་ཏེ་སྒྲོམ་གུ་བཞག དེ་ལས་ཅོག་ཙེ་གུ་གི་ཆུ་རས་སྐམ་པོས་ཕྱིས།"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "རས་གོ་ཆུང་ཀུ་འདི་ཆུ་དྲོདམ་ནང་བཀྲུས་ཡོད། ཤུལ་ལས་སྒོ་འགྲམ་ལུ་སྐམ་བཅུག་ཡོད།"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "ཕྱི་རུ་ཐབ་ཚང་ནང་ཇ་ཚ་ཏོམ་གྱི་དྲི་མ་འཐུལ། ཧོད་ཀྱི་ཁ་ལེབ་ཅུང་ཟད་འགུལ། ཁང་མིག་ནང་དལ་བུར་ཁུ་སིམ་སིམ་བྱུང་།"
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

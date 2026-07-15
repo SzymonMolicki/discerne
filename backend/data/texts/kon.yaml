@@ -1,0 +1,22 @@
+language: kon
+texts:
+  - content: "Sambu na inki nkasa ya madia me bika na nse ya kiti? Nzo kele pima ve, kansi muntu ke tubila ve. Na dibaya kele kaka mbuma zole."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Mono tulaka ve lukaya ya nkento na zulu ya mesa. Mupepe nataka yo tii pene ya kielo."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Kanga sakosi ya madia mbote, ebuna tula yo na kisika ya kuyuma. Kubika ve mbisi ya mupepe kukota muna."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Kana tiya me kuma fyoti, supu ta vanda kitoko sambu na bana. Beto ta lamba mampa na nima."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Mukanda ya nkufi sonamaka na kalamu ya ndombe. Yo kangamaka na nsinga ya fioti. Na nima, yo tulamaka na kati ya kitunga."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

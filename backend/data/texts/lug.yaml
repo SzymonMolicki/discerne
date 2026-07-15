@@ -1,0 +1,22 @@
+language: lug
+texts:
+  - content: "Lwaki omukeeka omupya guwanikiddwa ku nkondo? Ku mabbali kuliko akatuli katono. Akayinja akamyufu kegobedde wansi w'entebe."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Saaseetudde nsigo nkalu ku lubengo. Akasekuzo kaasigadde ku bbali nga tekalina kantu."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Zinga amalagala ago ogasibe n'akaguwa akagonvu. Totwala ttabaaza ya bbumba kumpi n'omukeeka."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Singa obusera bugenda bugumu, tuyinza okugattamu amazzi agabuguma. Bwe butyo tebugenda kukwata ku ntobo."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Ekirere ky'ekibya ky'ensuwa kyaddirizibwa n'amafuta amaddugavu. Kyakalira ku bbali w'ebikuta. Omukono gwakyo tegwaddamu kunyeenya."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

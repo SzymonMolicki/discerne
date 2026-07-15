@@ -1,0 +1,22 @@
+language: asm
+texts:
+  - content: "এই সৰু বাতিটোৱে গোটেই পৃষ্ঠাটো পোহৰাব পাৰিবনে? কাগজখন টেবুলৰ কিনাৰাত অলপ কঁপিছিল। বাহিৰত বতাহৰ শব্দ কমি আহিল।"
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "মই পুৰণি চাবিটো ড্ৰয়াৰত নাপালোঁ। কাপোৰৰ সৰু টোপোলাটো মাত্ৰ ভিতৰত আছিল।"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "যদি মেঘ আঁতৰি যায়, উঠোনটো সোনকালে শুকাব। তেতিয়া কাপোৰবোৰ বাহিৰত মেলিব পৰা যাব।"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "পাতল পৰ্দাখন ধুই ৰ'দত মেলা হৈছিল। পিছত ইয়াক ভাঁজ কৰি আলমাৰিত থোৱা হৈছিল।"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "বিয়লি চাহৰ কাপবোৰ খিৰিকীৰ কাষত ৰৈ আছিল। তামোলৰ বাকচটো বন্ধ আছিল। ঘৰত ধীৰে ধীৰে উষ্ণতা বাঢ়িছিল।"
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

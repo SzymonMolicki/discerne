@@ -1,0 +1,22 @@
+language: srd
+texts:
+  - content: "Poita sa lampada pitica tremulat acanta de sa bentana? Su cuaderru est abertu subra sa mesa. Sa tenda si movet a bellu."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "No apo agatadu sa crae antiga in sa scatula. Aintro bi fiat solu unu filu biancu curtu."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Lava sos biccheres cun calma e torra a ponner-los in s'istante. A pustis sicca sas marcas de abba dae su piattu."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Si sa pruja firmaret, su cortile siccaiat lestru. Sos iscarpas non pigaiant tantu ludu."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "A sero, sa coghina fragaiat de pane callente. Una cullera restaiat acanta de s'aqua. Sa domo diventaiat muda a bellu."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

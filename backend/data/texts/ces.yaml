@@ -1,0 +1,22 @@
+language: ces
+texts:
+  - content: "Proč se na zrcadle drží tolik páry? Ručník leží na okraji vany. Z chodby je slyšet tiché kroky."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Nenašel jsem malý šroubek pod policí. V prachu zůstala jen kulatá stopa."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Otevři zásuvku pomalu a vyndej čistý sešit. Potom narovnej lampu blíž k okraji stolu."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Rozbité madlo bylo opraveno před polednem. Schody byly potom umyty, aby nebyly kluzké."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "V komoře voněly sušené houby. Na zemi stála prázdná taška. Víko sklenice tiše cvaklo."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

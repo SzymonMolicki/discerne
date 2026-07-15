@@ -1,0 +1,22 @@
+language: som
+texts:
+  - content: "Maxay laambadda yar uga biliglaynaysaa agagaarka daaqadda? Buug yar ayaa miiska ku furan. Daahku si tartiib ah ayuu u dhaqaaqayaa."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Ma aanan helin furihii hore ee sanduuqa ku jiray. Gudihiisa waxaa ku haray dun cad oo gaaban."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Koobabka si tartiib ah u dhaq oo ku celi shelf-ka. Kadibna masax raadadka biyaha ee saxanka."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Haddii roobku joogsado, barxadda si dhakhso ah ayay u qalali doontaa. Kabuhu dhoobo badan ma qaadi doonaan."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Fiidkii, jikadu waxay uraysay shaah kulul. Dheri yar ayaa saarnaa shooladda. Gurigu si tartiib ah ayuu u aamusay."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

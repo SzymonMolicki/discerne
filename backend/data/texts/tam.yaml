@@ -1,0 +1,22 @@
+language: tam
+texts:
+  - content: "ஏன் விளக்கு பகலிலும் எரிகிறது? திரை மூடப்பட்டதால் அறை மங்கலாக உள்ளது. மேசையின் மேல் ஒரு திறந்த புத்தகம் கிடக்கிறது."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "நான் காலை உணவை இன்னும் சாப்பிடவில்லை. பாத்திரத்தில் வெறும் சூடான கஞ்சி மட்டும் இருந்தது."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "கதவை மெதுவாக மூடி, ஈரமான குடையை வெளியே வை. தரையில் விழுந்த துளிகளை உடனே துடை."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "காற்று குறைந்தால், துணிகள் மாலைக்குள் காயும். அப்போது கயிறு மீண்டும் காலியாக இருக்கும்."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "சிறிய பெட்டி கவனமாக திறக்கப்பட்டது. அதன் உள்ளே இருந்த விதைகள் தனி கிண்ணத்தில் வைக்கப்பட்டன. மூடி மீண்டும் மெதுவாக மூடப்பட்டது."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

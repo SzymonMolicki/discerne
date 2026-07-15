@@ -1,0 +1,22 @@
+language: fas
+texts:
+  - content: "چرا چراغ کوچک کنار پنجره چشمک می‌زند؟ دفترچه روی میز باز مانده است. پرده آرام تکان می‌خورد."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "کلید قدیمی را در جعبه پیدا نکردم. داخل آن فقط یک نخ سفید کوتاه مانده بود."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "فنجان‌ها را آرام بشوی و دوباره روی قفسه بگذار. بعد رد آب را از سینی پاک کن."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "اگر باران بند بیاید، حیاط زود خشک می‌شود. کفش‌ها هم گل زیادی نمی‌گیرند."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "عصر، آشپزخانه بوی چای گرم می‌داد. قابلمه کوچکی روی اجاق بود. خانه کم‌کم ساکت شد."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

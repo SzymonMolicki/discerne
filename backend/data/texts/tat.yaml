@@ -1,0 +1,22 @@
+language: tat
+texts:
+  - content: "Нигә тәрәзә төбендә ике алма тора? Өй эче җылы, ләкин пыялада вак тамчылар күренә. Пәрдә читендә тузан җыелган."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Мин бүген радио тыңламадым. Өстәлдә бары тик ачылмаган дәфтәр генә ята иде."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Киезне ишек янына җәй һәм юеш итекләрне шунда куй. Аннары кулларыңны яхшылап ю."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Әгәр кичкә кадәр томан таралса, сукмак яхшырак күренәчәк. Без лампаны соңрак кабызырбыз."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Кыска хәбәр сак кына укылды. Соңыннан кәгазь тартмага кире салынды. Аның кырые бераз бөгелгән иде."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

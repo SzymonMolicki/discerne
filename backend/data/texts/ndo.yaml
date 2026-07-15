@@ -1,0 +1,22 @@
+language: ndo
+texts:
+  - content: "Omolenga okatito otaka omwenyo popepi nokwindo? Ombapila ya yululwa pashitaafula. Omphepo ondjewa tayi ningitha etanga."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Kandi mono ekwamo lyakulu mokakutu. Mwa kala ashike ondjila ombili onene."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Koshela po omakopi, opo u ga tule pavas. Konima shuna omeva pashitaafula."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Ngele omvula ya hula, ondjila otayi yuma nondilo. Omapapatwa kage na nyengwa nodhina odhingi."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Nguloshi, ondjuwo yokulya ya hwama tii yelutu. Okapoto oka kala poshisa. Ondjuwo ya ninga ya mwena."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

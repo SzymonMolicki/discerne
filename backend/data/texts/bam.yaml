@@ -1,0 +1,22 @@
+language: bam
+texts:
+  - content: "Mun na fitinɛnin bɛ wuli ka bila kɔnɔ? Gafe min bɛ tabali kan, a dafɛ ye sɛbɛn fura ye. Fɔɲɔ bɛ farafinɛ minɛ ka taa."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "N ma kilisi kɔrɔ ye sanfɛla kɔnɔ. Bɔrɔ caman dɔrɔn tun bɛ yen, nka kunko tɛ siran."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Ni ji bɛ dɔgɔya, minɛn bɛna ja ka teliya. O waati la, fini bɛ se ka bila kɛnɛ ma."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Finimuguw ye ko ka bila sogonkun kan. O kɔ, u ye lajɛ ka kɛ tɔgɔw ye."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Wulada la, dugukolo bɛ di ka suman. Nɔnɔ finman bɛ tasuma kɛrɛfɛ. So kɔnɔ bɛ kalan dɔɔnin dɔɔnin."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

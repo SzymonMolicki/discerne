@@ -1,0 +1,22 @@
+language: glg
+texts:
+  - content: "Por que quedou a cesta no medio do corredor? A roupa xa está dobrada. Dende a cociña chega un arrecendo doce."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Non atopei o pano azul no caixón. Apareceu detrás da almofada, aínda un pouco húmido."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Se baixase a persiana, a luz sería máis suave. A lectura avanzaría sen tanto cansazo."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Se o vento cambiase, a roupa secaría antes. A terraza quedaría libre para a cea."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Ao fondo da sala soaba unha radio moi baixa. O gato ocupaba a cadeira pequena. A tarde pasaba sen présa."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

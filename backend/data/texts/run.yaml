@@ -1,0 +1,22 @@
+language: run
+texts:
+  - content: "Kubera iki itara rito ryaka rihindagurika hafi y'idirisha? Igitabo gifunguye kiri ku meza. Umuyaga woroheje unyeganyeza umwenda."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Sinabonye urufunguzo rwa kera mu gasandugu. Imbere hasigayemwo agace gato k'umugozi wera."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Oza ibikombe witonze, ubisubize ku kabati. Hanyuma uhanagure amazi ari ku meza."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Imvura ihagaze, inzira izokama vuba. Inkweto ntizotwara ivyondo vyinshi."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Ku mugoroba, mu gikoni humvikanaga impumuro y'icayi gishushe. Inkono nto yari ku ziko. Inzu yaciye itekana."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

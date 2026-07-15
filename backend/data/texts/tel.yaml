@@ -1,0 +1,22 @@
+language: tel
+texts:
+  - content: "ఎందుకు చిన్న గంట మళ్లీ మళ్లీ మోగుతోంది? తలుపు దగ్గర ఎవరూ లేరు, కానీ గాలి బలంగా వస్తోంది. గోడపై ఉన్న నీడ కూడా కదులుతోంది."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "నేను నిన్నటి పుస్తకం సంచిలో పెట్టలేదు. లోపల పెన్సిల్ ముక్కలు మరియు పొడి ఆకు మాత్రమే ఉన్నాయి."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "చాపను సరిగా పరచి, పక్కన ఉన్న దీపాన్ని కొంచెం దూరంగా పెట్టు. పిల్లలు దాటే దారిని ఖాళీగా ఉంచు."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "మేఘాలు మధ్యాహ్నానికి తొలగితే, మట్టికుండ త్వరగా ఆరుతుంది. మనం దానిలో విత్తనాలు వేయగలం."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "సన్నని దారం జాగ్రత్తగా కొలవబడింది. తరువాత అది కొత్త మడతలో దాచబడింది. దాని చివర చిన్న ముడి వేశారు."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

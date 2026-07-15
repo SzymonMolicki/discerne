@@ -1,0 +1,22 @@
+language: zho
+texts:
+  - content: "为什么小灯一直闪？桌上摊着一张便条。窗边的帘子轻轻动了一下。"
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "我没有在盒子里找到旧钥匙。里面只剩下一段柔软的白线。"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "把杯子慢慢洗干净，再放回架子上。然后用干布擦掉桌面的水痕。"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "如果雨早点停，院子会很快变干。鞋底也不会沾上太多泥。"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "傍晚的厨房里有姜的味道。锅盖轻轻响着。房间一点一点暖了起来。"
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

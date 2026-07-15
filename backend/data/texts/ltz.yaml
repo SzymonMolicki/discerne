@@ -1,0 +1,22 @@
+language: ltz
+texts:
+  - content: "Firwat flackert déi kleng Luucht beim Fënster? D'Heft läit opgeschloen um Dësch. De Rideau beweegt sech ganz lues."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Ech hunn den ale Schlëssel net an der Këscht fonnt. Dobanne louch nëmmen e kuerze wäisse Fuedem."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Wäsch d'Bechere lues a stell se zeréck op d'Regal. Dono wisch d'Waasserspuren vum Schacht."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Wann de Reen ophale géif, géif den Haff séier dréchnen. D'Schong géifen net esou vill Bulli kréien."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Owes huet d'Kichen no waarmem Téi geroch. E klenge Pot stoung um Uewen. D'Haus gouf no an no roueg."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

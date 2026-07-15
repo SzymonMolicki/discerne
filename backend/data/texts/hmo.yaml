@@ -1,0 +1,22 @@
+language: hmo
+texts:
+  - content: "Badina be mai laiti em i lait isi? Buk i op long tebol. Win liklik i kam insait long windo."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Mi no painim ki oltaim insait long bokis. Liklik hap laplap wait tasol i stap."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Wasim kap isi na putim ol gen long shelf. Bihain, draim wara mak long tebol."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Sapos ren i stop, rot bai drai hariap. Su bai no kisim planti graun."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Long apinun, haus kuk i smel olsem ti hat. Pot lid i mekim liklik nois. Haus i kam isi isi."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

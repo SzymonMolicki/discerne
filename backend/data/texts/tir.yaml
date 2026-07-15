@@ -1,0 +1,22 @@
+language: tir
+texts:
+  - content: "እቲ ንእሽቶ መኽደኒ ኣብ ጠረጴዛ ስለምንታይ ተረሲዑ፧ ኣብ ክፍሊ ርግእ ዝበለ ብርሃን ኣሎ። እቲ መስኮት ቍሩብ ተኸፊቱ ኣሎ።"
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "ኣነ ነቲ መፍትሕ ኣይረኸብክዎን። ኣብቲ ሳንዱቕ ንእሽቶ ወረቐት ጥራይ ነበረ።"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "ነቲ ኩባያ ቀስ ኢልካ ሕጸቦ። ድሕሪኡ ኣብ ንጹህ ጨርቂ ኣቐምጦ።"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "እንተደኣ እቲ ንፋስ ህድእ ኢሉ፣ እቲ ክዳን ቀልጢፉ ክነቅጽ እዩ። እቲ ገዛ ድማ ዝያዳ ጽፉፍ ክመስል እዩ።"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "እቲ ሓጺር መልእኽቲ ብጥንቃቐ ተነቢቡ። ድሕሪኡ ኣብ መጽሓፍ ውሽጢ ተቐሚጡ። እቲ ቀለም ገና ቍሩብ ይሽትት ነበረ።"
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

@@ -1,0 +1,22 @@
+language: cor
+texts:
+  - content: "Pandr'a yw an golow byghan ow plana? Yma lyver digor war an voos. An gwyns a wra movya an lien."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Ny wrugav kavos an allwedd goth yn y gist. Yma neusen wyn hepken omma."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Golgh an hanafasow yn lent ha gosodhowgh i war an estyllen. Wosa henna, seghowgh an voos gans lien sych."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Mar pleg an glaw yn skon, an fordh a via sych. An eskisyow na via leun a bry."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Dhe nos, sawor bara pooth a lenwis an gegin. An gath lowen a guskas war gador. An chi a dheuth dhe vos taw."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

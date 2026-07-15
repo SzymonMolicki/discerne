@@ -1,0 +1,22 @@
+language: jav
+texts:
+  - content: "Kena apa lampu cilik kuwi kedhep-kedhep cedhak jendhela? Buku cathetan isih kabuka ing meja. Angin alus ngobahake gorden."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Aku ora nemokake kunci lawas ing kothak. Ing njero mung ana kain putih cilik."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Wisuh gelas-gelas iku alon-alon banjur balekna menyang rak. Sawise kuwi, lap bekas banyu ing nampan."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Yen udan mandheg, latar bakal cepet garing. Sepatu ora bakal kebak lendhut."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Sore kuwi pawon ambune teh panas. Tutup panci muni lirih. Omah banjur dadi luwih sepi."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

@@ -1,0 +1,22 @@
+language: nld
+texts:
+  - content: "Waarom staat de achterdeur op een kier? De mat is droog, maar er ligt zand naast de drempel. In de keuken tikt een lepel tegen glas."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Ik vond de grijze sjaal niet in de kast. Hij lag opgerold onder de bank."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Schuif de doos onder het bed en sluit de lade. Zet daarna de schoenen netjes naast elkaar."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "De oude gordijnen werden gewassen met koud water. Later werden ze buiten in de schaduw gehangen."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Tegen de avond rook de kamer naar stof en munt. Een potlood lag tussen twee kussens. Het licht werd steeds zachter."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

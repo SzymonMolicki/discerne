@@ -1,0 +1,22 @@
+language: fry
+texts:
+  - content: "Wêrom leit it blauwe doek oer de stoel? De flier is kâld wurden. Yn de hoeke stiet noch in iepen doaze."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Ik haw de kaai net yn de jasbûse fûn. Allinnich in lyts briefke siet der noch yn."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Set de skjinne boarden op it rek en doch de lade ticht. Lit it mes net op 'e râne lizze."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "As de loft fannemiddei helderder wurdt, kin de tekken bûten hingje. Dan rûkt de keamer letter frisser."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "It âlde kaartsje waard fan de pot helle. In nij kaartsje waard der strak op plakt. De pot gie werom yn de kast."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

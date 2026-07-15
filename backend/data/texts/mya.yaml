@@ -1,0 +1,22 @@
+language: mya
+texts:
+  - content: "ဒီမီးအိမ်သေးသေးက ဘာကြောင့် တိတ်တိတ်လေး လင်းနေသလဲ။ စားပွဲပေါ်မှာ စာရွက်တစ်ရွက် ဖွင့်ထားသည်။ ပြတင်းပေါက်နားမှာ လေညင်း ဝင်လာသည်။"
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "ကျွန်တော် သော့အဟောင်းကို အံဆွဲထဲမှာ မတွေ့ခဲ့ပါ။ အထဲမှာ အဝတ်စတစ်စပဲ ရှိနေသည်။"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "ခွက်တွေကို ဖြည်းဖြည်း ဆေးပြီး စင်ပေါ်မှာ တင်ပါ။ ပြီးရင် စိုနေတဲ့ နေရာကို အဝတ်ခြောက်နဲ့ သုတ်ပါ။"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "မိုးရပ်သွားရင် လမ်းက မြန်မြန် ခြောက်လာမယ်။ ဖိနပ်တွေမှာ ရွှံ့ မကပ်တော့ဘူး။"
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "ညနေပိုင်းမှာ မီးဖိုချောင်ထဲက ဂျင်းနံ့ ရလာသည်။ အိုးအဖုံးက ဖြည်းဖြည်း လှုပ်နေသည်။ အခန်းက တဖြည်းဖြည်း နွေးလာသည်။"
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

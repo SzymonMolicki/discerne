@@ -1,0 +1,22 @@
+language: tgl
+texts:
+  - content: "Bakit tahimik ang radyo kahit nakasaksak ito? May ilaw sa kusina, ngunit walang nagsasalita. Sa tabi nito, nakabukas ang maliit na bintana."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Hindi ko naisara ang lalagyan ng asukal kanina. Kaya may maliliit na butil sa tabi ng tasa."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Ayusin mo ang unan at itabi ang kumot sa dulo ng upuan. Huwag mong harangan ang daanan."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Kung luluwag ang oras mamaya, magluluto tayo ng sabaw bago dumilim. Mas madali ring maghugas pagkatapos."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Nilinis ang maliit na salamin bago isinabit sa dingding. Pagkaraan, inilagay sa ilalim nito ang tuyong tuwalya. Natuyo rin ang bakas ng tubig sa sahig."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true

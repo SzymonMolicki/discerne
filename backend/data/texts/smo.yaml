@@ -1,0 +1,22 @@
+language: smo
+texts:
+  - content: "Aiseā e emoemo ai le molī laʻitiiti i tafatafa o le faamalama? O loo tatala le api i luga o le laulau. E luelue filemu le ie puipui."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
+  - content: "Ou te leʻi maua le ki tuai i totonu o le pusa. Sa na o se filo paʻepaʻe puupuu na totoe."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Fufulu lemu ipu ma toe tuu i luga o le fata. Ona solo lea o faailoga vai i le fata."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "Afai e muta le timu, e vave ona mago le malae. E le pipii tele le palapala i seevae."
+    sentence_count: 2
+    license: "Project-owned"
+    approved: true
+  - content: "I le afiafi, sa manogi le umukuka i le ti vevela. Sa i luga o le ogaumu se ulo laʻitiiti. Sa filemu le fale."
+    sentence_count: 3
+    license: "Project-owned"
+    approved: true
