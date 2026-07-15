@@ -64,6 +64,151 @@ func TestHealthEndpoint(t *testing.T) {
 	}
 }
 
+func TestReadyEndpoint(t *testing.T) {
+	location, err := time.LoadLocation("Europe/Warsaw")
+	if err != nil {
+		t.Fatalf("time.LoadLocation() error = %v", err)
+	}
+
+	service := &fakeQuizService{
+		readiness: quizdb.ReadinessStatus{
+			DatabaseOK:      true,
+			TodayQuizOK:     true,
+			FutureQuizCount: 16,
+		},
+	}
+	router := NewRouter(config.Config{
+		AppName:     "Discerne",
+		HTTPAddress: ":8080",
+		AppTimezone: location,
+	}, slog.New(slog.NewTextHandler(io.Discard, nil)), service)
+
+	request := httptest.NewRequest(http.MethodGet, "/api/v1/health/ready", nil)
+	response := httptest.NewRecorder()
+
+	router.ServeHTTP(response, request)
+
+	if response.Code != http.StatusOK {
+		t.Fatalf("status = %d, want %d", response.Code, http.StatusOK)
+	}
+	if !service.readinessCalled {
+		t.Fatal("readinessCalled = false, want true")
+	}
+
+	var body struct {
+		Status          string `json:"status"`
+		Database        string `json:"database"`
+		TodayQuiz       string `json:"todayQuiz"`
+		FutureQuizCount int    `json:"futureQuizCount"`
+	}
+	if err := json.Unmarshal(response.Body.Bytes(), &body); err != nil {
+		t.Fatalf("decode response: %v", err)
+	}
+	if body.Status != "ok" {
+		t.Fatalf("Status = %q, want %q", body.Status, "ok")
+	}
+	if body.Database != "ok" {
+		t.Fatalf("Database = %q, want %q", body.Database, "ok")
+	}
+	if body.TodayQuiz != "ok" {
+		t.Fatalf("TodayQuiz = %q, want %q", body.TodayQuiz, "ok")
+	}
+	if body.FutureQuizCount != 16 {
+		t.Fatalf("FutureQuizCount = %d, want %d", body.FutureQuizCount, 16)
+	}
+}
+
+func TestReadyEndpointReturnsUnavailableWhenTodayQuizIsMissing(t *testing.T) {
+	location, err := time.LoadLocation("Europe/Warsaw")
+	if err != nil {
+		t.Fatalf("time.LoadLocation() error = %v", err)
+	}
+
+	service := &fakeQuizService{
+		readiness: quizdb.ReadinessStatus{
+			DatabaseOK:      true,
+			TodayQuizOK:     false,
+			FutureQuizCount: 16,
+		},
+	}
+	router := NewRouter(config.Config{
+		AppName:     "Discerne",
+		HTTPAddress: ":8080",
+		AppTimezone: location,
+	}, slog.New(slog.NewTextHandler(io.Discard, nil)), service)
+
+	request := httptest.NewRequest(http.MethodGet, "/api/v1/health/ready", nil)
+	response := httptest.NewRecorder()
+
+	router.ServeHTTP(response, request)
+
+	if response.Code != http.StatusServiceUnavailable {
+		t.Fatalf("status = %d, want %d", response.Code, http.StatusServiceUnavailable)
+	}
+
+	var body struct {
+		Status          string `json:"status"`
+		Database        string `json:"database"`
+		TodayQuiz       string `json:"todayQuiz"`
+		FutureQuizCount int    `json:"futureQuizCount"`
+	}
+	if err := json.Unmarshal(response.Body.Bytes(), &body); err != nil {
+		t.Fatalf("decode response: %v", err)
+	}
+	if body.Status != "unavailable" {
+		t.Fatalf("Status = %q, want %q", body.Status, "unavailable")
+	}
+	if body.Database != "ok" {
+		t.Fatalf("Database = %q, want %q", body.Database, "ok")
+	}
+	if body.TodayQuiz != "missing" {
+		t.Fatalf("TodayQuiz = %q, want %q", body.TodayQuiz, "missing")
+	}
+	if body.FutureQuizCount != 16 {
+		t.Fatalf("FutureQuizCount = %d, want %d", body.FutureQuizCount, 16)
+	}
+}
+
+func TestReadyEndpointReturnsUnavailableWithoutQuizService(t *testing.T) {
+	location, err := time.LoadLocation("Europe/Warsaw")
+	if err != nil {
+		t.Fatalf("time.LoadLocation() error = %v", err)
+	}
+
+	router := NewRouter(config.Config{
+		AppName:     "Discerne",
+		HTTPAddress: ":8080",
+		AppTimezone: location,
+	}, slog.New(slog.NewTextHandler(io.Discard, nil)), nil)
+
+	request := httptest.NewRequest(http.MethodGet, "/api/v1/health/ready", nil)
+	response := httptest.NewRecorder()
+
+	router.ServeHTTP(response, request)
+
+	if response.Code != http.StatusServiceUnavailable {
+		t.Fatalf("status = %d, want %d", response.Code, http.StatusServiceUnavailable)
+	}
+
+	var body struct {
+		Status    string `json:"status"`
+		Database  string `json:"database"`
+		TodayQuiz string `json:"todayQuiz"`
+	}
+	if err := json.Unmarshal(response.Body.Bytes(), &body); err != nil {
+		t.Fatalf("decode response: %v", err)
+	}
+	if body.Status != "unavailable" {
+		t.Fatalf("Status = %q, want %q", body.Status, "unavailable")
+	}
+	if body.Database != "unavailable" {
+		t.Fatalf("Database = %q, want %q", body.Database, "unavailable")
+	}
+	if body.TodayQuiz != "unknown" {
+		t.Fatalf("TodayQuiz = %q, want %q", body.TodayQuiz, "unknown")
+	}
+}
+
 func TestTodayQuizEndpoint(t *testing.T) {
 	location, err := time.LoadLocation("Europe/Warsaw")
 	if err != nil {
@@ -782,6 +927,9 @@ type fakeQuizService struct {
 	quiz                 quizdb.DailyQuiz
 	loadErr              error
 	locale               string
+	readiness            quizdb.ReadinessStatus
+	readinessErr         error
+	readinessCalled      bool
 	dailyAttempt         quizdb.AttemptResult
 	dailyAttemptErr      error
 	dailyAttemptDeviceID string
@@ -800,6 +948,11 @@ type fakeQuizService struct {
 func (reader *fakeQuizService) LoadDailyQuiz(_ context.Context, _ time.Time, locale string) (quizdb.DailyQuiz, error) {
 	reader.locale = locale
 	return reader.quiz, reader.loadErr
+}
+
+func (reader *fakeQuizService) LoadReadiness(_ context.Context, _ time.Time) (quizdb.ReadinessStatus, error) {
+	reader.readinessCalled = true
+	return reader.readiness, reader.readinessErr
 }
 
 func (reader *fakeQuizService) LoadDailyQuizAttempt(_ context.Context, _ time.Time, deviceID string) (quizdb.AttemptResult, error) {

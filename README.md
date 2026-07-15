@@ -27,6 +27,11 @@ Language names shown as answers are localized as well.
 
 The backend exposes a REST API under `/api/v1`. The main endpoints fetch today's quiz, start an attempt, submit an answer and read the result. Correct answers are not returned before the player submits an answer.
 
+Health endpoints:
+
+- `GET /api/v1/health` checks whether the API process is running.
+- `GET /api/v1/health/ready` checks whether the API can serve quiz traffic. It verifies database connectivity, today's quiz and the number of future quizzes. It returns `503` when the application is not ready.
+
 ## Local Development
 
 Requirements: Go matching `backend/go.mod`, Node.js with npm, Docker and `goose` for migrations.
@@ -87,6 +92,8 @@ Then open:
 http://localhost:5173
 ```
 
+The backend container healthcheck uses `/api/v1/health/ready`, so the backend becomes healthy only after migrations, seed import and quiz generation have prepared data for today.
+
 
 If local Go or Vite processes already use the default ports, override them for Docker:
 
@@ -101,6 +108,16 @@ BACKEND_PORT=18080 FRONTEND_PORT=15173 docker compose up -d backend frontend
 `go run ./cmd/quiz-preview --seed 1 --locale en-US` generates a quiz preview without writing to the database.
 
 `go run ./cmd/quiz-generator --days 7` stores future quizzes in PostgreSQL. By default, generation starts from the current date in the `Europe/Warsaw` timezone.
+
+`go run ./cmd/quiz-generator --ensure-future 7 --generate-days 30` is the scheduled mode. It checks how many quizzes exist from tomorrow onward. If there are fewer than 7, it generates 30 days starting from tomorrow and skips dates that already exist.
+
+In Docker, run the scheduled mode with:
+
+```bash
+docker compose run --rm --interactive=false -T quiz-ensure-future
+```
+
+In a cloud deployment, run that command as a scheduled job.
 
 ## Configuration
 
@@ -120,6 +137,12 @@ Backend:
 cd backend
 go test ./...
 go vet ./...
+```
+
+API readiness:
+
+```bash
+curl http://localhost:8080/api/v1/health/ready
 ```
 
 PostgreSQL integration test:

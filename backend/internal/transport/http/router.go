@@ -34,12 +34,17 @@ type AttemptLoader interface {
 	LoadAttempt(rctx context.Context, attemptID string, deviceID string) (quizdb.AttemptResult, error)
 }
 
+type ReadinessLoader interface {
+	LoadReadiness(rctx context.Context, today time.Time) (quizdb.ReadinessStatus, error)
+}
+
 type QuizService interface {
 	DailyQuizReader
 	DailyQuizAttemptLoader
 	AttemptStarter
 	AnswerSubmitter
 	AttemptLoader
+	ReadinessLoader
 }
 
 // NewRouter wires the API routes.
@@ -54,6 +59,44 @@ func NewRouter(cfg config.Config, logger *slog.Logger, quizzes QuizService) http
 			Now:      time.Now().In(cfg.AppTimezone).Format(time.RFC3339),
 		}); err != nil {
 			logger.Error("write health response", "error", err)
+		}
+	})
+
+	mux.HandleFunc("GET /api/v1/health/ready", func(w http.ResponseWriter, r *http.Request) {
+		if quizzes == nil {
+			if err := respondJSON(w, http.StatusServiceUnavailable, readinessResponse{
+				Status:          "unavailable",
+				Database:        "unavailable",
+				TodayQuiz:       "unknown",
+				FutureQuizCount: 0,
+			}); err != nil {
+				logger.Error("write readiness response", "error", err)
+			}
+			return
+		}
+
+		today := time.Now().In(cfg.AppTimezone)
+		status, err := quizzes.LoadReadiness(r.Context(), today)
+		if err != nil {
+			logger.Error("load readiness", "error", err)
+			if err := respondJSON(w, http.StatusServiceUnavailable, readinessResponse{
+				Status:          "unavailable",
+				Database:        "unavailable",
+				TodayQuiz:       "unknown",
+				FutureQuizCount: 0,
+			}); err != nil {
+				logger.Error("write readiness response", "error", err)
+			}
+			return
+		}
+
+		response := readinessResponseFromStatus(status)
+		httpStatus := http.StatusOK
+		if response.Status != "ok" {
+			httpStatus = http.StatusServiceUnavailable
+		}
+		if err := respondJSON(w, httpStatus, response); err != nil {
+			logger.Error("write readiness response", "error", err)
 		}
 	})
 
@@ -274,6 +317,13 @@ type healthResponse struct {
 	Now      string `json:"now"`
 }
 
+type readinessResponse struct {
+	Status          string `json:"status"`
+	Database        string `json:"database"`
+	TodayQuiz       string `json:"todayQuiz"`
+	FutureQuizCount int    `json:"futureQuizCount"`
+}
+
 type errorResponse struct {
 	Error string `json:"error"`
 }
@@ -346,6 +396,26 @@ func attemptAnswersResponse(answers []quizdb.AttemptAnswer) []todayQuizAttemptAn
 			CorrectLanguageID:  answer.CorrectLanguageID,
 			IsCorrect:          answer.IsCorrect,
 		})
+	}
+
+	return response
+}
+
+func readinessResponseFromStatus(status quizdb.ReadinessStatus) readinessResponse {
+	response := readinessResponse{
+		Status:          "ok",
+		Database:        "ok",
+		TodayQuiz:       "ok",
+		FutureQuizCount: status.FutureQuizCount,
+	}
+
+	if !status.DatabaseOK {
+		response.Status = "unavailable"
+		response.Database = "unavailable"
+	}
+	if !status.TodayQuizOK {
+		response.Status = "unavailable"
+		response.TodayQuiz = "missing"
 	}
 
 	return response
