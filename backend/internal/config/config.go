@@ -10,10 +10,12 @@ import (
 )
 
 const (
-	defaultAppName          = "Discerne"
-	defaultHTTPAddress      = ":8080"
-	defaultAppTimezone      = "Europe/Warsaw"
-	defaultDeviceCookieName = "discerne_device"
+	defaultAppName                   = "Discerne"
+	defaultHTTPAddress               = ":8080"
+	defaultAppTimezone               = "Europe/Warsaw"
+	defaultDeviceCookieName          = "discerne_device"
+	DefaultMutationRateLimitRequests = 30
+	DefaultMutationRateLimitWindow   = time.Minute
 )
 
 // Config contains settings validated at startup.
@@ -24,6 +26,13 @@ type Config struct {
 	DeviceCookieName  string
 	SecureCookies     bool
 	DistractorWeights quiz.DistractorWeights
+	MutationRateLimit MutationRateLimitConfig
+}
+
+// MutationRateLimitConfig controls rate limiting for mutating quiz endpoints.
+type MutationRateLimitConfig struct {
+	Requests int
+	Window   time.Duration
 }
 
 // Load builds Config from environment values.
@@ -65,6 +74,11 @@ func Load(environ []string) (Config, error) {
 		return Config{}, err
 	}
 
+	mutationRateLimit, err := loadMutationRateLimit(values)
+	if err != nil {
+		return Config{}, err
+	}
+
 	return Config{
 		AppName:           appName,
 		HTTPAddress:       httpAddress,
@@ -72,6 +86,30 @@ func Load(environ []string) (Config, error) {
 		DeviceCookieName:  deviceCookieName,
 		SecureCookies:     secureCookies,
 		DistractorWeights: distractorWeights,
+		MutationRateLimit: mutationRateLimit,
+	}, nil
+}
+
+func loadMutationRateLimit(values map[string]string) (MutationRateLimitConfig, error) {
+	requests, err := intFromEnv(values, "RATE_LIMIT_MUTATION_REQUESTS", DefaultMutationRateLimitRequests)
+	if err != nil {
+		return MutationRateLimitConfig{}, err
+	}
+	if requests <= 0 {
+		return MutationRateLimitConfig{}, fmt.Errorf("RATE_LIMIT_MUTATION_REQUESTS must be greater than zero")
+	}
+
+	window, err := durationFromEnv(values, "RATE_LIMIT_MUTATION_WINDOW", DefaultMutationRateLimitWindow)
+	if err != nil {
+		return MutationRateLimitConfig{}, err
+	}
+	if window <= 0 {
+		return MutationRateLimitConfig{}, fmt.Errorf("RATE_LIMIT_MUTATION_WINDOW must be greater than zero")
+	}
+
+	return MutationRateLimitConfig{
+		Requests: requests,
+		Window:   window,
 	}, nil
 }
 
@@ -133,6 +171,19 @@ func boolFromEnv(values map[string]string, key string, fallback bool) (bool, err
 	value, err := strconv.ParseBool(rawValue)
 	if err != nil {
 		return false, fmt.Errorf("parse %s %q: %w", key, rawValue, err)
+	}
+	return value, nil
+}
+
+func durationFromEnv(values map[string]string, key string, fallback time.Duration) (time.Duration, error) {
+	rawValue := strings.TrimSpace(values[key])
+	if rawValue == "" {
+		return fallback, nil
+	}
+
+	value, err := time.ParseDuration(rawValue)
+	if err != nil {
+		return 0, fmt.Errorf("parse %s %q: %w", key, rawValue, err)
 	}
 	return value, nil
 }

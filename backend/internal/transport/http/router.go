@@ -246,7 +246,8 @@ func NewRouter(cfg config.Config, logger *slog.Logger, quizzes QuizService) http
 		}
 	})
 
-	return requestLogger(logger, mux)
+	rateLimiter := newMutationRateLimiter(cfg)
+	return requestLogger(logger, rateLimiter.middleware(cfg, mux))
 }
 
 type todayQuizResponse struct {

@@ -117,6 +117,8 @@ Required backend environment variables:
 - `DEVICE_COOKIE_NAME` - anonymous browser cookie name, for example `discerne_device`.
 - `SECURE_COOKIES` - use `true` in production behind HTTPS.
 - `DISTRACTOR_*_WEIGHT` - distractor scoring weights. Use the same values as `.env.example` unless there is a reason to tune gameplay.
+- `RATE_LIMIT_MUTATION_REQUESTS` - maximum attempt/answer POST requests per client in one rate-limit window.
+- `RATE_LIMIT_MUTATION_WINDOW` - rate-limit window duration, for example `1m`.
 
 Initial deployment order:
 
@@ -197,6 +199,18 @@ The most important settings are listed in `.env.example`:
 - `APP_TIMEZONE` - quiz publication timezone, defaulting to `Europe/Warsaw`.
 - `DEVICE_COOKIE_NAME` and `SECURE_COOKIES` - anonymous device cookie settings.
 - `DISTRACTOR_*_WEIGHT` - weights used when selecting distractors.
+- `RATE_LIMIT_MUTATION_REQUESTS` and `RATE_LIMIT_MUTATION_WINDOW` - backend rate limiting for mutating quiz endpoints.
+
+## Security Headers And Rate Limiting
+
+The frontend nginx config sets conservative security headers for all responses, including CSP, Referrer-Policy, HSTS, X-Content-Type-Options, X-Frame-Options and Permissions-Policy.
+
+The backend rate-limits mutating quiz endpoints:
+
+- `POST /api/v1/quizzes/today/attempt`
+- `POST /api/v1/attempts/{attemptId}/answers`
+
+By default, each client may make 30 such requests per minute. Clients are keyed by the anonymous device cookie when available, otherwise by forwarded client IP. Limited requests return `429` with error code `rate_limited` and a `Retry-After` header.
 
 ## Verification
 

@@ -657,6 +657,69 @@ func TestStartAttemptEndpointRejectsCompletedAttempt(t *testing.T) {
 	}
 }
 
+func TestStartAttemptEndpointIsRateLimited(t *testing.T) {
+	location, err := time.LoadLocation("Europe/Warsaw")
+	if err != nil {
+		t.Fatalf("time.LoadLocation() error = %v", err)
+	}
+
+	service := &fakeQuizService{
+		attempt: quizdb.Attempt{
+			ID:       "attempt-id",
+			DeviceID: "device-id",
+			Status:   "in_progress",
+		},
+	}
+	router := NewRouter(config.Config{
+		AppName:          "Discerne",
+		HTTPAddress:      ":8080",
+		AppTimezone:      location,
+		DeviceCookieName: "discerne_device",
+		MutationRateLimit: config.MutationRateLimitConfig{
+			Requests: 2,
+			Window:   time.Minute,
+		},
+	}, slog.New(slog.NewTextHandler(io.Discard, nil)), service)
+
+	for i := 0; i < 2; i++ {
+		request := httptest.NewRequest(http.MethodPost, "/api/v1/quizzes/today/attempt", nil)
+		request.AddCookie(&http.Cookie{Name: "discerne_device", Value: "device-id"})
+		response := httptest.NewRecorder()
+
+		router.ServeHTTP(response, request)
+
+		if response.Code != http.StatusCreated {
+			t.Fatalf("request %d status = %d, want %d", i+1, response.Code, http.StatusCreated)
+		}
+	}
+
+	request := httptest.NewRequest(http.MethodPost, "/api/v1/quizzes/today/attempt", nil)
+	request.AddCookie(&http.Cookie{Name: "discerne_device", Value: "device-id"})
+	response := httptest.NewRecorder()
+
+	router.ServeHTTP(response, request)
+
+	if response.Code != http.StatusTooManyRequests {
+		t.Fatalf("status = %d, want %d", response.Code, http.StatusTooManyRequests)
+	}
+	if response.Header().Get("Retry-After") == "" {
+		t.Fatal("Retry-After header is empty")
+	}
+	if service.startCalls != 2 {
+		t.Fatalf("startCalls = %d, want %d", service.startCalls, 2)
+	}
+
+	var body struct {
+		Error string `json:"error"`
+	}
+	if err := json.Unmarshal(response.Body.Bytes(), &body); err != nil {
+		t.Fatalf("decode response: %v", err)
+	}
+	if body.Error != "rate_limited" {
+		t.Fatalf("Error = %q, want %q", body.Error, "rate_limited")
+	}
+}
+
 func TestSubmitAnswerEndpoint(t *testing.T) {
 	location, err := time.LoadLocation("Europe/Warsaw")
 	if err != nil {
@@ -834,6 +897,56 @@ func TestSubmitAnswerEndpointRejectsDuplicateAnswer(t *testing.T) {
 	}
 }
 
+func TestSubmitAnswerEndpointIsRateLimited(t *testing.T) {
+	location, err := time.LoadLocation("Europe/Warsaw")
+	if err != nil {
+		t.Fatalf("time.LoadLocation() error = %v", err)
+	}
+
+	service := &fakeQuizService{
+		answer: quizdb.AnswerSubmission{
+			QuestionID:         "question-id",
+			SelectedLanguageID: "language-id",
+			CorrectLanguageID:  "correct-language-id",
+			IsCorrect:          true,
+		},
+	}
+	router := NewRouter(config.Config{
+		AppName:          "Discerne",
+		HTTPAddress:      ":8080",
+		AppTimezone:      location,
+		DeviceCookieName: "discerne_device",
+		MutationRateLimit: config.MutationRateLimitConfig{
+			Requests: 1,
+			Window:   time.Minute,
+		},
+	}, slog.New(slog.NewTextHandler(io.Discard, nil)), service)
+
+	body := `{"questionId":"question-id","selectedLanguageId":"language-id"}`
+	firstRequest := httptest.NewRequest(http.MethodPost, "/api/v1/attempts/attempt-id/answers", strings.NewReader(body))
+	firstRequest.AddCookie(&http.Cookie{Name: "discerne_device", Value: "device-id"})
+	firstResponse := httptest.NewRecorder()
+
+	router.ServeHTTP(firstResponse, firstRequest)
+
+	if firstResponse.Code != http.StatusCreated {
+		t.Fatalf("first status = %d, want %d", firstResponse.Code, http.StatusCreated)
+	}
+
+	secondRequest := httptest.NewRequest(http.MethodPost, "/api/v1/attempts/attempt-id/answers", strings.NewReader(body))
+	secondRequest.AddCookie(&http.Cookie{Name: "discerne_device", Value: "device-id"})
+	secondResponse := httptest.NewRecorder()
+
+	router.ServeHTTP(secondResponse, secondRequest)
+
+	if secondResponse.Code != http.StatusTooManyRequests {
+		t.Fatalf("second status = %d, want %d", secondResponse.Code, http.StatusTooManyRequests)
+	}
+	if service.submitCalls != 1 {
+		t.Fatalf("submitCalls = %d, want %d", service.submitCalls, 1)
+	}
+}
+
 func TestGetAttemptEndpoint(t *testing.T) {
 	location, err := time.LoadLocation("Europe/Warsaw")
 	if err != nil {
@@ -936,9 +1049,11 @@ type fakeQuizService struct {
 	attempt              quizdb.Attempt
 	startErr             error
 	startDeviceID        string
+	startCalls           int
 	answer               quizdb.AnswerSubmission
 	submitErr            error
 	submitInput          quizdb.SubmitAnswerInput
+	submitCalls          int
 	result               quizdb.AttemptResult
 	resultErr            error
 	resultAttemptID      string
@@ -961,11 +1076,13 @@ func (reader *fakeQuizService) LoadDailyQuizAttempt(_ context.Context, _ time.Ti
 }
 
 func (reader *fakeQuizService) StartAttempt(_ context.Context, _ string, deviceID string) (quizdb.Attempt, error) {
+	reader.startCalls++
 	reader.startDeviceID = deviceID
 	return reader.attempt, reader.startErr
 }
 
 func (reader *fakeQuizService) SubmitAnswer(_ context.Context, input quizdb.SubmitAnswerInput) (quizdb.AnswerSubmission, error) {
+	reader.submitCalls++
 	reader.submitInput = input
 	return reader.answer, reader.submitErr
 }

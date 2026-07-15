@@ -35,6 +35,14 @@ func TestLoadUsesDefaults(t *testing.T) {
 	if cfg.DistractorWeights.SameSubgroup != 16 {
 		t.Fatalf("DistractorWeights.SameSubgroup = %d, want %d", cfg.DistractorWeights.SameSubgroup, 16)
 	}
+
+	if cfg.MutationRateLimit.Requests != 30 {
+		t.Fatalf("MutationRateLimit.Requests = %d, want %d", cfg.MutationRateLimit.Requests, 30)
+	}
+
+	if cfg.MutationRateLimit.Window.String() != "1m0s" {
+		t.Fatalf("MutationRateLimit.Window = %s, want %s", cfg.MutationRateLimit.Window, "1m0s")
+	}
 }
 
 func TestLoadAllowsOverrides(t *testing.T) {
@@ -46,6 +54,8 @@ func TestLoadAllowsOverrides(t *testing.T) {
 		"SECURE_COOKIES=true",
 		"DISTRACTOR_BASE_WEIGHT=12",
 		"DISTRACTOR_SAME_SCRIPT_WEIGHT=7",
+		"RATE_LIMIT_MUTATION_REQUESTS=9",
+		"RATE_LIMIT_MUTATION_WINDOW=30s",
 	})
 	if err != nil {
 		t.Fatalf("Load() error = %v", err)
@@ -78,6 +88,14 @@ func TestLoadAllowsOverrides(t *testing.T) {
 	if cfg.DistractorWeights.SameScript != 7 {
 		t.Fatalf("DistractorWeights.SameScript = %d, want %d", cfg.DistractorWeights.SameScript, 7)
 	}
+
+	if cfg.MutationRateLimit.Requests != 9 {
+		t.Fatalf("MutationRateLimit.Requests = %d, want %d", cfg.MutationRateLimit.Requests, 9)
+	}
+
+	if cfg.MutationRateLimit.Window.String() != "30s" {
+		t.Fatalf("MutationRateLimit.Window = %s, want %s", cfg.MutationRateLimit.Window, "30s")
+	}
 }
 
 func TestLoadRejectsInvalidTimezone(t *testing.T) {
@@ -106,6 +124,23 @@ func TestLoadRejectsInvalidDistractorWeights(t *testing.T) {
 
 func TestLoadRejectsInvalidBool(t *testing.T) {
 	_, err := Load([]string{"SECURE_COOKIES=maybe"})
+	if err == nil {
+		t.Fatal("Load() error = nil, want error")
+	}
+}
+
+func TestLoadRejectsInvalidRateLimit(t *testing.T) {
+	_, err := Load([]string{"RATE_LIMIT_MUTATION_REQUESTS=0"})
+	if err == nil {
+		t.Fatal("Load() error = nil, want error")
+	}
+
+	_, err = Load([]string{"RATE_LIMIT_MUTATION_WINDOW=0s"})
+	if err == nil {
+		t.Fatal("Load() error = nil, want error")
+	}
+
+	_, err = Load([]string{"RATE_LIMIT_MUTATION_WINDOW=not-a-duration"})
 	if err == nil {
 		t.Fatal("Load() error = nil, want error")
 	}
