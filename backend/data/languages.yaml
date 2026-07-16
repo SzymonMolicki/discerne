@@ -1327,7 +1327,7 @@ languages:
     subgroup: sundanese
     continent: AS
     script: Latn
-    enabled: false
+    enabled: true
   - iso_639_3: swa
     iso_639_1: sw
     canonical_name: Swahili
@@ -1336,7 +1336,7 @@ languages:
     subgroup: bantu
     continent: AF
     script: Latn
-    enabled: false
+    enabled: true
   - iso_639_3: ssw
     iso_639_1: ss
     canonical_name: Swati
@@ -1345,7 +1345,7 @@ languages:
     subgroup: bantu
     continent: AF
     script: Latn
-    enabled: false
+    enabled: true
   - iso_639_3: swe
     iso_639_1: sv
     canonical_name: Swedish
@@ -1354,7 +1354,7 @@ languages:
     subgroup: north-germanic
     continent: EU
     script: Latn
-    enabled: false
+    enabled: true
   - iso_639_3: tgl
     iso_639_1: tl
     canonical_name: Tagalog
@@ -1363,7 +1363,7 @@ languages:
     subgroup: central-philippine
     continent: AS
     script: Latn
-    enabled: false
+    enabled: true
   - iso_639_3: tah
     iso_639_1: ty
     canonical_name: Tahitian
@@ -1372,7 +1372,7 @@ languages:
     subgroup: oceanic
     continent: OC
     script: Latn
-    enabled: false
+    enabled: true
   - iso_639_3: tgk
     iso_639_1: tg
     canonical_name: Tajik
@@ -1381,7 +1381,7 @@ languages:
     subgroup: iranian
     continent: AS
     script: Cyrl
-    enabled: false
+    enabled: true
   - iso_639_3: tam
     iso_639_1: ta
     canonical_name: Tamil
@@ -1390,7 +1390,7 @@ languages:
     subgroup: tamil
     continent: AS
     script: Taml
-    enabled: false
+    enabled: true
   - iso_639_3: tat
     iso_639_1: tt
     canonical_name: Tatar
@@ -1399,7 +1399,7 @@ languages:
     subgroup: kipchak
     continent: EU
     script: Cyrl
-    enabled: false
+    enabled: true
   - iso_639_3: tel
     iso_639_1: te
     canonical_name: Telugu
@@ -1408,7 +1408,7 @@ languages:
     subgroup: telugu
     continent: AS
     script: Telu
-    enabled: false
+    enabled: true
   - iso_639_3: tha
     iso_639_1: th
     canonical_name: Thai
@@ -1417,7 +1417,7 @@ languages:
     subgroup: southwestern-tai
     continent: AS
     script: Thai
-    enabled: false
+    enabled: true
   - iso_639_3: bod
     iso_639_1: bo
     canonical_name: Tibetan
@@ -1426,7 +1426,7 @@ languages:
     subgroup: bodish
     continent: AS
     script: Tibt
-    enabled: false
+    enabled: true
   - iso_639_3: tir
     iso_639_1: ti
     canonical_name: Tigrinya
@@ -1435,7 +1435,7 @@ languages:
     subgroup: ethiopian-semitic
     continent: AF
     script: Ethi
-    enabled: false
+    enabled: true
   - iso_639_3: ton
     iso_639_1: to
     canonical_name: Tongan
@@ -1444,7 +1444,7 @@ languages:
     subgroup: oceanic
     continent: OC
     script: Latn
-    enabled: false
+    enabled: true
   - iso_639_3: tso
     iso_639_1: ts
     canonical_name: Tsonga
@@ -1453,7 +1453,7 @@ languages:
     subgroup: bantu
     continent: AF
     script: Latn
-    enabled: false
+    enabled: true
   - iso_639_3: tsn
     iso_639_1: tn
     canonical_name: Tswana
@@ -1462,7 +1462,7 @@ languages:
     subgroup: bantu
     continent: AF
     script: Latn
-    enabled: false
+    enabled: true
   - iso_639_3: tur
     iso_639_1: tr
     canonical_name: Turkish
@@ -1471,7 +1471,7 @@ languages:
     subgroup: oghuz
     continent: AS
     script: Latn
-    enabled: false
+    enabled: true
   - iso_639_3: tuk
     iso_639_1: tk
     canonical_name: Turkmen
@@ -1480,7 +1480,7 @@ languages:
     subgroup: oghuz
     continent: AS
     script: Latn
-    enabled: false
+    enabled: true
   - iso_639_3: twi
     iso_639_1: tw
     canonical_name: Twi
@@ -1489,7 +1489,7 @@ languages:
     subgroup: potou-tano
     continent: AF
     script: Latn
-    enabled: false
+    enabled: true
   - iso_639_3: ukr
     iso_639_1: uk
     canonical_name: Ukrainian
@@ -1498,7 +1498,7 @@ languages:
     subgroup: east-slavic
     continent: EU
     script: Cyrl
-    enabled: false
+    enabled: true
   - iso_639_3: urd
     iso_639_1: ur
     canonical_name: Urdu
@@ -1507,7 +1507,7 @@ languages:
     subgroup: indo-aryan
     continent: AS
     script: Arab
-    enabled: false
+    enabled: true
   - iso_639_3: uig
     iso_639_1: ug
     canonical_name: Uyghur
@@ -1516,7 +1516,7 @@ languages:
     subgroup: karluk
     continent: AS
     script: Arab
-    enabled: false
+    enabled: true
   - iso_639_3: uzb
     iso_639_1: uz
     canonical_name: Uzbek
@@ -1525,7 +1525,7 @@ languages:
     subgroup: karluk
     continent: AS
     script: Latn
-    enabled: false
+    enabled: true
   - iso_639_3: ven
     iso_639_1: ve
     canonical_name: Venda
@@ -1534,7 +1534,7 @@ languages:
     subgroup: bantu
     continent: AF
     script: Latn
-    enabled: false
+    enabled: true
   - iso_639_3: vie
     iso_639_1: vi
     canonical_name: Vietnamese
@@ -1543,7 +1543,7 @@ languages:
     subgroup: viet-muong
     continent: AS
     script: Latn
-    enabled: false
+    enabled: true
   - iso_639_3: vol
     iso_639_1: vo
     canonical_name: Volapük
@@ -1552,7 +1552,7 @@ languages:
     subgroup: volapuk
     continent: EU
     script: Latn
-    enabled: false
+    enabled: true
   - iso_639_3: wln
     iso_639_1: wa
     canonical_name: Walloon
@@ -1561,7 +1561,7 @@ languages:
     subgroup: romance
     continent: EU
     script: Latn
-    enabled: false
+    enabled: true
   - iso_639_3: cym
     iso_639_1: cy
     canonical_name: Welsh
@@ -1570,7 +1570,7 @@ languages:
     subgroup: brittonic
     continent: EU
     script: Latn
-    enabled: false
+    enabled: true
   - iso_639_3: fry
     iso_639_1: fy
     canonical_name: Western Frisian
@@ -1579,7 +1579,7 @@ languages:
     subgroup: west-germanic
     continent: EU
     script: Latn
-    enabled: false
+    enabled: true
   - iso_639_3: wol
     iso_639_1: wo
     canonical_name: Wolof
@@ -1588,7 +1588,7 @@ languages:
     subgroup: senegambian
     continent: AF
     script: Latn
-    enabled: false
+    enabled: true
   - iso_639_3: wym
     canonical_name: Wymysorys
     family: indo-european
@@ -1596,7 +1596,7 @@ languages:
     subgroup: west-germanic
     continent: EU
     script: Latn
-    enabled: false
+    enabled: true
   - iso_639_3: xho
     iso_639_1: xh
     canonical_name: Xhosa
@@ -1605,7 +1605,7 @@ languages:
     subgroup: bantu
     continent: AF
     script: Latn
-    enabled: false
+    enabled: true
   - iso_639_3: yid
     iso_639_1: yi
     canonical_name: Yiddish
@@ -1614,7 +1614,7 @@ languages:
     subgroup: west-germanic
     continent: EU
     script: Hebr
-    enabled: false
+    enabled: true
   - iso_639_3: yor
     iso_639_1: yo
     canonical_name: Yoruba
@@ -1623,7 +1623,7 @@ languages:
     subgroup: yoruboid
     continent: AF
     script: Latn
-    enabled: false
+    enabled: true
   - iso_639_3: zha
     iso_639_1: za
     canonical_name: Zhuang
@@ -1632,7 +1632,7 @@ languages:
     subgroup: zhuang
     continent: AS
     script: Latn
-    enabled: false
+    enabled: true
   - iso_639_3: zul
     iso_639_1: zu
     canonical_name: Zulu
@@ -1641,4 +1641,4 @@ languages:
     subgroup: bantu
     continent: AF
     script: Latn
-    enabled: false
+    enabled: true
