@@ -36,6 +36,14 @@ func TestLoadUsesDefaults(t *testing.T) {
 		t.Fatalf("DistractorWeights.SameSubgroup = %d, want %d", cfg.DistractorWeights.SameSubgroup, 10)
 	}
 
+	if cfg.DistractorWeights.SameContinent != 10 {
+		t.Fatalf("DistractorWeights.SameContinent = %d, want %d", cfg.DistractorWeights.SameContinent, 10)
+	}
+
+	if cfg.DistractorWeights.SameScript != 10 {
+		t.Fatalf("DistractorWeights.SameScript = %d, want %d", cfg.DistractorWeights.SameScript, 10)
+	}
+
 	if cfg.MutationRateLimit.Requests != 30 {
 		t.Fatalf("MutationRateLimit.Requests = %d, want %d", cfg.MutationRateLimit.Requests, 30)
 	}

@@ -9,8 +9,8 @@ x-backend-environment: &backend-environment
   DISTRACTOR_SAME_FAMILY_WEIGHT: ${DISTRACTOR_SAME_FAMILY_WEIGHT:-6}
   DISTRACTOR_SAME_GROUP_WEIGHT: ${DISTRACTOR_SAME_GROUP_WEIGHT:-8}
   DISTRACTOR_SAME_SUBGROUP_WEIGHT: ${DISTRACTOR_SAME_SUBGROUP_WEIGHT:-10}
-  DISTRACTOR_SAME_CONTINENT_WEIGHT: ${DISTRACTOR_SAME_CONTINENT_WEIGHT:-6}
-  DISTRACTOR_SAME_SCRIPT_WEIGHT: ${DISTRACTOR_SAME_SCRIPT_WEIGHT:-8}
+  DISTRACTOR_SAME_CONTINENT_WEIGHT: ${DISTRACTOR_SAME_CONTINENT_WEIGHT:-10}
+  DISTRACTOR_SAME_SCRIPT_WEIGHT: ${DISTRACTOR_SAME_SCRIPT_WEIGHT:-10}
   RATE_LIMIT_MUTATION_REQUESTS: ${RATE_LIMIT_MUTATION_REQUESTS:-30}
   RATE_LIMIT_MUTATION_WINDOW: ${RATE_LIMIT_MUTATION_WINDOW:-1m}
 
@@ -71,27 +71,30 @@ services:
   migrate:
     <<: *backend-service
     profiles: ["tools"]
-    command: ["sh", "-c", "./bin/goose -dir ./migrations postgres \"$${DATABASE_URL}\" up"]
+    entrypoint: ["sh", "-c", "exec ./bin/goose -dir ./migrations postgres \"$${DATABASE_URL}\" \"$@\"", "goose"]
+    command: ["up"]
 
   seed-import:
     <<: *backend-service
     profiles: ["tools"]
-    command: ["./bin/seed-import"]
+    entrypoint: ["./bin/seed-import"]
 
   quiz-generator:
     <<: *backend-service
     profiles: ["tools"]
-    command: ["./bin/quiz-generator", "--days", "7"]
+    entrypoint: ["./bin/quiz-generator"]
+    command: ["--days", "7"]
 
   quiz-ensure-future:
     <<: *backend-service
     profiles: ["tools"]
-    command: ["./bin/quiz-generator", "--ensure-future", "7", "--generate-days", "30"]
+    entrypoint: ["./bin/quiz-generator"]
+    command: ["--ensure-future", "7", "--generate-days", "30"]
 
   data-validator:
     <<: *backend-service
     profiles: ["tools"]
-    command: ["./bin/data-validator"]
+    entrypoint: ["./bin/data-validator"]
 
 volumes:
   postgres-data:

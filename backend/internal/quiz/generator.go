@@ -2,7 +2,7 @@ package quiz
 
 import "fmt"
 
-const DefaultQuestionCount = 5
+const DefaultQuestionCount = 8
 const DefaultOptionCount = 5
 
 type Generator struct {

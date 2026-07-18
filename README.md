@@ -1,12 +1,12 @@
 # Discerne
 
-Discerne is a browser-based daily language identification quiz. The player sees a short text in an unknown language and chooses one of five answers. Each quiz has five questions and the quiz for a given day is the same for every player.
+Discerne is a browser-based daily language identification quiz. The player sees a short text in an unknown language and chooses one of five answers. Each quiz has eight questions and the quiz for a given day is the same for every player.
 
 The project does not require user accounts. Progress is tied to an anonymous identifier stored in an HTTP cookie and scoring is calculated on the server.
 
 ## How The Quiz Works
 
-For each day, the generator selects five different languages and one approved text for each of them. Four distractors are selected for every correct answer. They are not sampled uniformly: languages that share the same family, group, subgroup, continent, or script get a higher weight, while unrelated languages still keep a non-zero chance of appearing.
+For each day, the generator selects eight different languages and one approved text for each of them. Four distractors are selected for every correct answer. They are not sampled uniformly: languages that share the same family, group, subgroup, continent, or script get a higher weight, while unrelated languages still keep a non-zero chance of appearing.
 
 Texts and language metadata are stored as seed data in `backend/data`.
 
@@ -85,6 +85,14 @@ docker compose up -d backend frontend
 ```
 
 `--interactive=false -T` makes the one-off commands safe to paste as one block in a terminal.
+
+Tool service arguments can be overridden after the service name. For example:
+
+```bash
+docker compose run --rm --interactive=false -T quiz-generator --days 14 --seed 42
+docker compose run --rm --interactive=false -T seed-import --data-dir /app/data
+docker compose run --rm --interactive=false -T migrate status
+```
 
 Then open:
 

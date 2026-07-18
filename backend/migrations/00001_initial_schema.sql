@@ -104,7 +104,6 @@ CREATE TABLE daily_quiz_questions (
     position INTEGER NOT NULL,
     text_id UUID NOT NULL REFERENCES language_texts (id) ON DELETE RESTRICT,
     correct_language_id UUID NOT NULL REFERENCES languages (id) ON DELETE RESTRICT,
-    CONSTRAINT daily_quiz_questions_position_chk CHECK (position BETWEEN 1 AND 5),
     UNIQUE (daily_quiz_id, position),
     UNIQUE (daily_quiz_id, text_id),
     UNIQUE (daily_quiz_id, correct_language_id)
@@ -147,8 +146,7 @@ CREATE TABLE quiz_attempts (
     daily_quiz_id UUID NOT NULL REFERENCES daily_quizzes (id) ON DELETE CASCADE,
     started_at TIMESTAMPTZ NOT NULL DEFAULT now(),
     completed_at TIMESTAMPTZ,
-    score INTEGER,
-    CONSTRAINT quiz_attempts_score_chk CHECK (score IS NULL OR score BETWEEN 0 AND 5)
+    score INTEGER
 );
 
 CREATE INDEX quiz_attempts_device_id_idx ON quiz_attempts (device_id);

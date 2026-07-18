@@ -23,8 +23,8 @@ func TestDistractorWeightUsesCumulativeMetadata(t *testing.T) {
 		t.Fatalf("DistractorWeight() error = %v", err)
 	}
 
-	if weight != 39 {
-		t.Fatalf("weight = %d, want %d", weight, 39)
+	if weight != 45 {
+		t.Fatalf("weight = %d, want %d", weight, 45)
 	}
 }
 

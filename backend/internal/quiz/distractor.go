@@ -25,8 +25,8 @@ func DefaultDistractorWeights() DistractorWeights {
 		SameFamily:    6,
 		SameGroup:     8,
 		SameSubgroup:  10,
-		SameContinent: 6,
-		SameScript:    8,
+		SameContinent: 10,
+		SameScript:    10,
 	}
 }
 

@@ -32,7 +32,7 @@ func TestSelectDistractorsUsesWeightedSamplingWithoutReplacement(t *testing.T) {
 		candidate("jpn", "japonic", "japanese", "japanese", "AS", "Jpan"),
 		candidate("arb", "afro-asiatic", "semitic", "central-semitic", "AS", "Arab"),
 	}
-	random := &fakeRandomSource{values: []int{0, 21, 21}}
+	random := &fakeRandomSource{values: []int{0, 27, 27}}
 
 	selected, err := SelectDistractors(correct, candidates, 3, DefaultDistractorWeights(), random)
 	if err != nil {
@@ -43,7 +43,7 @@ func TestSelectDistractorsUsesWeightedSamplingWithoutReplacement(t *testing.T) {
 		t.Fatalf("len(selected) = %d, want %d", len(selected), 3)
 	}
 
-	assertSelected(t, selected[0], "fra", 39)
+	assertSelected(t, selected[0], "fra", 45)
 	assertSelected(t, selected[1], "jpn", 1)
 	assertSelected(t, selected[2], "arb", 1)
 }
